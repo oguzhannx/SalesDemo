@@ -36,6 +36,7 @@ namespace SalesDemo.Web
 
             services.AddSingleton<IProductRepository, ProductRepository>();
             services.AddSingleton<ICompanyRepository, CompanyRepository>();
+            services.AddSingleton<ISaleRepository, SaleRepository>();
             //veritabaný entegrasyonu
             services.Configure<MongoSettings>(o =>
             {
@@ -46,7 +47,7 @@ namespace SalesDemo.Web
 
             services.AddIdentity<User, MongoIdentityRole>()
                 .AddMongoDbStores<User, MongoIdentityRole, Guid>(Configuration.GetSection("MongoDbConnectionString:ConnectionString").Value,
-    Configuration.GetSection("MongoDbConnectionString:DatabaseName").Value)
+                    Configuration.GetSection("MongoDbConnectionString:DatabaseName").Value)
                 .AddDefaultTokenProviders()
                 .AddSignInManager();
 
@@ -70,7 +71,7 @@ namespace SalesDemo.Web
                 app.UseStaticFiles();
 
                 app.UseRouting();
-
+                app.UseAuthentication();
                 app.UseAuthorization();
 
                 app.UseEndpoints(endpoints =>
