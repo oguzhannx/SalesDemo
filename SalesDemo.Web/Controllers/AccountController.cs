@@ -121,7 +121,7 @@ namespace SalesDemo.Web.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Login(LoginVM loginVM, string returnUrl = null)
         {
-            returnUrl ??= Url.Content("/");
+            returnUrl ??= Url.Content("/home/index");
 
 
             if (ModelState.IsValid)
