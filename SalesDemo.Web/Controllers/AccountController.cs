@@ -54,7 +54,7 @@ namespace SalesDemo.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterVM registerVM, string? returnUrl = null)
         {
-            returnUrl ??= Url.Content("/");
+            returnUrl ??= Url.Content("/home/index");
         
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace SalesDemo.Web.Controllers
                         if (result.Succeeded)
                         {
                             await _signInManager.SignInAsync(user, isPersistent: false);
-                            RedirectToPage(returnUrl);
+                            return LocalRedirect(returnUrl);
                         }
                     }
                     //company ismide rol zaten varsa kullanıcıya direkt o rolu ata
@@ -96,7 +96,7 @@ namespace SalesDemo.Web.Controllers
                         if (result.Succeeded)
                         {
                             await _signInManager.SignInAsync(user, isPersistent: false);
-                            RedirectToPage(returnUrl);
+                            return LocalRedirect(returnUrl);
                         }
 
                     }
