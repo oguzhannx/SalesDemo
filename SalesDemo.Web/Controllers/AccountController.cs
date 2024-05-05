@@ -1,13 +1,9 @@
-﻿using AspNetCore.Identity.MongoDbCore;
-using AspNetCore.Identity.MongoDbCore.Models;
+﻿using AspNetCore.Identity.MongoDbCore.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SalesDemo.Entities.Auth;
 using SalesDemo.Models.ViewModels;
-using SalesDemo.Utility;
-using System;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -55,20 +51,20 @@ namespace SalesDemo.Web.Controllers
         public async Task<IActionResult> Register(RegisterVM registerVM, string? returnUrl = null)
         {
             returnUrl ??= Url.Content("/home/index");
-        
+
             if (ModelState.IsValid)
             {
-                
+
                 User user = new User
                 {
-                 Name = registerVM.Name,
-                 Surname = registerVM.Surname,
-                 UserName = registerVM.UserName,
-                 PhoneNumber = registerVM.Phone,
-                
+                    Name = registerVM.Name,
+                    Surname = registerVM.Surname,
+                    UserName = registerVM.UserName,
+                    PhoneNumber = registerVM.Phone,
+
                 };
-                   
-               var result = await _userManager.CreateAsync(user, registerVM.Password);
+
+                var result = await _userManager.CreateAsync(user, registerVM.Password);
 
                 if (result.Succeeded)
                 {
@@ -101,7 +97,8 @@ namespace SalesDemo.Web.Controllers
 
                     }
                 }
-                else if(!result.Succeeded){
+                else if (!result.Succeeded)
+                {
                     foreach (var error in result.Errors)
                     {
                         ModelState.AddModelError(string.Empty, error.Description);
@@ -110,7 +107,7 @@ namespace SalesDemo.Web.Controllers
                     // Hata mesajlarını ViewBag üzerinden kullanıcıya gönderin
                     ViewBag.RegisterErrors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
                 }
-               
+
             }
             return View();
         }

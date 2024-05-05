@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace SalesDemo.Models.ViewModels
 {
@@ -18,7 +12,7 @@ namespace SalesDemo.Models.ViewModels
         [Display(Name = "Surname")]
         public string Surname { get; set; }
 
-         [Required(ErrorMessage = "Bu Alanı Doldurmak Zorunludur")]
+        [Required(ErrorMessage = "Bu Alanı Doldurmak Zorunludur")]
         [Display(Name = "User Name")]
         public string UserName { get; set; }
 
@@ -36,7 +30,7 @@ namespace SalesDemo.Models.ViewModels
 
         [Display(Name = "Company Name")]
         [Required(ErrorMessage = "Bu Alanı Doldurmak Zorunludur")]
-        public string CompanyName{ get; set; }
+        public string CompanyName { get; set; }
 
         [Display(Name = "Phone Number")]
         [Required(ErrorMessage = "Bu Alanı Doldurmak Zorunludur")]

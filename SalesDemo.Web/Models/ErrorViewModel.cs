@@ -1,5 +1,3 @@
-using System;
-
 namespace SalesDemo.Web.Models
 {
     public class ErrorViewModel

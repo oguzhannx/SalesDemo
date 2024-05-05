@@ -1,13 +1,8 @@
-﻿using DnsClient.Protocol;
-using MongoDB.Bson;
+﻿using MongoDB.Bson;
 using SalesDemo.Business.Abstract;
 using SalesDemo.Core.Models.Concrete;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace SalesDemo.Business.Concrete
@@ -27,7 +22,7 @@ namespace SalesDemo.Business.Concrete
         public GetManyResult<Sale> getSalesByComppanyId(string id)
         {
             var a = _saleRepository.FilterBy(q => q.CompanyId == ObjectId.Parse(id));
-            return  a;
+            return a;
         }
     }
 }
