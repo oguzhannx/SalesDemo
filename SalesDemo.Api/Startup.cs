@@ -7,6 +7,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using SalesDemo.Business.Abstract;
+using SalesDemo.Business.Concrete;
+using SalesDemo.Core.DbSettingModels;
+using SalesDemo.DataAccess.Abstract;
+using SalesDemo.DataAccess.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +33,17 @@ namespace SalesDemo.Api
         {
 
             services.AddControllers();
+
+            services.AddSingleton<ISaleRepository, SaleRepository>();
+            services.AddSingleton<ISaleService, SaleService>();
+            services.Configure<MongoSettings>(o =>
+            {
+                o.ConnectionString = Configuration.GetSection("MongoDbConnectionString:ConnectionString").Value;
+                o.DatabaseName = Configuration.GetSection("MongoDbConnectionString:DatabaseName").Value;
+
+            });
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SalesDemo.Api", Version = "v1" });

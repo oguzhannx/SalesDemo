@@ -22,7 +22,7 @@ namespace SalesDemo.Api.Controllers
         [HttpGet]
         public  IEnumerable<Sale> GetAll()
         {
-              var a = await _saleService.getAllSales().Result.Result;
+              var a =  _saleService.getAllSales().Result.Result;
 
             return a;
         }
