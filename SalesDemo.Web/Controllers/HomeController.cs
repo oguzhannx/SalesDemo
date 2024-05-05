@@ -49,7 +49,7 @@ namespace SalesDemo.Web.Controllers
 
 
                 List<IndexVM> indexVMs = new List<IndexVM>();
-
+                ViewBag.Companies = companies;
                 foreach (var item in companies)
                 {
 

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using SalesDemo.Entities.Auth;
 using SalesDemo.Models.ViewModels;
 using System.Linq;
@@ -15,13 +16,16 @@ namespace SalesDemo.Web.Controllers
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         private readonly RoleManager<MongoIdentityRole> _roleManager;
+        private readonly ILogger<AccountController> _logger;
 
 
 
         public AccountController(UserManager<User> userManager,
             RoleManager<MongoIdentityRole> roleManager,
-            SignInManager<User> signInManager)
+            SignInManager<User> signInManager,
+            ILogger<AccountController> accountController)
         {
+            _logger = accountController;
             _userManager = userManager;
             _roleManager = roleManager;
             _signInManager = signInManager;
@@ -29,19 +33,7 @@ namespace SalesDemo.Web.Controllers
 
         public IActionResult Register()
         {
-            //if (!_roleManager.RoleExistsAsync(Enums.Role_Admin).GetAwaiter().GetResult())
-            //{
-            //    _roleManager.CreateAsync(new MongoIdentityRole
-            //    {
-            //        Name = Enums.Role_Admin,
-            //    }).GetAwaiter().GetResult();
-            //    _roleManager.CreateAsync(new MongoIdentityRole
-            //    {
-            //        Name = Enums.Role_User_Comp,
-            //    }).GetAwaiter().GetResult();
-
-
-            //}
+            
 
             return View();
         }
@@ -65,6 +57,7 @@ namespace SalesDemo.Web.Controllers
                 };
 
                 var result = await _userManager.CreateAsync(user, registerVM.Password);
+                _logger.LogInformation("User created.");
 
                 if (result.Succeeded)
                 {
@@ -81,6 +74,8 @@ namespace SalesDemo.Web.Controllers
                         if (result.Succeeded)
                         {
                             await _signInManager.SignInAsync(user, isPersistent: false);
+                            _logger.LogInformation("User logged in.");
+
                             return LocalRedirect(returnUrl);
                         }
                     }
@@ -92,6 +87,8 @@ namespace SalesDemo.Web.Controllers
                         if (result.Succeeded)
                         {
                             await _signInManager.SignInAsync(user, isPersistent: false);
+                            _logger.LogInformation("User logged in.");
+
                             return LocalRedirect(returnUrl);
                         }
 
@@ -102,6 +99,8 @@ namespace SalesDemo.Web.Controllers
                     foreach (var error in result.Errors)
                     {
                         ModelState.AddModelError(string.Empty, error.Description);
+                        _logger.LogInformation(error.Description);
+
                     }
 
                     // Hata mesajlarını ViewBag üzerinden kullanıcıya gönderin
@@ -136,7 +135,7 @@ namespace SalesDemo.Web.Controllers
 
                     if (result.Succeeded)
                     {
-                        //_logger.LogInformation("User logged in.");
+                        _logger.LogInformation("User logged in.");
                         return LocalRedirect(returnUrl);
                     }
                 }
@@ -149,6 +148,7 @@ namespace SalesDemo.Web.Controllers
         {
             await _signInManager.SignOutAsync();
 
+            _logger.LogInformation("user signout");
 
             return RedirectToAction("Login");
         }

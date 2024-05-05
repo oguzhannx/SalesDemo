@@ -45,7 +45,27 @@
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
                             <div class="header-title">
-                                <h4 class="card-title">Basic Table</h4>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="search-toggle nav-link" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Hepsi
+                                        <span class="bg-primary"></span>
+                                    </a>
+                                    <div class="p-0 sub-drop dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButtonW">
+                                        <div class="m-0 border-0 shadow-none card">
+                                            <div class="p-0 ">
+                                                <ul class="p-0 list-group list-group-flush">
+
+                                                    @foreach (var item in Model)
+                                                    {
+                                                        <li class="iq-sub-card list-group-item"><a class="p-0" href="#">@item.Company.CompanyName</a></li>
+
+                                                    }
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="card-body p-0">
@@ -98,6 +118,9 @@
                 <div class="col-md-12 col-lg-12">
                 
             <div class="card" data-aos="fade-up" data-aos-delay="500">
+                <div class="text-center card-header d-flex justify-content-around">
+                    <h2>Toplamlar</h2>
+                </div>
                 <div class="text-center card-body d-flex justify-content-around">
                     <div>
                         @*burada List<IndexVM> olarak gelen vvverinin içerisnde dolaşarak toplam satış verisine erişiyoruz*@
@@ -108,7 +131,7 @@
                             {
                                 totalPrices += item.Sale.TotalPrice;
                             }
-                            <h2 class="mb-2"><small>@totalPrices</small></h2>
+                            <h2 class="mb-2"><small>₺@totalPrices</small></h2>
                             <p class="mb-0 text-gray">Toplam Satış Ucreti</p>
                         }
                     </div>
