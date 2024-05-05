@@ -82,7 +82,11 @@ namespace SalesDemo.Web.Controllers
 
                         await _userManager.AddToRoleAsync(user, registerVM.CompanyName.ToLower());
                         await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Role, registerVM.CompanyName.ToLower()));
-
+                        if (result.Succeeded)
+                        {
+                            await _signInManager.SignInAsync(user, isPersistent: false);
+                            RedirectToPage(returnUrl);
+                        }
                     }
                     //company ismide rol zaten varsa kullanıcıya direkt o rolu ata
                     else
