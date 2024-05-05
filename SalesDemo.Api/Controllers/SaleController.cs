@@ -20,12 +20,21 @@ namespace SalesDemo.Api.Controllers
         }
         // GET: api/<SaleController>
         [HttpGet]
-        public  IEnumerable<Sale> GetAll()
+        public IEnumerable<Sale> GetAll()
         {
-              var a =  _saleService.getAllSales().Result.Result;
+            var a = _saleService.getAllSales().Result.Result;
 
             return a;
         }
+
+        // GET: api/<SaleController>
+        [HttpGet("{companyId}")]
+        public IEnumerable<Sale> GetAllByID(string companyId)
+        {
+
+            return _saleService.getSalesByComppanyId(companyId).Result;
+        }
+
 
     }
 }

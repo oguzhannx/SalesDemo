@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MongoDB.Bson;
+using Newtonsoft.Json;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.Entities;
 using SalesDemo.Entities.Auth;
@@ -13,6 +14,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace SalesDemo.Web.Controllers
@@ -26,9 +28,8 @@ namespace SalesDemo.Web.Controllers
         private readonly ISaleRepository _saleRepository;
         private readonly UserManager<User> _userManager;
 
-
         public HomeController(ILogger<HomeController> logger, IProductRepository productRepository, ICompanyRepository companyRepository, UserManager<User> userManager,
-            ISaleRepository saleRepository)
+            ISaleRepository saleRepository, HttpClient client)
         {
             _logger = logger;
             _productRepository = productRepository;
@@ -40,7 +41,11 @@ namespace SalesDemo.Web.Controllers
         public async Task<IActionResult> Index()
         {
 
+            using (HttpClient _client = new HttpClient())
+            {
 
+            
+            
            var user = await _userManager.GetUserAsync(User);
             var role = await _userManager.GetRolesAsync(user);
 
@@ -49,16 +54,25 @@ namespace SalesDemo.Web.Controllers
                 var companies =  _companyRepository.GetAllAsync().Result.Result.ToList();
 
 
-
                 List<IndexVM> indexVMs = new List<IndexVM>();
 
                 foreach (var item in companies)
                 {
-                    var sale = _saleRepository.FilterByAsync(q => q.CompanyId == item.Id).Result.Result.FirstOrDefault(); //sales talosunda company id'ye karşilık gelen yeri alma
+                    HttpResponseMessage response = await _client.GetAsync($"https://localhost:44363/api/sale/{item.Id}");
+
+                    // Yanıtın başarılı olduğunu kontrol etme
+                    response.EnsureSuccessStatusCode();
+
+                    // JSON yanıtını okuma ve model tipine dönüştürme
+                    string jsonResponse = await response.Content.ReadAsStringAsync();
+                    var apiResponse = JsonConvert.DeserializeObject<List<Sale>>(jsonResponse);
+
+                    //var sale = _saleRepository.FilterByAsync(q => q.CompanyId == item.Id).Result.Result.FirstOrDefault(); //sales talosunda company id'ye karşilık gelen yeri alma
+
                     IndexVM indexVM = new IndexVM
                     {
                         Company = item,
-                        Sale = sale
+                        Sale = new Sale { }
                     };
                     indexVMs.Add(indexVM);
                 }
@@ -86,7 +100,7 @@ namespace SalesDemo.Web.Controllers
                 return View(indexVMs);
 
             }
-
+            }
 
 
 

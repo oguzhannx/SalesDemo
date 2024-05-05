@@ -33,6 +33,7 @@ namespace SalesDemo.Web
         {
 
             services.AddControllersWithViews();
+            services.AddHttpClient();
 
             services.AddSingleton<IProductRepository, ProductRepository>();
             services.AddSingleton<ICompanyRepository, CompanyRepository>();

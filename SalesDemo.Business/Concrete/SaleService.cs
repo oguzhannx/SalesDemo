@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson;
+﻿using DnsClient.Protocol;
+using MongoDB.Bson;
 using SalesDemo.Business.Abstract;
 using SalesDemo.Core.Models.Concrete;
 using SalesDemo.DataAccess.Abstract;
@@ -23,10 +24,10 @@ namespace SalesDemo.Business.Concrete
         public async Task<GetManyResult<Sale>> getAllSales() => await _saleRepository.GetAllAsync();
 
         //şirket id sine göre satışları getiren
-        public GetOneResult<Sale> getSalesByComppanyId(ObjectId id)
+        public GetManyResult<Sale> getSalesByComppanyId(string id)
         {
-
-            return  _saleRepository.GetById(id.ToString());
+            var a = _saleRepository.FilterBy(q => q.CompanyId == ObjectId.Parse(id));
+            return  a;
         }
     }
 }

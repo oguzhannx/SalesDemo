@@ -12,5 +12,5 @@ namespace SalesDemo.Business.Abstract
     public interface ISaleService
     {
         Task<GetManyResult<Sale>> getAllSales();
-        GetOneResult<Sale> getSalesByComppanyId(ObjectId id);    }
+        GetManyResult<Sale> getSalesByComppanyId(string id);    }
 }

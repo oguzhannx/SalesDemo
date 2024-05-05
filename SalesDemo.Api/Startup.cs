@@ -34,8 +34,13 @@ namespace SalesDemo.Api
 
             services.AddControllers();
 
+            //SALE
             services.AddSingleton<ISaleRepository, SaleRepository>();
             services.AddSingleton<ISaleService, SaleService>();
+
+
+
+
             services.Configure<MongoSettings>(o =>
             {
                 o.ConnectionString = Configuration.GetSection("MongoDbConnectionString:ConnectionString").Value;
