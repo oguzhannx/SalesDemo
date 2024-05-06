@@ -52,19 +52,19 @@ namespace SalesDemo.Web.Controllers
             if (role.Contains("seyhanlar"))
             {
                 //Butun Şirketlerin Getirilmesi
-                //var companies = _companyRepository.GetAllAsync().Result.Result.ToList();
-                List<Company> companies;
-                using (var client = new HttpClient())
-                {
+                var companies = _companyRepository.GetAllAsync().Result.Result.ToList();
+                //List<Company> companies;
+                //using (var client = new HttpClient())
+                //{
 
-                    var httpMessage = await client.GetAsync("https://localhost:44363/api/Company");
-                    var stringMessage = await httpMessage.Content.ReadAsStringAsync();
-                    //var jsonCompanies = JsonConvert.DeserializeObject<List<CompanyDto>>(stringMessage);
+                //    var httpMessage = await client.GetAsync("https://localhost:44363/api/Company");
+                //    var stringMessage = await httpMessage.Content.ReadAsStringAsync();
+                //    //var jsonCompanies = JsonConvert.DeserializeObject<List<CompanyDto>>(stringMessage);
                
-                        var jsonCompanies = MongoDB.Bson.Serialization.BsonSerializer.Deserialize<List<Company>>(stringMessage);
-                    //jsonCompanies.ForEach(c => c.Products.ForEach(p => p.Id.ToString()));
-                    companies = jsonCompanies;
-                }
+                //        var jsonCompanies = MongoDB.Bson.Serialization.BsonSerializer.Deserialize<List<Company>>(stringMessage);
+                //    //jsonCompanies.ForEach(c => c.Products.ForEach(p => p.Id.ToString()));
+                //    companies = jsonCompanies;
+                //}
 
                 List<IndexVM> indexVMs = new List<IndexVM>();
                 foreach (var item in companies)
@@ -73,7 +73,7 @@ namespace SalesDemo.Web.Controllers
                     //sales talosunda companyId'ye karşilık gelen veriyi alma alma
                     var sale = _saleRepository.FilterByAsync(q => q.CompanyId == item.Id).Result.Result.FirstOrDefault();
                     //Sale sale;
-                    //using (var client =new HttpClient())
+                    //using (var client = new HttpClient())
                     //{
                     //    var httpMessage = await client.GetAsync("https://localhost:44363/api/Sale/" + ObjectId.Parse(item.Id));
                     //    var stringMessage = await httpMessage.Content.ReadAsStringAsync();
