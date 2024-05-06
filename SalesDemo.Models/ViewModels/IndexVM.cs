@@ -1,4 +1,5 @@
 ﻿using SalesDemo.Entities;
+using SalesDemo.Models.Dtos;
 
 namespace SalesDemo.Models.ViewModels
 {

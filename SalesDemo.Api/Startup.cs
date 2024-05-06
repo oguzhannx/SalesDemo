@@ -31,6 +31,13 @@ namespace SalesDemo.Api
             services.AddSingleton<ISaleRepository, SaleRepository>();
             services.AddSingleton<ISaleService, SaleService>();
 
+            //Product
+            services.AddSingleton<IProductRepository, ProductRepository>();
+            services.AddSingleton<IProductService, ProductService>();
+            
+            //Company
+            services.AddSingleton<ICompanyRepository, CompanyRepository>();
+            services.AddSingleton<ICompanyService, CompanyService>();
 
 
 
