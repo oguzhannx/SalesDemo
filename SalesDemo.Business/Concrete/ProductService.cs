@@ -3,7 +3,6 @@ using SalesDemo.Core.Models.Concrete;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.DataAccess.Concrete;
 using SalesDemo.Entities;
-using SalesDemo.Models.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,23 +27,6 @@ namespace SalesDemo.Business.Concrete
             return _productRepository.GetAll();
         }
 
-        public List<ProductFromCompanyDto> GetProductsFromCompany()
-        {
-            List<ProductFromCompanyDto> dto = new List<ProductFromCompanyDto>();
 
-            var a = _companyRepository.GetAll();
-            foreach (var item in a.Result)
-            {
-                ProductFromCompanyDto dto1 = new ProductFromCompanyDto
-                {
-                    CompanyName = item.CompanyName,
-                    CompanyId = item.Id.ToString(),
-                    Products = item.Products
-                };
-                dto.Add(dto1);
-            }
-
-            return dto;
-        }
     }
 }

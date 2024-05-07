@@ -2,7 +2,6 @@
 using SalesDemo.Core.Models.Concrete;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.Entities;
-using SalesDemo.Models.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

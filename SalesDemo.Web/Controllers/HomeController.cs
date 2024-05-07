@@ -8,7 +8,6 @@ using Newtonsoft.Json;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.Entities;
 using SalesDemo.Entities.Auth;
-using SalesDemo.Models.Dtos;
 using SalesDemo.Models.ViewModels;
 using SalesDemo.Web.Models;
 using System.Collections.Generic;
@@ -53,18 +52,7 @@ namespace SalesDemo.Web.Controllers
             {
                 //Butun Şirketlerin Getirilmesi
                 var companies = _companyRepository.GetAllAsync().Result.Result.ToList();
-                //List<Company> companies;
-                //using (var client = new HttpClient())
-                //{
 
-                //    var httpMessage = await client.GetAsync("https://localhost:44363/api/Company");
-                //    var stringMessage = await httpMessage.Content.ReadAsStringAsync();
-                //    //var jsonCompanies = JsonConvert.DeserializeObject<List<CompanyDto>>(stringMessage);
-               
-                //        var jsonCompanies = MongoDB.Bson.Serialization.BsonSerializer.Deserialize<List<Company>>(stringMessage);
-                //    //jsonCompanies.ForEach(c => c.Products.ForEach(p => p.Id.ToString()));
-                //    companies = jsonCompanies;
-                //}
 
                 List<IndexVM> indexVMs = new List<IndexVM>();
                 foreach (var item in companies)
@@ -72,14 +60,7 @@ namespace SalesDemo.Web.Controllers
 
                     //sales talosunda companyId'ye karşilık gelen veriyi alma alma
                     var sale = _saleRepository.FilterByAsync(q => q.CompanyId == item.Id).Result.Result.FirstOrDefault();
-                    //Sale sale;
-                    //using (var client = new HttpClient())
-                    //{
-                    //    var httpMessage = await client.GetAsync("https://localhost:44363/api/Sale/" + ObjectId.Parse(item.Id));
-                    //    var stringMessage = await httpMessage.Content.ReadAsStringAsync();
-                    //    var jsonsale = JsonConvert.DeserializeObject<List<Sale>>(stringMessage).FirstOrDefault();
-                    //    sale = jsonsale;
-                    //}
+
 
 
                     IndexVM indexVM = new IndexVM
@@ -96,15 +77,7 @@ namespace SalesDemo.Web.Controllers
             {
                 //companyName ye gore company getirme
                 var companies = _companyRepository.FilterByAsync(q => q.CompanyName.ToLower() == role.First().ToLower()).Result.Result;
-                //List<CompanyDto> companies;
-                //using (var client = new HttpClient())
-                //{
-                //    var httpMessage = await client.GetAsync("https://localhost:44363/api/Company");
-                //    var stringMessage = await httpMessage.Content.ReadAsStringAsync();
-                //    var jsonCompanies = JsonConvert.DeserializeObject<List<CompanyDto>>(stringMessage);
 
-                //    companies = jsonCompanies;
-                //}
 
 
                 List<IndexVM> indexVMs = new List<IndexVM>();
@@ -112,19 +85,7 @@ namespace SalesDemo.Web.Controllers
                 foreach (var item in companies)
                 {
                     //sales talosunda companyId'ye karşilık gelen yeri alma
-                    var sale = _saleRepository.FilterByAsync(q => q.CompanyId == item.Id).Result.Result.FirstOrDefault(); //sales talosunda company id'ye karşilık gelen yeri alma
-
-                    //Sale sale;
-                    //using (var client = new HttpClient())
-                    //{
-                    //    var httpMessage = await client.GetAsync("https://localhost:44363/api/Sale/" + ObjectId.Parse(item.Id));
-                    //    var stringMessage = await httpMessage.Content.ReadAsStringAsync();
-                    //    var jsonsale = JsonConvert.DeserializeObject<List<Sale>>(stringMessage).FirstOrDefault();
-                    //    sale = jsonsale;
-                    //}
-
-
-
+                    var sale = _saleRepository.FilterByAsync(q => q.CompanyId == item.Id).Result.Result.FirstOrDefault();
 
                     IndexVM indexVM = new IndexVM
                     {

@@ -8,4 +8,8 @@
     <ProjectReference Include="..\SalesDemo.Entity\SalesDemo.Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+  </ItemGroup>
+
 </Project>

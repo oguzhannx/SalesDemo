@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using SalesDemo.Models.Dtos;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -17,9 +16,9 @@ namespace SalesDemo.Web.Controllers
             {
                 var responseMessage =await client.GetAsync("https://localhost:44363/api/Company/WithoutProducts");
                 var jsonString = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<CompanyWithoutProductsDto>>(jsonString);
+                //var values = JsonConvert.DeserializeObject<List<CompanyWithoutProductsDto>>(jsonString);
 
-                return View(values);
+                return View();
 
 
             }
