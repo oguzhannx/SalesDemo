@@ -7502,3 +7502,1385 @@ System.InvalidCastException: Cannot cast Newtonsoft.Json.Linq.JArray to Newtonso
 2024-05-07 16:56:34.425 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
 2024-05-07 16:56:34.427 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.3249ms
 2024-05-07 16:56:34.441 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.8479ms
+2024-05-08 08:28:48.556 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 08:28:48.899 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 08:28:48.902 +03:00 [INF] Hosting environment: Development
+2024-05-08 08:28:48.907 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 08:28:48.932 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 08:28:48.992 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:28:49.048 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 08:28:49.137 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:28:49.147 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.123ms.
+2024-05-08 08:28:49.180 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 08:28:49.405 +03:00 [INF] Executed ViewResult - view Login executed in 237.2154ms.
+2024-05-08 08:28:49.411 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 361.5081ms
+2024-05-08 08:28:49.412 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:28:49.451 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 521.6627ms
+2024-05-08 08:28:49.578 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:28:49.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:28:49.592 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 13.6659ms
+2024-05-08 08:28:49.632 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 52.3186ms
+2024-05-08 08:39:49.122 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 08:39:49.428 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 08:39:49.434 +03:00 [INF] Hosting environment: Development
+2024-05-08 08:39:49.434 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 08:39:49.460 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 08:39:49.519 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:39:49.548 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 08:39:49.601 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:39:49.606 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5603ms.
+2024-05-08 08:39:49.620 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 08:39:49.768 +03:00 [INF] Executed ViewResult - view Login executed in 151.8088ms.
+2024-05-08 08:39:49.772 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 222.8213ms
+2024-05-08 08:39:49.772 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:39:49.801 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 343.1160ms
+2024-05-08 08:39:49.844 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:39:49.848 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:39:49.848 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 4.1424ms
+2024-05-08 08:39:49.891 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.8887ms
+2024-05-08 08:39:52.471 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 08:39:52.481 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-08 08:39:52.487 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-08 08:39:52.489 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 302 - - 18.2459ms
+2024-05-08 08:39:52.491 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Account/Login?ReturnUrl=%2Fhome%2Findex - -
+2024-05-08 08:39:52.494 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:39:52.494 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 08:39:52.511 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:39:52.511 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.051ms.
+2024-05-08 08:39:52.511 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 08:39:52.524 +03:00 [INF] Executed ViewResult - view Login executed in 12.8065ms.
+2024-05-08 08:39:52.525 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 30.0549ms
+2024-05-08 08:39:52.525 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:39:52.532 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Account/Login?ReturnUrl=%2Fhome%2Findex - - - 200 - text/html;+charset=utf-8 40.6997ms
+2024-05-08 08:39:52.635 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:39:52.638 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.6354ms
+2024-05-08 08:39:52.642 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:39:52.667 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.0626ms
+2024-05-08 08:39:54.211 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:39:54.212 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:39:54.223 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:39:54.240 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:39:57.487 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3246.6366ms.
+2024-05-08 08:39:57.489 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 08:39:57.494 +03:00 [INF] Executed ViewResult - view Index executed in 5.6931ms.
+2024-05-08 08:39:57.499 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 3275.08ms
+2024-05-08 08:39:57.499 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:39:57.500 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 200 - text/html;+charset=utf-8 3288.8418ms
+2024-05-08 08:39:57.545 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:39:57.545 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:39:57.547 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.6625ms
+2024-05-08 08:39:57.567 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.7199ms
+2024-05-08 08:40:04.052 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:40:04.053 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:40:04.053 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:40:04.066 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:41:47.366 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 103299.2584ms.
+2024-05-08 08:41:47.367 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 08:41:47.370 +03:00 [INF] Executed ViewResult - view Index executed in 3.3861ms.
+2024-05-08 08:41:47.370 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 103315.9001ms
+2024-05-08 08:41:47.370 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:41:47.371 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 200 - text/html;+charset=utf-8 103318.0702ms
+2024-05-08 08:41:47.390 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:41:47.398 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:41:47.399 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.2407ms
+2024-05-08 08:41:47.412 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.3981ms
+2024-05-08 08:41:47.445 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/favicon.ico - -
+2024-05-08 08:41:47.449 +03:00 [INF] The file /favicon.ico was not modified
+2024-05-08 08:41:47.450 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/favicon.ico - - - 304 - image/x-icon 4.9542ms
+2024-05-08 08:42:06.799 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:42:06.800 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:42:06.800 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:42:06.813 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:44:22.749 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 08:44:23.042 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 08:44:23.047 +03:00 [INF] Hosting environment: Development
+2024-05-08 08:44:23.047 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 08:44:23.074 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 08:44:23.125 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:44:23.154 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 08:44:23.205 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:44:23.210 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7097ms.
+2024-05-08 08:44:23.226 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 08:44:23.382 +03:00 [INF] Executed ViewResult - view Login executed in 159.8913ms.
+2024-05-08 08:44:23.385 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 230.2448ms
+2024-05-08 08:44:23.386 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:44:23.415 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 344.1940ms
+2024-05-08 08:44:23.455 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:44:23.459 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:44:23.459 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 3.4598ms
+2024-05-08 08:44:23.492 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.9596ms
+2024-05-08 08:44:27.023 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:44:27.026 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:44:27.038 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:44:27.051 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:44:53.050 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 25998.07ms.
+2024-05-08 08:44:53.052 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 08:44:53.059 +03:00 [INF] Executed ViewResult - view Index executed in 7.0794ms.
+2024-05-08 08:44:53.063 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 26025.2125ms
+2024-05-08 08:44:53.063 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:44:53.065 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 200 - text/html;+charset=utf-8 26042.1338ms
+2024-05-08 08:44:53.111 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:44:53.111 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:44:53.118 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 5.9302ms
+2024-05-08 08:44:53.147 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.3919ms
+2024-05-08 08:48:37.264 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:48:37.266 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:48:37.267 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:48:37.278 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:48:44.688 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7409.5593ms.
+2024-05-08 08:48:44.700 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 08:48:44.704 +03:00 [INF] Executed ViewResult - view Index executed in 14.6208ms.
+2024-05-08 08:48:44.705 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 7438.0411ms
+2024-05-08 08:48:44.705 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:48:44.706 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 200 - text/html;+charset=utf-8 7441.7074ms
+2024-05-08 08:48:44.724 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:48:44.742 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:48:44.748 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 6.2620ms
+2024-05-08 08:48:44.764 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.6324ms
+2024-05-08 08:48:47.220 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:48:47.221 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:48:47.221 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:48:47.234 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:49:22.044 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 34809.8663ms.
+2024-05-08 08:49:22.047 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 08:49:22.075 +03:00 [INF] Executed ViewResult - view Index executed in 28.3209ms.
+2024-05-08 08:49:22.075 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 34854.4415ms
+2024-05-08 08:49:22.075 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:49:22.077 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 200 - text/html;+charset=utf-8 34857.2399ms
+2024-05-08 08:49:22.095 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:49:22.103 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:49:22.116 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 7.9003ms
+2024-05-08 08:49:22.140 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.8801ms
+2024-05-08 08:49:42.040 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 08:49:42.357 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 08:49:42.357 +03:00 [INF] Hosting environment: Development
+2024-05-08 08:49:42.357 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 08:49:42.380 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 08:49:42.432 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:49:42.472 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 08:49:42.540 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:49:42.545 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6186ms.
+2024-05-08 08:49:42.562 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 08:49:42.710 +03:00 [INF] Executed ViewResult - view Login executed in 153.2134ms.
+2024-05-08 08:49:42.714 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 241.4216ms
+2024-05-08 08:49:42.715 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:49:42.750 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 371.7625ms
+2024-05-08 08:49:42.789 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:49:42.791 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:49:42.792 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.7474ms
+2024-05-08 08:49:42.824 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.4890ms
+2024-05-08 08:49:46.118 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 08:49:46.127 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-08 08:49:46.133 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-08 08:49:46.135 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 302 - - 16.8633ms
+2024-05-08 08:49:46.137 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Account/Login?ReturnUrl=%2Fhome%2Findex - -
+2024-05-08 08:49:46.140 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:49:46.140 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 08:49:46.154 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:49:46.155 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0591ms.
+2024-05-08 08:49:46.155 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 08:49:46.163 +03:00 [INF] Executed ViewResult - view Login executed in 7.9029ms.
+2024-05-08 08:49:46.163 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 22.5944ms
+2024-05-08 08:49:46.163 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:49:46.170 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Account/Login?ReturnUrl=%2Fhome%2Findex - - - 200 - text/html;+charset=utf-8 33.1088ms
+2024-05-08 08:49:46.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:49:46.269 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.3207ms
+2024-05-08 08:49:46.269 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:49:46.295 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.6972ms
+2024-05-08 08:49:47.939 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:49:47.941 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:49:47.953 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:49:47.967 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:49:51.693 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3725.4945ms.
+2024-05-08 08:49:51.695 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 08:49:51.700 +03:00 [INF] Executed ViewResult - view Index executed in 5.6095ms.
+2024-05-08 08:49:51.700 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 3746.6418ms
+2024-05-08 08:49:51.700 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:49:51.701 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 200 - text/html;+charset=utf-8 3761.9024ms
+2024-05-08 08:49:51.749 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:49:51.751 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:49:51.754 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.3688ms
+2024-05-08 08:49:51.775 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.5375ms
+2024-05-08 08:49:57.564 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:49:57.565 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:49:57.565 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:49:57.580 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:50:08.433 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10852.7347ms.
+2024-05-08 08:50:08.433 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 08:50:08.437 +03:00 [INF] Executed ViewResult - view Index executed in 3.9565ms.
+2024-05-08 08:50:08.437 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 10871.6806ms
+2024-05-08 08:50:08.437 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:50:08.438 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 200 - text/html;+charset=utf-8 10874.2601ms
+2024-05-08 08:50:08.457 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:50:08.465 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:50:08.466 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.3772ms
+2024-05-08 08:50:08.480 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.1330ms
+2024-05-08 08:51:30.703 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 08:51:31.012 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 08:51:31.012 +03:00 [INF] Hosting environment: Development
+2024-05-08 08:51:31.013 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 08:51:31.053 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 08:51:31.117 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:51:31.147 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 08:51:31.200 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:51:31.205 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5372ms.
+2024-05-08 08:51:31.220 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 08:51:31.359 +03:00 [INF] Executed ViewResult - view Login executed in 142.1982ms.
+2024-05-08 08:51:31.362 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 214.3448ms
+2024-05-08 08:51:31.363 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:51:31.394 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 344.9519ms
+2024-05-08 08:51:31.436 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:51:31.439 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:51:31.440 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 3.5663ms
+2024-05-08 08:51:31.479 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.2266ms
+2024-05-08 08:51:38.571 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:51:38.573 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:51:38.581 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:51:38.593 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:51:39.306 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 725.1307ms
+2024-05-08 08:51:39.306 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:51:39.310 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error converting value 14756745 to type 'System.Int16'. Path '[0].id.increment', line 1, position 555.
+ ---> System.OverflowException: Value was either too large or too small for an Int16.
+   at System.Convert.ThrowInt16OverflowException()
+   at System.Convert.ToInt16(Int32 value)
+   at System.Int32.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.TestController.Index() in C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web\Controllers\TestController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-08 08:51:39.392 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 500 - text/html;+charset=utf-8 820.8055ms
+2024-05-08 08:51:39.410 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:51:39.417 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:51:39.419 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.4505ms
+2024-05-08 08:51:39.434 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.4719ms
+2024-05-08 08:52:03.094 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 08:52:03.396 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 08:52:03.397 +03:00 [INF] Hosting environment: Development
+2024-05-08 08:52:03.397 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 08:52:03.424 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 08:52:03.479 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:52:03.509 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 08:52:03.562 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:52:03.567 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6341ms.
+2024-05-08 08:52:03.581 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 08:52:03.736 +03:00 [INF] Executed ViewResult - view Login executed in 159.1594ms.
+2024-05-08 08:52:03.740 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 229.9274ms
+2024-05-08 08:52:03.741 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:52:03.771 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 348.9340ms
+2024-05-08 08:52:03.814 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:52:03.817 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:52:03.818 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 3.6300ms
+2024-05-08 08:52:03.851 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.8185ms
+2024-05-08 08:52:05.147 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:52:05.150 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:52:05.159 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:52:05.171 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:52:05.864 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 704.396ms
+2024-05-08 08:52:05.864 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:52:05.867 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error converting value 14756745 to type 'System.Int16'. Path '[0].id.increment', line 1, position 555.
+ ---> System.OverflowException: Value was either too large or too small for an Int16.
+   at System.Convert.ThrowInt16OverflowException()
+   at System.Convert.ToInt16(Int32 value)
+   at System.Int32.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.TestController.Index() in C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web\Controllers\TestController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-08 08:52:05.941 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 500 - text/html;+charset=utf-8 793.0813ms
+2024-05-08 08:52:05.968 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:52:05.975 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:52:05.977 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.9269ms
+2024-05-08 08:52:05.992 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.6880ms
+2024-05-08 08:52:07.193 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:52:07.196 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:52:07.196 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:52:07.209 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:52:07.295 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 99.2651ms
+2024-05-08 08:52:07.296 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:52:07.296 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error converting value 14756745 to type 'System.Int16'. Path '[0].id.increment', line 1, position 555.
+ ---> System.OverflowException: Value was either too large or too small for an Int16.
+   at System.Convert.ThrowInt16OverflowException()
+   at System.Convert.ToInt16(Int32 value)
+   at System.Int32.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.TestController.Index() in C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web\Controllers\TestController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-08 08:52:07.310 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 500 - text/html;+charset=utf-8 116.7533ms
+2024-05-08 08:52:07.326 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:52:07.334 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:52:07.335 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.2253ms
+2024-05-08 08:52:07.350 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.8238ms
+2024-05-08 08:52:07.810 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:52:07.811 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:52:07.811 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:52:07.823 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:52:07.909 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 97.5808ms
+2024-05-08 08:52:07.909 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:52:07.909 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error converting value 14756745 to type 'System.Int16'. Path '[0].id.increment', line 1, position 555.
+ ---> System.OverflowException: Value was either too large or too small for an Int16.
+   at System.Convert.ThrowInt16OverflowException()
+   at System.Convert.ToInt16(Int32 value)
+   at System.Int32.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.TestController.Index() in C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web\Controllers\TestController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-08 08:52:07.923 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 500 - text/html;+charset=utf-8 112.9730ms
+2024-05-08 08:52:07.943 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:52:07.950 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:52:07.951 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.2949ms
+2024-05-08 08:52:07.964 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.6901ms
+2024-05-08 08:52:09.225 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:52:09.225 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:52:09.226 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:52:09.238 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:52:09.322 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 96.6675ms
+2024-05-08 08:52:09.323 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:52:09.323 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error converting value 14756745 to type 'System.Int16'. Path '[0].id.increment', line 1, position 555.
+ ---> System.OverflowException: Value was either too large or too small for an Int16.
+   at System.Convert.ThrowInt16OverflowException()
+   at System.Convert.ToInt16(Int32 value)
+   at System.Int32.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.TestController.Index() in C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web\Controllers\TestController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-08 08:52:09.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 500 - text/html;+charset=utf-8 111.3495ms
+2024-05-08 08:52:09.350 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:52:09.358 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:52:09.360 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.7732ms
+2024-05-08 08:52:09.373 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.7441ms
+2024-05-08 08:52:17.934 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:52:17.935 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:52:17.935 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:52:17.948 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:52:23.695 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 5759.354ms
+2024-05-08 08:52:23.695 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:52:23.695 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error converting value 14756745 to type 'System.Int16'. Path '[0].id.increment', line 1, position 555.
+ ---> System.OverflowException: Value was either too large or too small for an Int16.
+   at System.Convert.ThrowInt16OverflowException()
+   at System.Convert.ToInt16(Int32 value)
+   at System.Int32.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.TestController.Index() in C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web\Controllers\TestController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-08 08:52:23.752 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 500 - text/html;+charset=utf-8 5817.5074ms
+2024-05-08 08:52:23.760 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:52:23.760 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:52:23.762 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.5206ms
+2024-05-08 08:52:23.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.4150ms
+2024-05-08 08:53:21.360 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 08:53:21.696 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 08:53:21.700 +03:00 [INF] Hosting environment: Development
+2024-05-08 08:53:21.700 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 08:53:21.723 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 08:53:21.770 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:53:21.800 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 08:53:21.853 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:53:21.858 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5518ms.
+2024-05-08 08:53:21.872 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 08:53:22.026 +03:00 [INF] Executed ViewResult - view Login executed in 157.7063ms.
+2024-05-08 08:53:22.031 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 230.4557ms
+2024-05-08 08:53:22.032 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:53:22.053 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 332.1604ms
+2024-05-08 08:53:22.978 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:53:22.981 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:53:22.988 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:53:23.001 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:53:26.942 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 3953.2916ms
+2024-05-08 08:53:26.942 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:53:26.945 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Error converting value 14756745 to type 'System.Int16'. Path '[0].id.increment', line 1, position 555.
+ ---> System.OverflowException: Value was either too large or too small for an Int16.
+   at System.Convert.ThrowInt16OverflowException()
+   at System.Convert.ToInt16(Int32 value)
+   at System.Int32.System.IConvertible.ToInt16(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.TestController.Index() in C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web\Controllers\TestController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-08 08:53:27.059 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 500 - text/html;+charset=utf-8 4080.7167ms
+2024-05-08 08:53:27.081 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:53:27.093 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:53:27.097 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 3.6806ms
+2024-05-08 08:53:27.120 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.3088ms
+2024-05-08 08:56:15.188 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 08:56:15.496 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 08:56:15.496 +03:00 [INF] Hosting environment: Development
+2024-05-08 08:56:15.496 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 08:56:15.521 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 08:56:15.569 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:56:15.602 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 08:56:15.654 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:56:15.659 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.662ms.
+2024-05-08 08:56:15.674 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 08:56:15.818 +03:00 [INF] Executed ViewResult - view Login executed in 147.5772ms.
+2024-05-08 08:56:15.821 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 219.0194ms
+2024-05-08 08:56:15.822 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 08:56:15.841 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 322.4998ms
+2024-05-08 08:56:17.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/test/index - -
+2024-05-08 08:56:17.395 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:56:17.403 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 08:56:17.415 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 08:56:44.944 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 27528.3835ms.
+2024-05-08 08:56:44.946 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 08:56:44.961 +03:00 [INF] Executed ViewResult - view Index executed in 15.5887ms.
+2024-05-08 08:56:44.961 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 27558.0533ms
+2024-05-08 08:56:44.962 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 08:56:44.970 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/test/index - - - 200 - text/html;+charset=utf-8 27577.5520ms
+2024-05-08 08:56:44.988 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 08:56:44.995 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 08:56:45.001 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 5.1869ms
+2024-05-08 08:56:45.030 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.2452ms
+2024-05-08 09:00:54.254 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 09:00:54.608 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 09:00:54.608 +03:00 [INF] Hosting environment: Development
+2024-05-08 09:00:54.608 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 09:00:54.632 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:00:54.681 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:00:54.713 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:00:54.769 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:00:54.774 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5377ms.
+2024-05-08 09:00:54.789 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:00:54.938 +03:00 [INF] Executed ViewResult - view Login executed in 152.9334ms.
+2024-05-08 09:00:54.941 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 227.542ms
+2024-05-08 09:00:54.942 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:00:54.969 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 340.1252ms
+2024-05-08 09:00:55.013 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:00:55.015 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:00:55.021 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.6865ms
+2024-05-08 09:00:55.053 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.1306ms
+2024-05-08 09:10:19.842 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 09:10:20.164 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 09:10:20.165 +03:00 [INF] Hosting environment: Development
+2024-05-08 09:10:20.165 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 09:10:20.186 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:10:20.248 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:10:20.278 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:10:20.330 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:10:20.334 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5147ms.
+2024-05-08 09:10:20.349 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:10:20.494 +03:00 [INF] Executed ViewResult - view Login executed in 147.8012ms.
+2024-05-08 09:10:20.497 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 218.7751ms
+2024-05-08 09:10:20.499 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:10:20.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 343.8594ms
+2024-05-08 09:10:20.569 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:10:20.572 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:10:20.572 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.8525ms
+2024-05-08 09:10:20.609 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.2058ms
+2024-05-08 09:15:06.956 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 09:15:07.296 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 09:15:07.296 +03:00 [INF] Hosting environment: Development
+2024-05-08 09:15:07.296 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 09:15:07.322 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:15:07.371 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:15:07.398 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:15:07.453 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:15:07.458 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5462ms.
+2024-05-08 09:15:07.476 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:15:07.633 +03:00 [INF] Executed ViewResult - view Login executed in 162.7041ms.
+2024-05-08 09:15:07.636 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 237.8169ms
+2024-05-08 09:15:07.637 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:15:07.662 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 342.3165ms
+2024-05-08 09:15:56.905 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:15:56.912 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-05-08 09:15:56.918 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2024-05-08 09:15:56.924 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 302 - - 18.4940ms
+2024-05-08 09:15:56.924 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Account/Login?ReturnUrl=%2Fhome%2Findex - -
+2024-05-08 09:15:56.927 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:15:56.927 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:15:56.939 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:15:56.939 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0531ms.
+2024-05-08 09:15:56.945 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:15:56.964 +03:00 [INF] Executed ViewResult - view Login executed in 23.3876ms.
+2024-05-08 09:15:56.964 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 36.9638ms
+2024-05-08 09:15:56.964 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:15:56.973 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Account/Login?ReturnUrl=%2Fhome%2Findex - - - 200 - text/html;+charset=utf-8 48.6984ms
+2024-05-08 09:15:57.071 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:15:57.072 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:15:57.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.4269ms
+2024-05-08 09:15:57.102 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.7691ms
+2024-05-08 09:15:59.665 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/Account/Login?ReturnUrl=%2Fhome%2Findex application/x-www-form-urlencoded 225
+2024-05-08 09:15:59.667 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:15:59.684 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:15:59.732 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:16:00.103 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-08 09:16:00.104 +03:00 [INF] User logged in.
+2024-05-08 09:16:00.105 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 372.3609ms.
+2024-05-08 09:16:00.107 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-08 09:16:00.107 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 423.0588ms
+2024-05-08 09:16:00.107 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:16:00.108 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/Account/Login?ReturnUrl=%2Fhome%2Findex application/x-www-form-urlencoded 225 - 302 - - 442.4914ms
+2024-05-08 09:16:00.110 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:16:00.117 +03:00 [INF] Authorization was successful.
+2024-05-08 09:16:00.117 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:16:00.120 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:16:00.143 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:16:00.985 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 842.2125ms.
+2024-05-08 09:16:00.987 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:16:01.025 +03:00 [INF] Executed ViewResult - view Index executed in 39.2294ms.
+2024-05-08 09:16:01.025 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 905.3231ms
+2024-05-08 09:16:01.025 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:16:01.032 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 922.3653ms
+2024-05-08 09:16:01.062 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:16:01.063 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.4008ms
+2024-05-08 09:16:01.063 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:16:01.085 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.1606ms
+2024-05-08 09:27:19.108 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 09:27:19.418 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 09:27:19.419 +03:00 [INF] Hosting environment: Development
+2024-05-08 09:27:19.419 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 09:27:19.502 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:27:19.582 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:27:19.614 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:27:19.664 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:27:19.669 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5903ms.
+2024-05-08 09:27:19.684 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:27:19.825 +03:00 [INF] Executed ViewResult - view Login executed in 145.4788ms.
+2024-05-08 09:27:19.829 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 214.121ms
+2024-05-08 09:27:19.830 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:27:19.858 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 360.3543ms
+2024-05-08 09:27:19.902 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:27:19.907 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 3.9213ms
+2024-05-08 09:27:19.908 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:27:19.946 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.5347ms
+2024-05-08 09:27:37.940 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268
+2024-05-08 09:27:37.942 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:27:37.964 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:27:38.006 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:27:38.367 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-08 09:27:38.368 +03:00 [INF] User logged in.
+2024-05-08 09:27:38.369 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 362.7233ms.
+2024-05-08 09:27:38.371 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-08 09:27:38.371 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 407.4155ms
+2024-05-08 09:27:38.372 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:27:38.373 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268 - 302 - - 433.0316ms
+2024-05-08 09:27:38.375 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:27:38.388 +03:00 [INF] Authorization was successful.
+2024-05-08 09:27:38.389 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:27:38.392 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:27:38.416 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:27:39.247 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 830.6342ms.
+2024-05-08 09:27:39.248 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:27:39.290 +03:00 [INF] Executed ViewResult - view Index executed in 42.4953ms.
+2024-05-08 09:27:39.290 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 898.4708ms
+2024-05-08 09:27:39.290 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:27:39.299 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 924.0176ms
+2024-05-08 09:27:39.327 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:27:39.328 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:27:39.328 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.5279ms
+2024-05-08 09:27:39.353 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.6621ms
+2024-05-08 09:27:41.444 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:27:41.445 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:27:41.445 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:27:41.460 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:27:41.460 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0186ms.
+2024-05-08 09:27:41.460 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:27:41.467 +03:00 [INF] Executed ViewResult - view Login executed in 6.7682ms.
+2024-05-08 09:27:41.467 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 21.6928ms
+2024-05-08 09:27:41.467 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:27:41.469 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 25.7876ms
+2024-05-08 09:27:41.496 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:27:41.498 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.2713ms
+2024-05-08 09:27:44.636 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 267
+2024-05-08 09:27:44.637 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:27:44.637 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:27:44.651 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:27:44.665 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-08 09:27:44.665 +03:00 [INF] User logged in.
+2024-05-08 09:27:44.665 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 14.4688ms.
+2024-05-08 09:27:44.665 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-08 09:27:44.666 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 28.129ms
+2024-05-08 09:27:44.666 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:27:44.666 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 267 - 302 - - 30.4131ms
+2024-05-08 09:27:44.669 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:27:44.671 +03:00 [INF] Authorization was successful.
+2024-05-08 09:27:44.671 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:27:44.671 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:27:44.684 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:27:44.814 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 142.9028ms
+2024-05-08 09:27:44.815 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:27:44.816 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[SalesDemo.Entities.CompanyDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'companyName', line 1, position 15.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.HomeController.Index() in C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web\Controllers\HomeController.cs:line 104
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-08 09:27:44.888 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 500 - text/html;+charset=utf-8 218.4668ms
+2024-05-08 09:27:44.905 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:27:44.916 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:27:44.918 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.9154ms
+2024-05-08 09:27:44.928 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.4230ms
+2024-05-08 09:28:00.052 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:28:00.054 +03:00 [INF] Authorization was successful.
+2024-05-08 09:28:00.054 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:28:00.055 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:28:00.068 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:28:15.011 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 14956.4233ms
+2024-05-08 09:28:15.012 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:28:15.013 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[SalesDemo.Entities.CompanyDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'companyName', line 1, position 15.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.HomeController.Index() in C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web\Controllers\HomeController.cs:line 104
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-08 09:28:15.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 500 - text/html;+charset=utf-8 15020.8603ms
+2024-05-08 09:28:15.087 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:28:15.095 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:28:15.097 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.5107ms
+2024-05-08 09:28:15.110 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.6652ms
+2024-05-08 09:28:23.864 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:28:23.865 +03:00 [INF] Authorization was successful.
+2024-05-08 09:28:23.865 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:28:23.865 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:28:23.879 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:28:32.484 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 8618.6934ms
+2024-05-08 09:28:32.484 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:28:32.485 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[SalesDemo.Entities.CompanyDto]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'companyName', line 1, position 15.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.HomeController.Index() in C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web\Controllers\HomeController.cs:line 104
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-08 09:28:32.502 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 500 - text/html;+charset=utf-8 8638.0587ms
+2024-05-08 09:28:32.519 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:28:32.528 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:28:32.530 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.7363ms
+2024-05-08 09:28:32.544 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.7034ms
+2024-05-08 09:29:21.449 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:29:21.450 +03:00 [INF] Authorization was successful.
+2024-05-08 09:29:21.450 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:29:21.450 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:29:21.465 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:29:52.685 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 31218.702ms.
+2024-05-08 09:29:52.691 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:29:52.702 +03:00 [INF] Executed ViewResult - view Index executed in 13.0907ms.
+2024-05-08 09:29:52.702 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 31252.2355ms
+2024-05-08 09:29:52.703 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:29:52.714 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 31264.9697ms
+2024-05-08 09:29:52.741 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:29:52.742 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.1247ms
+2024-05-08 09:29:52.750 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:29:52.779 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.4657ms
+2024-05-08 09:31:50.567 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:31:50.568 +03:00 [INF] Authorization was successful.
+2024-05-08 09:31:50.568 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:31:50.568 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:31:50.587 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:32:09.181 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 18593.3363ms.
+2024-05-08 09:32:09.271 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:32:10.202 +03:00 [INF] Executed ViewResult - view Index executed in 1020.8682ms.
+2024-05-08 09:32:10.202 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 19634.0856ms
+2024-05-08 09:32:10.203 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:32:10.210 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 19642.6292ms
+2024-05-08 09:32:10.246 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:32:10.248 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.2759ms
+2024-05-08 09:32:10.250 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:32:10.272 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.0615ms
+2024-05-08 09:36:10.018 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 09:36:10.343 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 09:36:10.343 +03:00 [INF] Hosting environment: Development
+2024-05-08 09:36:10.343 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 09:36:10.366 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:36:10.446 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:36:10.526 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:36:10.572 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:36:10.577 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5278ms.
+2024-05-08 09:36:10.593 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:36:10.734 +03:00 [INF] Executed ViewResult - view Login executed in 145.4694ms.
+2024-05-08 09:36:10.739 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 212.9256ms
+2024-05-08 09:36:10.740 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:36:10.770 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 406.7953ms
+2024-05-08 09:36:10.860 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:36:10.862 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:36:10.864 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 3.3630ms
+2024-05-08 09:36:10.902 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.6761ms
+2024-05-08 09:36:12.518 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268
+2024-05-08 09:36:12.521 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:36:12.543 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:36:12.589 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:36:12.972 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-08 09:36:12.973 +03:00 [INF] User logged in.
+2024-05-08 09:36:12.974 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 385.3224ms.
+2024-05-08 09:36:12.976 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-08 09:36:12.977 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 433.5407ms
+2024-05-08 09:36:12.977 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:36:12.978 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268 - 302 - - 460.0549ms
+2024-05-08 09:36:12.980 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:36:12.996 +03:00 [INF] Authorization was successful.
+2024-05-08 09:36:12.997 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:36:13.000 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:36:13.025 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:36:13.862 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 836.9443ms.
+2024-05-08 09:36:13.868 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:36:13.911 +03:00 [INF] Executed ViewResult - view Index executed in 43.5131ms.
+2024-05-08 09:36:13.911 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 910.4311ms
+2024-05-08 09:36:13.911 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:36:13.922 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 941.4221ms
+2024-05-08 09:36:13.959 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:36:13.960 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:36:13.960 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.4725ms
+2024-05-08 09:36:13.984 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.3381ms
+2024-05-08 09:36:56.719 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:36:56.721 +03:00 [INF] Authorization was successful.
+2024-05-08 09:36:56.721 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:36:56.722 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:36:56.735 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:36:56.884 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 149.1262ms.
+2024-05-08 09:36:56.885 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:36:56.894 +03:00 [INF] Executed ViewResult - view Index executed in 9.6574ms.
+2024-05-08 09:36:56.895 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 172.6199ms
+2024-05-08 09:36:56.895 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:36:56.906 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 187.5002ms
+2024-05-08 09:36:56.927 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:36:56.929 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:36:56.934 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 6.9582ms
+2024-05-08 09:36:56.957 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.6980ms
+2024-05-08 09:40:07.809 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Test/Index - -
+2024-05-08 09:40:07.816 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 09:40:07.827 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-08 09:40:07.844 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:40:07.921 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 77.0441ms.
+2024-05-08 09:40:07.922 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:40:07.929 +03:00 [INF] Executed ViewResult - view Index executed in 7.499ms.
+2024-05-08 09:40:07.929 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 102.2112ms
+2024-05-08 09:40:07.929 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-08 09:40:07.944 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Test/Index - - - 200 - text/html;+charset=utf-8 133.5210ms
+2024-05-08 09:40:07.988 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:40:07.998 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:40:08.001 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 12.5913ms
+2024-05-08 09:40:08.055 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.1604ms
+2024-05-08 09:41:30.222 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 09:41:30.526 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 09:41:30.526 +03:00 [INF] Hosting environment: Development
+2024-05-08 09:41:30.527 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 09:41:30.549 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:41:30.617 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:41:30.651 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:41:30.703 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:41:30.709 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6781ms.
+2024-05-08 09:41:30.727 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:41:30.863 +03:00 [INF] Executed ViewResult - view Login executed in 142.1226ms.
+2024-05-08 09:41:30.866 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 214.4881ms
+2024-05-08 09:41:30.867 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:41:30.895 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 348.4916ms
+2024-05-08 09:41:30.936 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:41:30.944 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:41:30.945 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 8.9362ms
+2024-05-08 09:41:30.983 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.0535ms
+2024-05-08 09:41:33.633 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268
+2024-05-08 09:41:33.635 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:41:33.661 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:41:33.701 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:41:34.063 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-08 09:41:34.064 +03:00 [INF] User logged in.
+2024-05-08 09:41:34.065 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 363.3892ms.
+2024-05-08 09:41:34.067 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-08 09:41:34.067 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 406.299ms
+2024-05-08 09:41:34.068 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:41:34.069 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268 - 302 - - 435.9248ms
+2024-05-08 09:41:34.073 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:41:34.088 +03:00 [INF] Authorization was successful.
+2024-05-08 09:41:34.089 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:41:34.091 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:41:34.115 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:41:35.002 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 886.1364ms.
+2024-05-08 09:41:35.003 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:41:35.034 +03:00 [INF] Executed ViewResult - view Index executed in 31.7171ms.
+2024-05-08 09:41:35.034 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 942.4542ms
+2024-05-08 09:41:35.034 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:41:35.044 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 970.9573ms
+2024-05-08 09:41:35.071 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:41:35.071 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:41:35.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.0995ms
+2024-05-08 09:41:35.094 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.1663ms
+2024-05-08 09:41:41.387 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:41:41.389 +03:00 [INF] Authorization was successful.
+2024-05-08 09:41:41.389 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:41:41.389 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:41:41.409 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:41:41.550 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 140.2949ms.
+2024-05-08 09:41:41.550 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:41:41.559 +03:00 [INF] Executed ViewResult - view Index executed in 8.5127ms.
+2024-05-08 09:41:41.559 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 169.5723ms
+2024-05-08 09:41:41.559 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:41:41.566 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 179.3069ms
+2024-05-08 09:41:41.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:41:41.586 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:41:41.587 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.3565ms
+2024-05-08 09:41:41.604 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.0731ms
+2024-05-08 09:42:08.103 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:42:08.105 +03:00 [INF] Authorization was successful.
+2024-05-08 09:42:08.105 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:42:08.105 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:42:08.152 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:42:08.308 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 155.62ms.
+2024-05-08 09:42:08.308 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:42:08.312 +03:00 [INF] Executed ViewResult - view Index executed in 4.1093ms.
+2024-05-08 09:42:08.313 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 207.3416ms
+2024-05-08 09:42:08.313 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:42:08.320 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 216.6372ms
+2024-05-08 09:42:08.340 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:42:08.340 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:42:08.342 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.5284ms
+2024-05-08 09:42:08.363 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.3520ms
+2024-05-08 09:42:15.686 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 09:42:16.004 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 09:42:16.004 +03:00 [INF] Hosting environment: Development
+2024-05-08 09:42:16.004 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 09:42:16.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:42:16.092 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:42:16.120 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:42:16.168 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:42:16.172 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5011ms.
+2024-05-08 09:42:16.190 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:42:16.333 +03:00 [INF] Executed ViewResult - view Login executed in 148.3131ms.
+2024-05-08 09:42:16.336 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 214.769ms
+2024-05-08 09:42:16.337 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:42:16.364 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 339.6686ms
+2024-05-08 09:42:16.404 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:42:16.406 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:42:16.408 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 3.9936ms
+2024-05-08 09:42:16.440 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.4200ms
+2024-05-08 09:42:18.073 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268
+2024-05-08 09:42:18.075 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:42:18.095 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:42:18.141 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:42:18.517 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-08 09:42:18.518 +03:00 [INF] User logged in.
+2024-05-08 09:42:18.519 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 378.6266ms.
+2024-05-08 09:42:18.522 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-08 09:42:18.522 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 427.3651ms
+2024-05-08 09:42:18.523 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:42:18.525 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268 - 302 - - 451.5868ms
+2024-05-08 09:42:18.527 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:42:18.541 +03:00 [INF] Authorization was successful.
+2024-05-08 09:42:18.542 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:42:18.545 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:42:18.567 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:42:19.504 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 937.1244ms.
+2024-05-08 09:42:19.506 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:42:19.534 +03:00 [INF] Executed ViewResult - view Index executed in 29.2405ms.
+2024-05-08 09:42:19.534 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 989.3662ms
+2024-05-08 09:42:19.534 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:42:19.541 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 1014.4971ms
+2024-05-08 09:42:19.567 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:42:19.569 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:42:19.569 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.3809ms
+2024-05-08 09:42:19.594 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.2715ms
+2024-05-08 09:42:29.707 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 09:42:30.038 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 09:42:30.039 +03:00 [INF] Hosting environment: Development
+2024-05-08 09:42:30.039 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 09:42:30.064 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:42:30.141 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:42:30.169 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:42:30.217 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:42:30.222 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7048ms.
+2024-05-08 09:42:30.237 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:42:30.367 +03:00 [INF] Executed ViewResult - view Login executed in 133.8693ms.
+2024-05-08 09:42:30.371 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 201.395ms
+2024-05-08 09:42:30.372 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:42:30.404 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 342.5930ms
+2024-05-08 09:42:30.498 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:42:30.500 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:42:30.501 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.9563ms
+2024-05-08 09:42:30.535 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.5286ms
+2024-05-08 09:42:33.070 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268
+2024-05-08 09:42:33.072 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:42:33.093 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:42:33.135 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:42:33.494 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-08 09:42:33.495 +03:00 [INF] User logged in.
+2024-05-08 09:42:33.497 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 361.8549ms.
+2024-05-08 09:42:33.499 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-08 09:42:33.499 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 405.9036ms
+2024-05-08 09:42:33.499 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:42:33.501 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268 - 302 - - 430.3045ms
+2024-05-08 09:42:33.505 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:42:33.518 +03:00 [INF] Authorization was successful.
+2024-05-08 09:42:33.519 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:42:33.521 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:42:33.545 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:42:34.426 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 880.5183ms.
+2024-05-08 09:42:34.427 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:42:34.459 +03:00 [INF] Executed ViewResult - view Index executed in 33.5629ms.
+2024-05-08 09:42:34.460 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 938.1989ms
+2024-05-08 09:42:34.460 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:42:34.470 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 964.8717ms
+2024-05-08 09:42:34.496 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:42:34.496 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:42:34.499 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.1914ms
+2024-05-08 09:42:34.521 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.2149ms
+2024-05-08 09:43:30.994 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 09:43:31.340 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 09:43:31.345 +03:00 [INF] Hosting environment: Development
+2024-05-08 09:43:31.345 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 09:43:31.369 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:43:31.443 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:43:31.473 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:43:31.520 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:43:31.525 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5837ms.
+2024-05-08 09:43:31.544 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:43:31.680 +03:00 [INF] Executed ViewResult - view Login executed in 142.2215ms.
+2024-05-08 09:43:31.684 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 209.568ms
+2024-05-08 09:43:31.685 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:43:31.713 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 346.7253ms
+2024-05-08 09:43:31.756 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:43:31.759 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.7339ms
+2024-05-08 09:43:31.760 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:43:31.797 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.7026ms
+2024-05-08 09:43:34.604 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268
+2024-05-08 09:43:34.607 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:43:34.629 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:43:34.670 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:43:35.034 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-08 09:43:35.035 +03:00 [INF] User logged in.
+2024-05-08 09:43:35.036 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 365.1224ms.
+2024-05-08 09:43:35.038 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-08 09:43:35.038 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 409.0626ms
+2024-05-08 09:43:35.038 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:43:35.039 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268 - 302 - - 435.2656ms
+2024-05-08 09:43:35.042 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:43:35.055 +03:00 [INF] Authorization was successful.
+2024-05-08 09:43:35.056 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:43:35.058 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:43:35.082 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:43:35.912 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 829.997ms.
+2024-05-08 09:43:35.913 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:43:35.939 +03:00 [INF] Executed ViewResult - view Index executed in 26.5584ms.
+2024-05-08 09:43:35.939 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 880.7153ms
+2024-05-08 09:43:35.939 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:43:36.257 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 1215.1070ms
+2024-05-08 09:43:36.287 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:43:36.289 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:43:36.289 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 2.0881ms
+2024-05-08 09:43:36.315 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.0514ms
+2024-05-08 09:43:58.897 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 09:43:59.245 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 09:43:59.245 +03:00 [INF] Hosting environment: Development
+2024-05-08 09:43:59.246 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 09:43:59.272 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:43:59.353 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:43:59.382 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:43:59.427 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:43:59.432 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4872ms.
+2024-05-08 09:43:59.446 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:43:59.585 +03:00 [INF] Executed ViewResult - view Login executed in 143.0291ms.
+2024-05-08 09:43:59.588 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 205.4638ms
+2024-05-08 09:43:59.589 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:43:59.623 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 354.4029ms
+2024-05-08 09:43:59.715 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:43:59.717 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:43:59.718 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 3.0842ms
+2024-05-08 09:43:59.745 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.6974ms
+2024-05-08 09:44:04.245 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268
+2024-05-08 09:44:04.247 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:44:04.267 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:44:04.308 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:44:04.675 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-08 09:44:04.677 +03:00 [INF] User logged in.
+2024-05-08 09:44:04.678 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 369.5989ms.
+2024-05-08 09:44:04.679 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-08 09:44:04.680 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 412.5506ms
+2024-05-08 09:44:04.680 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:44:04.681 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268 - 302 - - 436.3373ms
+2024-05-08 09:44:04.685 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:44:04.700 +03:00 [INF] Authorization was successful.
+2024-05-08 09:44:04.701 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:44:04.704 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:44:04.726 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:44:05.588 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 861.3801ms.
+2024-05-08 09:44:05.589 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:44:05.615 +03:00 [INF] Executed ViewResult - view Index executed in 27.1364ms.
+2024-05-08 09:44:05.616 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 911.9646ms
+2024-05-08 09:44:05.616 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:44:05.623 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 937.1026ms
+2024-05-08 09:44:05.653 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:44:05.655 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.9422ms
+2024-05-08 09:44:05.656 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:44:05.682 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.3546ms
+2024-05-08 09:45:49.402 +03:00 [INF] User profile is available. Using 'C:\Users\oguzhan.ozturk\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-08 09:45:49.742 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-08 09:45:49.742 +03:00 [INF] Hosting environment: Development
+2024-05-08 09:45:49.742 +03:00 [INF] Content root path: C:\Users\oguzhan.ozturk\source\repos\SalesDemo\SalesDemo.Web
+2024-05-08 09:45:49.763 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:45:49.827 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:45:49.853 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:45:49.900 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:45:49.905 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5753ms.
+2024-05-08 09:45:49.919 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:45:50.055 +03:00 [INF] Executed ViewResult - view Login executed in 139.4354ms.
+2024-05-08 09:45:50.058 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 204.5266ms
+2024-05-08 09:45:50.059 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:45:50.090 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 329.3381ms
+2024-05-08 09:45:50.138 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:45:50.138 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:45:50.148 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 10.3613ms
+2024-05-08 09:45:50.179 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.3799ms
+2024-05-08 09:45:53.248 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268
+2024-05-08 09:45:53.250 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:45:53.271 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:45:53.316 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:45:53.683 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-08 09:45:53.685 +03:00 [INF] User logged in.
+2024-05-08 09:45:53.686 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 369.569ms.
+2024-05-08 09:45:53.688 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-08 09:45:53.688 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 416.6216ms
+2024-05-08 09:45:53.688 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:45:53.690 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268 - 302 - - 441.9517ms
+2024-05-08 09:45:53.692 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:45:53.708 +03:00 [INF] Authorization was successful.
+2024-05-08 09:45:53.718 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:45:53.722 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:45:53.757 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:45:54.598 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 841.1754ms.
+2024-05-08 09:45:54.599 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:45:54.637 +03:00 [INF] Executed ViewResult - view Index executed in 38.2894ms.
+2024-05-08 09:45:54.637 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 915.0355ms
+2024-05-08 09:45:54.637 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:45:54.646 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 954.0186ms
+2024-05-08 09:45:54.675 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:45:54.676 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.6117ms
+2024-05-08 09:45:54.676 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:45:54.700 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.0853ms
+2024-05-08 09:45:58.293 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Account/Logout - -
+2024-05-08 09:45:58.295 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web)'
+2024-05-08 09:45:58.298 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LogoutAsync() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:45:58.311 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:45:58.313 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-05-08 09:45:58.314 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-05-08 09:45:58.314 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-05-08 09:45:58.315 +03:00 [INF] user signout
+2024-05-08 09:45:58.315 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 3.1797ms.
+2024-05-08 09:45:58.315 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2024-05-08 09:45:58.316 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web) in 17.635ms
+2024-05-08 09:45:58.316 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web)'
+2024-05-08 09:45:58.317 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Account/Logout - - - 302 - - 24.0181ms
+2024-05-08 09:45:58.319 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-08 09:45:58.319 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:45:58.319 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:45:58.332 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:45:58.332 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0306ms.
+2024-05-08 09:45:58.332 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-08 09:45:58.338 +03:00 [INF] Executed ViewResult - view Login executed in 6.3252ms.
+2024-05-08 09:45:58.338 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 18.8377ms
+2024-05-08 09:45:58.338 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:45:58.340 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 21.7691ms
+2024-05-08 09:45:58.359 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:45:58.370 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:45:58.372 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.3935ms
+2024-05-08 09:45:58.380 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.8437ms
+2024-05-08 09:46:01.465 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 224
+2024-05-08 09:46:01.467 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:46:01.467 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-08 09:46:01.481 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:46:01.495 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-08 09:46:01.495 +03:00 [INF] User logged in.
+2024-05-08 09:46:01.495 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult in 14.3226ms.
+2024-05-08 09:46:01.495 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-08 09:46:01.495 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 28.6116ms
+2024-05-08 09:46:01.496 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-08 09:46:01.496 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 224 - 302 - - 30.6380ms
+2024-05-08 09:46:01.499 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-08 09:46:01.501 +03:00 [INF] Authorization was successful.
+2024-05-08 09:46:01.501 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:46:01.501 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-08 09:46:01.513 +03:00 [INF] Executing action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) - Validation state: "Valid"
+2024-05-08 09:46:05.564 +03:00 [INF] Executed action method SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4050.3843ms.
+2024-05-08 09:46:05.564 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-08 09:46:05.568 +03:00 [INF] Executed ViewResult - view Index executed in 4.1726ms.
+2024-05-08 09:46:05.568 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 4067.465ms
+2024-05-08 09:46:05.568 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-08 09:46:05.576 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 4077.3593ms
+2024-05-08 09:46:05.596 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-08 09:46:05.606 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-08 09:46:05.608 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.9231ms
+2024-05-08 09:46:05.621 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.9837ms

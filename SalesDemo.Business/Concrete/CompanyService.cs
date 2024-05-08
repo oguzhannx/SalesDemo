@@ -1,12 +1,8 @@
 ﻿using SalesDemo.Business.Abstract;
-using SalesDemo.Core.Models.Concrete;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.Entities;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SalesDemo.Business.Concrete
 {
@@ -21,6 +17,15 @@ namespace SalesDemo.Business.Concrete
         {
             var a = _companyRepository.GetAll().Result.ToList();
             return a;
+        }
+
+        public Company GetCompanyByCompanyName(string companyName)
+        {
+
+
+            return _companyRepository.FilterBy(q => q.CompanyName.ToLower() == companyName.ToLower()).Result.FirstOrDefault();
+
+
         }
     }
 }

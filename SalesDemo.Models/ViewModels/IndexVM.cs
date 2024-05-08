@@ -4,7 +4,7 @@ namespace SalesDemo.Models.ViewModels
 {
     public class IndexVM
     {
-        public CompanyDto Company { get; set; }
-        public SaleDto Sale { get; set; }
+        public CompanyDto CompanyDto { get; set; }
+        public SaleDto SaleDto { get; set; }
     }
 }

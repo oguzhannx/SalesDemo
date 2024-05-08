@@ -1,12 +1,12 @@
 ﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
+using SalesDemo.Models.Dtos;
 
 namespace SalesDemo.Entities
 {
 
     public class ProductDto 
     {
-        public string Id { get; set; }
+        public BaseId Id { get; set; }
 
         public string PruductName { get; set; }
         public double Price { get; set; }
@@ -14,6 +14,6 @@ namespace SalesDemo.Entities
 
 
 
-
     }
+
 }

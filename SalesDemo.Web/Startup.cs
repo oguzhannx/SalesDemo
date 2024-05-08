@@ -28,7 +28,7 @@ namespace SalesDemo.Web
 
             services.AddControllersWithViews();
             services.AddHttpClient();
-            
+
 
 
 

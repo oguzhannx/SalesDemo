@@ -33,7 +33,7 @@ namespace SalesDemo.Web.Controllers
 
         public IActionResult Register()
         {
-            
+
 
             return View();
         }
