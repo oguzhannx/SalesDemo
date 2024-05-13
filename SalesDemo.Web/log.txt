@@ -8884,3 +8884,1165 @@ Path 'companyName', line 1, position 15.
 2024-05-08 09:46:05.606 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
 2024-05-08 09:46:05.608 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 1.9231ms
 2024-05-08 09:46:05.621 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.9837ms
+2024-05-13 22:01:40.636 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-13 22:01:41.026 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-13 22:01:41.027 +03:00 [INF] Hosting environment: Development
+2024-05-13 22:01:41.027 +03:00 [INF] Content root path: C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web
+2024-05-13 22:01:41.046 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-13 22:01:41.579 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:01:41.598 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:01:41.620 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 22:01:41.762 +03:00 [INF] Executed ViewResult - view Login executed in 146.4482ms.
+2024-05-13 22:01:41.766 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 167.3671ms
+2024-05-13 22:01:41.767 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:01:41.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 735.2642ms
+2024-05-13 22:01:41.872 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/hope-ui.min.css?v=2.0.0 - -
+2024-05-13 22:01:41.873 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/custom.min.css?v=2.0.0 - -
+2024-05-13 22:01:41.873 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/core/libs.min.css - -
+2024-05-13 22:01:41.912 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/css/custom.min.css'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\css\custom.min.css'
+2024-05-13 22:01:41.916 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/custom.min.css?v=2.0.0 - - - 200 10132 text/css 43.0467ms
+2024-05-13 22:01:41.921 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/dark.min.css - -
+2024-05-13 22:01:41.921 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/css/core/libs.min.css'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\css\core\libs.min.css'
+2024-05-13 22:01:41.923 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/core/libs.min.css - - - 200 61043 text/css 50.8238ms
+2024-05-13 22:01:41.927 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/css/hope-ui.min.css'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\css\hope-ui.min.css'
+2024-05-13 22:01:41.927 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/customizer.min.css - -
+2024-05-13 22:01:41.936 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/css/dark.min.css'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\css\dark.min.css'
+2024-05-13 22:01:41.937 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/dark.min.css - - - 200 28521 text/css 15.1581ms
+2024-05-13 22:01:41.937 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/hope-ui.min.css?v=2.0.0 - - - 200 530066 text/css 64.3195ms
+2024-05-13 22:01:41.942 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/css/customizer.min.css'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\css\customizer.min.css'
+2024-05-13 22:01:41.943 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/auth/01.png - -
+2024-05-13 22:01:41.943 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/rtl.min.css - -
+2024-05-13 22:01:41.943 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/core/libs.min.js - -
+2024-05-13 22:01:41.944 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/customizer.min.css - - - 200 42688 text/css 16.0398ms
+2024-05-13 22:01:41.956 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/css/rtl.min.css'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\css\rtl.min.css'
+2024-05-13 22:01:41.957 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/rtl.min.css - - - 200 30645 text/css 14.1505ms
+2024-05-13 22:01:41.963 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/auth/01.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\auth\01.png'
+2024-05-13 22:01:41.969 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/auth/01.png - - - 200 750486 image/png 26.6050ms
+2024-05-13 22:01:41.981 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/core/external.min.js - -
+2024-05-13 22:01:42.045 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/js/core/external.min.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\js\core\external.min.js'
+2024-05-13 22:01:42.060 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/core/external.min.js - - - 200 739995 application/javascript 78.4943ms
+2024-05-13 22:01:42.083 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/charts/widgetcharts.js - -
+2024-05-13 22:01:42.092 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/js/core/libs.min.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\js\core\libs.min.js'
+2024-05-13 22:01:42.101 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/core/libs.min.js - - - 200 427871 application/javascript 156.1914ms
+2024-05-13 22:01:42.102 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/js/charts/widgetcharts.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\js\charts\widgetcharts.js'
+2024-05-13 22:01:42.103 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/charts/widgetcharts.js - - - 200 19000 application/javascript 19.4939ms
+2024-05-13 22:01:42.107 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/charts/vectore-chart.js - -
+2024-05-13 22:01:42.126 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/charts/dashboard.js - -
+2024-05-13 22:01:42.137 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/js/charts/vectore-chart.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\js\charts\vectore-chart.js'
+2024-05-13 22:01:42.138 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/charts/vectore-chart.js - - - 200 93531 application/javascript 31.2582ms
+2024-05-13 22:01:42.141 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/js/charts/dashboard.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\js\charts\dashboard.js'
+2024-05-13 22:01:42.142 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/charts/dashboard.js - - - 200 6732 application/javascript 16.1617ms
+2024-05-13 22:01:42.145 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/plugins/fslightbox.js - -
+2024-05-13 22:01:42.146 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/plugins/setting.js - -
+2024-05-13 22:01:42.164 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/js/plugins/setting.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\js\plugins\setting.js'
+2024-05-13 22:01:42.165 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/plugins/setting.js - - - 200 16960 application/javascript 18.1399ms
+2024-05-13 22:01:42.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/plugins/slider-tabs.js - -
+2024-05-13 22:01:42.178 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/js/plugins/fslightbox.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\js\plugins\fslightbox.js'
+2024-05-13 22:01:42.179 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/plugins/fslightbox.js - - - 200 30577 application/javascript 34.2484ms
+2024-05-13 22:01:42.187 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/plugins/form-wizard.js - -
+2024-05-13 22:01:42.188 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:01:42.193 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/js/plugins/slider-tabs.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\js\plugins\slider-tabs.js'
+2024-05-13 22:01:42.194 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/plugins/slider-tabs.js - - - 200 4646 application/javascript 24.0702ms
+2024-05-13 22:01:42.195 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 6.2177ms
+2024-05-13 22:01:42.207 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/js/plugins/form-wizard.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\js\plugins\form-wizard.js'
+2024-05-13 22:01:42.208 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/plugins/form-wizard.js - - - 200 2837 application/javascript 20.4849ms
+2024-05-13 22:01:42.230 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/hope-ui.js - -
+2024-05-13 22:01:42.252 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/js/hope-ui.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\js\hope-ui.js'
+2024-05-13 22:01:42.252 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/js/hope-ui.js - - - 200 18512 application/javascript 21.8227ms
+2024-05-13 22:01:42.255 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:01:42.320 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.3105ms
+2024-05-13 22:01:42.577 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/favicon.ico - -
+2024-05-13 22:01:42.585 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\favicon.ico'
+2024-05-13 22:01:42.586 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/favicon.ico - - - 200 5430 image/x-icon 8.4295ms
+2024-05-13 22:01:48.577 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 271
+2024-05-13 22:01:48.586 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:01:48.602 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:01:48.721 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-13 22:01:48.722 +03:00 [INF] User logged in.
+2024-05-13 22:01:48.726 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-13 22:01:48.727 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 125.4265ms
+2024-05-13 22:01:48.728 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:01:48.730 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 271 - 302 - - 152.3285ms
+2024-05-13 22:01:48.732 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 22:01:48.753 +03:00 [INF] Authorization was successful.
+2024-05-13 22:01:48.753 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:01:48.756 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:01:53.169 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 4413.2307ms
+2024-05-13 22:01:53.170 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:01:53.172 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı. (localhost:44363)
+ ---> System.Net.Sockets.SocketException (10061): Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|283_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.DefaultConnectAsync(SocketsHttpConnectionContext context, CancellationToken cancellationToken)
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(Func`3 callback, DnsEndPoint endPoint, HttpRequestMessage requestMessage, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at SalesDemo.Web.Controllers.HomeController.Index() in C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\Controllers\HomeController.cs:line 102
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-13 22:01:53.344 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 500 - text/html;+charset=utf-8 4612.2582ms
+2024-05-13 22:01:53.393 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:01:53.406 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:01:53.411 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 4.9478ms
+2024-05-13 22:01:53.420 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.3707ms
+2024-05-13 22:02:26.942 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-13 22:02:27.312 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-13 22:02:27.312 +03:00 [INF] Hosting environment: Development
+2024-05-13 22:02:27.312 +03:00 [INF] Content root path: C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web
+2024-05-13 22:02:27.339 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-13 22:02:27.471 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:02:27.519 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:02:27.545 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 22:02:27.691 +03:00 [INF] Executed ViewResult - view Login executed in 150.7382ms.
+2024-05-13 22:02:27.694 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 173.992ms
+2024-05-13 22:02:27.695 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:02:27.707 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 369.9002ms
+2024-05-13 22:02:27.833 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:02:27.838 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 5.3442ms
+2024-05-13 22:02:27.843 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:02:27.918 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 74.9255ms
+2024-05-13 22:02:30.085 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 271
+2024-05-13 22:02:30.094 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:02:30.125 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:02:30.745 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-13 22:02:30.746 +03:00 [INF] User logged in.
+2024-05-13 22:02:30.750 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-13 22:02:30.752 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 626.3754ms
+2024-05-13 22:02:30.753 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:02:30.756 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 271 - 302 - - 670.6931ms
+2024-05-13 22:02:30.759 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 22:02:30.781 +03:00 [INF] Authorization was successful.
+2024-05-13 22:02:30.782 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:02:30.787 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:02:32.276 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 1488.7222ms
+2024-05-13 22:02:32.276 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:02:32.278 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: V. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.HomeController.Index() in C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\Controllers\HomeController.cs:line 104
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-13 22:02:32.381 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 500 - text/html;+charset=utf-8 1621.3146ms
+2024-05-13 22:02:32.420 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:02:32.443 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:02:32.445 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.7384ms
+2024-05-13 22:02:32.445 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.4328ms
+2024-05-13 22:03:15.605 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 22:03:15.610 +03:00 [INF] Authorization was successful.
+2024-05-13 22:03:15.610 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:03:15.611 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:03:15.775 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 164.0428ms
+2024-05-13 22:03:15.776 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:03:15.777 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: V. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.HomeController.Index() in C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\Controllers\HomeController.cs:line 104
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-13 22:03:15.792 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 500 - text/html;+charset=utf-8 186.8317ms
+2024-05-13 22:03:15.821 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:03:15.839 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:03:15.839 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.7656ms
+2024-05-13 22:03:15.840 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.5486ms
+2024-05-13 22:06:21.103 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 22:06:21.118 +03:00 [INF] Authorization was successful.
+2024-05-13 22:06:21.119 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:06:21.119 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:06:42.803 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 21684.0358ms
+2024-05-13 22:06:42.803 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:06:42.804 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: V. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at SalesDemo.Web.Controllers.HomeController.Index() in C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\Controllers\HomeController.cs:line 104
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-13 22:06:42.812 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 500 - text/html;+charset=utf-8 21709.1298ms
+2024-05-13 22:06:42.847 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:06:42.857 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.9839ms
+2024-05-13 22:06:42.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:06:42.860 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.5438ms
+2024-05-13 22:06:54.768 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 22:06:54.772 +03:00 [INF] Authorization was successful.
+2024-05-13 22:06:54.772 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:06:54.772 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:10:12.940 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-13 22:10:13.813 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-13 22:10:13.814 +03:00 [INF] Hosting environment: Development
+2024-05-13 22:10:13.814 +03:00 [INF] Content root path: C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web
+2024-05-13 22:10:13.902 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 22:10:13.902 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-13 22:10:14.336 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:10:14.365 +03:00 [INF] Authorization was successful.
+2024-05-13 22:10:14.367 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:10:14.433 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:10:14.435 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:10:14.645 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 22:10:14.863 +03:00 [INF] Executed ViewResult - view Login executed in 233.5594ms.
+2024-05-13 22:10:14.867 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 433.2286ms
+2024-05-13 22:10:14.868 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:10:15.014 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:10:15.070 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:10:15.071 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 1124.0714ms
+2024-05-13 22:10:15.083 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 68.0943ms
+2024-05-13 22:10:15.094 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 658.2722ms
+2024-05-13 22:10:15.095 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:10:15.100 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'user')
+   at Microsoft.AspNetCore.Identity.UserManager`1.GetRolesAsync(TUser user)
+   at SalesDemo.Web.Controllers.HomeController.Index() in C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\Controllers\HomeController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-13 22:10:15.192 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 119.8129ms
+2024-05-13 22:10:15.247 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 500 - text/html;+charset=utf-8 1357.0780ms
+2024-05-13 22:10:15.283 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:10:15.300 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:10:15.304 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 3.3794ms
+2024-05-13 22:10:15.319 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.7401ms
+2024-05-13 22:10:18.739 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 22:10:18.755 +03:00 [INF] Authorization was successful.
+2024-05-13 22:10:18.755 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:10:18.756 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:10:18.820 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 64.1024ms
+2024-05-13 22:10:18.821 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:10:18.822 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'user')
+   at Microsoft.AspNetCore.Identity.UserManager`1.GetRolesAsync(TUser user)
+   at SalesDemo.Web.Controllers.HomeController.Index() in C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\Controllers\HomeController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-13 22:10:18.831 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 500 - text/html;+charset=utf-8 91.9614ms
+2024-05-13 22:10:18.856 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:10:18.868 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.6598ms
+2024-05-13 22:10:18.872 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:10:18.875 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.7598ms
+2024-05-13 22:10:24.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-13 22:10:24.168 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:10:24.170 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:10:24.171 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 22:10:24.178 +03:00 [INF] Executed ViewResult - view Login executed in 7.4994ms.
+2024-05-13 22:10:24.179 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 8.1435ms
+2024-05-13 22:10:24.179 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:10:24.179 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 14.9604ms
+2024-05-13 22:10:24.250 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:10:24.252 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.4943ms
+2024-05-13 22:10:26.275 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 271
+2024-05-13 22:10:26.279 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:10:26.293 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:10:26.383 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 22:10:26.386 +03:00 [INF] Executed ViewResult - view Login executed in 2.548ms.
+2024-05-13 22:10:26.386 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 93.0305ms
+2024-05-13 22:10:26.386 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:10:26.386 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 271 - 200 - text/html;+charset=utf-8 111.3693ms
+2024-05-13 22:10:26.415 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:10:26.416 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.7372ms
+2024-05-13 22:10:26.429 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:10:26.445 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.0173ms
+2024-05-13 22:10:28.240 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 271
+2024-05-13 22:10:28.244 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:10:28.245 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:10:28.254 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 22:10:28.255 +03:00 [INF] Executed ViewResult - view Login executed in 1.5602ms.
+2024-05-13 22:10:28.255 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 10.3474ms
+2024-05-13 22:10:28.255 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:10:28.255 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 271 - 200 - text/html;+charset=utf-8 14.8269ms
+2024-05-13 22:10:28.283 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:10:28.285 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.3378ms
+2024-05-13 22:10:28.304 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:10:28.319 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.1086ms
+2024-05-13 22:10:46.827 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 270
+2024-05-13 22:10:46.830 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:10:46.830 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:10:46.841 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 22:10:46.843 +03:00 [INF] Executed ViewResult - view Login executed in 2.4925ms.
+2024-05-13 22:10:46.843 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 12.4658ms
+2024-05-13 22:10:46.843 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:10:46.843 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 270 - 200 - text/html;+charset=utf-8 16.4079ms
+2024-05-13 22:10:46.898 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:10:46.898 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:10:46.902 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.9132ms
+2024-05-13 22:10:46.916 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.3500ms
+2024-05-13 22:10:55.697 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/maps/customizer.min.css.map - -
+2024-05-13 22:10:55.699 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/maps/rtl.min.css.map - -
+2024-05-13 22:10:55.699 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/maps/hope-ui.min.css.map - -
+2024-05-13 22:10:55.700 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/maps/custom.min.css.map - -
+2024-05-13 22:10:55.700 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/maps/dark.min.css.map - -
+2024-05-13 22:10:55.756 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/css/maps/dark.min.css.map'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\css\maps\dark.min.css.map'
+2024-05-13 22:10:55.756 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/css/maps/custom.min.css.map'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\css\maps\custom.min.css.map'
+2024-05-13 22:10:55.756 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/css/maps/rtl.min.css.map'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\css\maps\rtl.min.css.map'
+2024-05-13 22:10:55.756 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/css/maps/customizer.min.css.map'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\css\maps\customizer.min.css.map'
+2024-05-13 22:10:55.757 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/maps/customizer.min.css.map - - - 200 24428 text/plain 59.7547ms
+2024-05-13 22:10:55.759 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/maps/custom.min.css.map - - - 200 93775 text/plain 58.2419ms
+2024-05-13 22:10:55.762 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/maps/rtl.min.css.map - - - 200 108653 text/plain 62.5780ms
+2024-05-13 22:10:55.764 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/maps/dark.min.css.map - - - 200 109911 text/plain 64.1542ms
+2024-05-13 22:10:55.770 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/css/maps/hope-ui.min.css.map'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\css\maps\hope-ui.min.css.map'
+2024-05-13 22:10:55.793 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/css/maps/hope-ui.min.css.map - - - 200 1075446 text/plain 93.9638ms
+2024-05-13 22:11:38.785 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 271
+2024-05-13 22:11:38.788 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:11:38.788 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:12:07.604 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 22:12:07.615 +03:00 [INF] Executed ViewResult - view Login executed in 13.6002ms.
+2024-05-13 22:12:07.615 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 28826.6677ms
+2024-05-13 22:12:07.615 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:12:07.617 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 271 - 200 - text/html;+charset=utf-8 28831.3820ms
+2024-05-13 22:12:07.662 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:12:07.667 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 4.5846ms
+2024-05-13 22:12:07.675 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:12:07.997 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 322.0706ms
+2024-05-13 22:12:12.686 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268
+2024-05-13 22:12:12.690 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:12:12.691 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:12:14.906 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-13 22:12:14.908 +03:00 [INF] User logged in.
+2024-05-13 22:12:14.909 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-13 22:12:14.910 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 2218.7034ms
+2024-05-13 22:12:14.910 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:12:14.911 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 268 - 302 - - 2225.0063ms
+2024-05-13 22:12:14.915 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 22:12:14.927 +03:00 [INF] Authorization was successful.
+2024-05-13 22:12:14.927 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:12:14.928 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:12:33.103 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 22:12:33.143 +03:00 [INF] Executed ViewResult - view Index executed in 40.8032ms.
+2024-05-13 22:12:33.143 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 18215.6268ms
+2024-05-13 22:12:33.143 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:12:33.144 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 18228.9541ms
+2024-05-13 22:12:33.179 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/vendor/aos/dist/aos.css - -
+2024-05-13 22:12:33.195 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/vendor/aos/dist/aos.css'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\vendor\aos\dist\aos.css'
+2024-05-13 22:12:33.195 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/vendor/aos/dist/aos.css - - - 200 26053 text/css 16.2791ms
+2024-05-13 22:12:33.200 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/01.png - -
+2024-05-13 22:12:33.200 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header.png - -
+2024-05-13 22:12:33.221 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header.png'
+2024-05-13 22:12:33.226 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header.png - - - 200 411717 image/png 25.2278ms
+2024-05-13 22:12:33.232 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header1.png - -
+2024-05-13 22:12:33.242 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header1.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header1.png'
+2024-05-13 22:12:33.247 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header1.png - - - 200 338017 image/png 14.6215ms
+2024-05-13 22:12:33.253 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header2.png - -
+2024-05-13 22:12:33.253 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/avatars/01.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\avatars\01.png'
+2024-05-13 22:12:33.264 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header2.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header2.png'
+2024-05-13 22:12:33.266 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header3.png - -
+2024-05-13 22:12:33.268 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header2.png - - - 200 370160 image/png 14.4346ms
+2024-05-13 22:12:33.276 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header3.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header3.png'
+2024-05-13 22:12:33.279 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header3.png - - - 200 337668 image/png 13.4864ms
+2024-05-13 22:12:33.287 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/01.png - - - 200 2471641 image/png 87.0969ms
+2024-05-13 22:12:33.322 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:12:33.323 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/vendor/aos/dist/aos.js - -
+2024-05-13 22:12:33.325 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 3.1032ms
+2024-05-13 22:12:33.355 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/vendor/aos/dist/aos.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\vendor\aos\dist\aos.js'
+2024-05-13 22:12:33.356 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/vendor/aos/dist/aos.js - - - 200 14690 application/javascript 33.2275ms
+2024-05-13 22:12:33.374 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header4.png - -
+2024-05-13 22:12:33.383 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header4.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header4.png'
+2024-05-13 22:12:33.386 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header4.png - - - 200 362255 image/png 11.5745ms
+2024-05-13 22:12:33.409 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header5.png - -
+2024-05-13 22:12:33.417 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header5.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header5.png'
+2024-05-13 22:12:33.419 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header5.png - - - 200 400278 image/png 10.2803ms
+2024-05-13 22:12:33.422 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:12:33.429 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.5611ms
+2024-05-13 22:12:33.539 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/favicon.ico - -
+2024-05-13 22:12:33.545 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/favicon.ico'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\favicon.ico'
+2024-05-13 22:12:33.546 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/favicon.ico - - - 200 6782 image/x-icon 7.1752ms
+2024-05-13 22:41:43.911 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Account/Logout - -
+2024-05-13 22:41:43.928 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web)'
+2024-05-13 22:41:43.931 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LogoutAsync() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:41:43.935 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-05-13 22:41:43.937 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-05-13 22:41:43.937 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-05-13 22:41:43.937 +03:00 [INF] user signout
+2024-05-13 22:41:43.938 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2024-05-13 22:41:43.938 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web) in 7.1707ms
+2024-05-13 22:41:43.938 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web)'
+2024-05-13 22:41:43.939 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Account/Logout - - - 302 - - 27.8784ms
+2024-05-13 22:41:43.941 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-13 22:41:43.945 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:41:43.945 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:41:43.947 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 22:41:43.953 +03:00 [INF] Executed ViewResult - view Login executed in 7.4481ms.
+2024-05-13 22:41:43.953 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 7.883ms
+2024-05-13 22:41:43.953 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:41:43.953 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 11.8138ms
+2024-05-13 22:41:44.009 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:41:44.011 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:41:44.011 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.3143ms
+2024-05-13 22:41:44.029 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.0553ms
+2024-05-13 22:42:11.147 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 224
+2024-05-13 22:42:11.149 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:42:11.150 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:42:15.140 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-13 22:42:15.140 +03:00 [INF] User logged in.
+2024-05-13 22:42:15.140 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-13 22:42:15.140 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 3990.1295ms
+2024-05-13 22:42:15.140 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:42:15.141 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 224 - 302 - - 3994.2814ms
+2024-05-13 22:42:15.145 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 22:42:15.148 +03:00 [INF] Authorization was successful.
+2024-05-13 22:42:15.148 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:42:15.148 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:42:25.933 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 22:42:25.936 +03:00 [INF] Executed ViewResult - view Index executed in 3.8054ms.
+2024-05-13 22:42:25.936 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 10787.9036ms
+2024-05-13 22:42:25.936 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:42:25.938 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 10793.1124ms
+2024-05-13 22:42:25.986 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/vendor/aos/dist/aos.css - -
+2024-05-13 22:42:25.990 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/vendor/aos/dist/aos.css'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\vendor\aos\dist\aos.css'
+2024-05-13 22:42:25.991 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/vendor/aos/dist/aos.css - - - 200 26053 text/css 4.7275ms
+2024-05-13 22:42:26.021 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/01.png - -
+2024-05-13 22:42:26.021 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header.png - -
+2024-05-13 22:42:26.031 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header1.png - -
+2024-05-13 22:42:26.045 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header.png'
+2024-05-13 22:42:26.059 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header1.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header1.png'
+2024-05-13 22:42:26.059 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header.png - - - 200 411717 image/png 37.6544ms
+2024-05-13 22:42:26.092 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header3.png - -
+2024-05-13 22:42:26.093 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header1.png - - - 200 338017 image/png 61.3754ms
+2024-05-13 22:42:26.094 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header2.png - -
+2024-05-13 22:42:26.120 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header2.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header2.png'
+2024-05-13 22:42:26.123 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header3.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header3.png'
+2024-05-13 22:42:26.125 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header2.png - - - 200 370160 image/png 30.5349ms
+2024-05-13 22:42:26.129 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header3.png - - - 200 337668 image/png 36.2707ms
+2024-05-13 22:42:26.130 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/avatars/01.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\avatars\01.png'
+2024-05-13 22:42:26.147 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/01.png - - - 200 2471641 image/png 126.4987ms
+2024-05-13 22:42:26.173 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/vendor/aos/dist/aos.js - -
+2024-05-13 22:42:26.174 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/vendor/aos/dist/aos.js'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\vendor\aos\dist\aos.js'
+2024-05-13 22:42:26.175 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:42:26.175 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/vendor/aos/dist/aos.js - - - 200 14690 application/javascript 1.8554ms
+2024-05-13 22:42:26.177 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.7078ms
+2024-05-13 22:42:26.188 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header4.png - -
+2024-05-13 22:42:26.192 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header5.png - -
+2024-05-13 22:42:26.196 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header4.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header4.png'
+2024-05-13 22:42:26.198 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/dashboard/top-header5.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\dashboard\top-header5.png'
+2024-05-13 22:42:26.201 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header4.png - - - 200 362255 image/png 12.0419ms
+2024-05-13 22:42:26.203 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/dashboard/top-header5.png - - - 200 400278 image/png 11.4353ms
+2024-05-13 22:42:26.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:42:26.215 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.9298ms
+2024-05-13 22:42:33.315 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 22:42:33.319 +03:00 [INF] Authorization was successful.
+2024-05-13 22:42:33.319 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:42:33.319 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:42:33.363 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 22:42:33.365 +03:00 [INF] Executed ViewResult - view Index executed in 2.3533ms.
+2024-05-13 22:42:33.366 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 46.4154ms
+2024-05-13 22:42:33.366 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:42:33.367 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 52.1901ms
+2024-05-13 22:42:33.411 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:42:33.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.9876ms
+2024-05-13 22:42:33.414 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:42:33.428 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.5572ms
+2024-05-13 22:42:33.639 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/favicon.ico - -
+2024-05-13 22:42:33.640 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/favicon.ico'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\favicon.ico'
+2024-05-13 22:42:33.641 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/favicon.ico - - - 200 6782 image/x-icon 1.7450ms
+2024-05-13 22:46:47.149 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Home/Index - -
+2024-05-13 22:46:47.167 +03:00 [INF] Authorization was successful.
+2024-05-13 22:46:47.168 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:46:47.168 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:46:47.213 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 22:46:47.215 +03:00 [INF] Executed ViewResult - view Index executed in 1.383ms.
+2024-05-13 22:46:47.215 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 46.9157ms
+2024-05-13 22:46:47.215 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:46:47.217 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Home/Index - - - 200 - text/html;+charset=utf-8 67.1135ms
+2024-05-13 22:46:47.264 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:46:47.267 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.0474ms
+2024-05-13 22:46:47.267 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:46:47.279 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.9529ms
+2024-05-13 22:46:55.893 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Account/Logout - -
+2024-05-13 22:46:55.897 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web)'
+2024-05-13 22:46:55.897 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LogoutAsync() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:46:55.898 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-05-13 22:46:55.898 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-05-13 22:46:55.898 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-05-13 22:46:55.898 +03:00 [INF] user signout
+2024-05-13 22:46:55.899 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2024-05-13 22:46:55.899 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web) in 1.1218ms
+2024-05-13 22:46:55.899 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web)'
+2024-05-13 22:46:55.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Account/Logout - - - 302 - - 7.2567ms
+2024-05-13 22:46:55.904 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-13 22:46:55.907 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:46:55.907 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:46:55.907 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 22:46:55.910 +03:00 [INF] Executed ViewResult - view Login executed in 2.6652ms.
+2024-05-13 22:46:55.910 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 3.0082ms
+2024-05-13 22:46:55.910 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:46:55.911 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 6.9716ms
+2024-05-13 22:46:55.962 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:46:55.964 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.8198ms
+2024-05-13 22:46:55.964 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:46:55.976 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.2589ms
+2024-05-13 22:47:06.591 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 224
+2024-05-13 22:47:06.594 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:47:06.594 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 22:47:06.630 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-13 22:47:06.630 +03:00 [INF] User logged in.
+2024-05-13 22:47:06.630 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-13 22:47:06.631 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 36.1281ms
+2024-05-13 22:47:06.631 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 22:47:06.631 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 224 - 302 - - 40.6082ms
+2024-05-13 22:47:06.635 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 22:47:06.638 +03:00 [INF] Authorization was successful.
+2024-05-13 22:47:06.638 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:47:06.638 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 22:47:06.677 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 22:47:06.678 +03:00 [INF] Executed ViewResult - view Index executed in 1.1899ms.
+2024-05-13 22:47:06.678 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 40.4187ms
+2024-05-13 22:47:06.678 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 22:47:06.679 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 44.5066ms
+2024-05-13 22:47:06.728 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:47:06.728 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 22:47:06.730 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.3976ms
+2024-05-13 22:47:06.741 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.6031ms
+2024-05-13 22:47:13.564 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 22:47:13.565 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.5379ms
+2024-05-13 23:24:05.483 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-13 23:24:05.616 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-13 23:24:05.617 +03:00 [INF] Hosting environment: Development
+2024-05-13 23:24:05.617 +03:00 [INF] Content root path: C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web
+2024-05-13 23:24:05.629 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/index.html - -
+2024-05-13 23:24:05.705 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/dashboard/index.html'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\dashboard\index.html'
+2024-05-13 23:24:05.711 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/index.html - - - 200 - text/html 83.2442ms
+2024-05-13 23:24:05.841 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag-05.png - -
+2024-05-13 23:24:05.841 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag-02.png - -
+2024-05-13 23:24:05.841 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag-04.png - -
+2024-05-13 23:24:05.841 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag001.png - -
+2024-05-13 23:24:05.841 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag-03.png - -
+2024-05-13 23:24:05.843 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/Flag/flag-03.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\Flag\flag-03.png'
+2024-05-13 23:24:05.843 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/Flag/flag-02.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\Flag\flag-02.png'
+2024-05-13 23:24:05.843 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/Flag/flag-05.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\Flag\flag-05.png'
+2024-05-13 23:24:05.843 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/Flag/flag001.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\Flag\flag001.png'
+2024-05-13 23:24:05.843 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/Flag/flag-04.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\Flag\flag-04.png'
+2024-05-13 23:24:05.843 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag-04.png - - - 200 500 image/png 2.4678ms
+2024-05-13 23:24:05.843 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag-03.png - - - 200 471 image/png 2.3952ms
+2024-05-13 23:24:05.843 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag-05.png - - - 200 209 image/png 2.4569ms
+2024-05-13 23:24:05.843 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag-02.png - - - 200 270 image/png 2.3270ms
+2024-05-13 23:24:05.844 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag001.png - - - 200 7375 image/png 3.6160ms
+2024-05-13 23:24:05.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/shapes/02.png - -
+2024-05-13 23:24:05.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/shapes/01.png - -
+2024-05-13 23:24:05.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/shapes/03.png - -
+2024-05-13 23:24:05.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag-06.png - -
+2024-05-13 23:24:05.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/shapes/04.png - -
+2024-05-13 23:24:05.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/avtar_1.png - -
+2024-05-13 23:24:05.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/avtar_2.png - -
+2024-05-13 23:24:05.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/avtar_5.png - -
+2024-05-13 23:24:05.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/avtar_4.png - -
+2024-05-13 23:24:05.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/01.png - -
+2024-05-13 23:24:05.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/01.png - -
+2024-05-13 23:24:05.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/shapes/05.png - -
+2024-05-13 23:24:05.853 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/01.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\01.png'
+2024-05-13 23:24:05.853 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/Flag/flag-06.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\Flag\flag-06.png'
+2024-05-13 23:24:05.853 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/01.png - - - 200 744 image/png 2.3320ms
+2024-05-13 23:24:05.853 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/avtar_3.png - -
+2024-05-13 23:24:05.853 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/Flag/flag-06.png - - - 200 249 image/png 4.2934ms
+2024-05-13 23:24:05.854 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/avatars/avtar_5.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\avatars\avtar_5.png'
+2024-05-13 23:24:05.854 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/avatars/avtar_4.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\avatars\avtar_4.png'
+2024-05-13 23:24:05.855 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:24:05.856 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/01.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\01.png'
+2024-05-13 23:24:05.857 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/04.png - -
+2024-05-13 23:24:05.857 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/01.png - - - 200 801 image/png 6.6065ms
+2024-05-13 23:24:05.858 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/05.png - -
+2024-05-13 23:24:05.858 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/03.png - -
+2024-05-13 23:24:05.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/06.png - -
+2024-05-13 23:24:05.858 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/06.png - -
+2024-05-13 23:24:05.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/04.png - -
+2024-05-13 23:24:05.861 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/05.png - -
+2024-05-13 23:24:05.861 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/02.png - -
+2024-05-13 23:24:05.862 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/avatars/avtar_3.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\avatars\avtar_3.png'
+2024-05-13 23:24:05.862 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/09.png - -
+2024-05-13 23:24:05.862 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/03.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\03.png'
+2024-05-13 23:24:05.862 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/06.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\06.png'
+2024-05-13 23:24:05.863 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/07.png - -
+2024-05-13 23:24:05.863 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/09.png - -
+2024-05-13 23:24:05.863 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/04.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\04.png'
+2024-05-13 23:24:05.863 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/10.png - -
+2024-05-13 23:24:05.864 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/09.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\09.png'
+2024-05-13 23:24:05.864 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/05.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\05.png'
+2024-05-13 23:24:06.213 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/11.png - -
+2024-05-13 23:24:06.214 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/02.png - -
+2024-05-13 23:24:06.214 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/avtar_5.png - - - 200 35294 image/png 363.8469ms
+2024-05-13 23:24:05.865 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/09.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\09.png'
+2024-05-13 23:24:05.865 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/02.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\02.png'
+2024-05-13 23:24:05.865 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/05.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\05.png'
+2024-05-13 23:24:06.214 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/avtar_4.png - - - 200 35114 image/png 363.9955ms
+2024-05-13 23:24:06.214 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/10.png - -
+2024-05-13 23:24:06.214 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/08.png - -
+2024-05-13 23:24:06.215 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/11.png - -
+2024-05-13 23:24:05.865 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/06.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\06.png'
+2024-05-13 23:24:06.215 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/08.png - -
+2024-05-13 23:24:06.216 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/08.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\08.png'
+2024-05-13 23:24:06.216 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/12.png - -
+2024-05-13 23:24:06.215 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 359.7333ms
+2024-05-13 23:24:06.216 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/11.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\11.png'
+2024-05-13 23:24:05.865 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/04.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\04.png'
+2024-05-13 23:24:06.218 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/06.png - - - 200 795 image/png 358.8594ms
+2024-05-13 23:24:06.218 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/13.png - -
+2024-05-13 23:24:06.218 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/03.png - -
+2024-05-13 23:24:06.218 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/04.png - - - 200 1078 image/png 361.0677ms
+2024-05-13 23:24:06.219 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/avatars/avtar_2.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\avatars\avtar_2.png'
+2024-05-13 23:24:06.220 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/13.png - -
+2024-05-13 23:24:05.872 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/07.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\07.png'
+2024-05-13 23:24:06.219 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/10.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\10.png'
+2024-05-13 23:24:06.220 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/02.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\02.png'
+2024-05-13 23:24:06.220 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/09.png - - - 200 912 image/png 357.9378ms
+2024-05-13 23:24:06.220 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/12.png - -
+2024-05-13 23:24:06.220 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/09.png - - - 200 989 image/png 357.8288ms
+2024-05-13 23:24:06.220 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/05.png - - - 200 886 image/png 363.1817ms
+2024-05-13 23:24:06.220 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:24:06.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/07.png - -
+2024-05-13 23:24:06.221 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/07.png - - - 200 744 image/png 358.1262ms
+2024-05-13 23:24:06.221 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/08.png - - - 200 1294 image/png 6.3304ms
+2024-05-13 23:24:06.222 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/07.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\07.png'
+2024-05-13 23:24:06.223 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/avatars/avtar_1.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\avatars\avtar_1.png'
+2024-05-13 23:24:06.223 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/02.png - - - 200 787 image/png 9.7181ms
+2024-05-13 23:24:06.224 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/12.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\12.png'
+2024-05-13 23:24:06.225 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/10.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\10.png'
+2024-05-13 23:24:06.226 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/13.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\13.png'
+2024-05-13 23:24:06.227 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/11.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\11.png'
+2024-05-13 23:24:06.227 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/13.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\13.png'
+2024-05-13 23:24:06.227 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/dark/08.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\dark\08.png'
+2024-05-13 23:24:06.228 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/13.png - - - 200 11867 image/png 8.0992ms
+2024-05-13 23:24:06.228 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/08.png - - - 200 3278 image/png 12.9876ms
+2024-05-13 23:24:06.231 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/shapes/04.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\shapes\04.png'
+2024-05-13 23:24:06.231 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/shapes/01.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\shapes\01.png'
+2024-05-13 23:24:06.232 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/03.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\03.png'
+2024-05-13 23:24:06.232 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/03.png - - - 200 799 image/png 13.6699ms
+2024-05-13 23:24:06.232 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/settings/light/12.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\settings\light\12.png'
+2024-05-13 23:24:06.233 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/12.png - - - 200 6875 image/png 13.2463ms
+2024-05-13 23:24:06.233 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/shapes/02.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\shapes\02.png'
+2024-05-13 23:24:06.236 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/11.png - - - 200 6436 image/png 21.2786ms
+2024-05-13 23:24:06.237 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/shapes/03.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\shapes\03.png'
+2024-05-13 23:24:06.237 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/06.png - - - 200 2655 image/png 378.7390ms
+2024-05-13 23:24:06.237 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/04.png - - - 200 2815 image/png 377.8106ms
+2024-05-13 23:24:06.238 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/avtar_3.png - - - 200 34345 image/png 385.0565ms
+2024-05-13 23:24:06.238 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/02.png - - - 200 3440 image/png 376.8669ms
+2024-05-13 23:24:06.239 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/assets/images/shapes/05.png'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\assets\images\shapes\05.png'
+2024-05-13 23:24:06.242 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/avtar_2.png - - - 200 130667 image/png 391.7213ms
+2024-05-13 23:24:06.242 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/10.png - - - 200 3992 image/png 27.2490ms
+2024-05-13 23:24:06.242 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/avatars/avtar_1.png - - - 200 130468 image/png 392.0831ms
+2024-05-13 23:24:06.247 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/11.png - - - 200 33952 image/png 33.8460ms
+2024-05-13 23:24:06.249 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/light/10.png - - - 200 11773 image/png 384.4934ms
+2024-05-13 23:24:06.252 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/07.png - - - 200 2635 image/png 31.0043ms
+2024-05-13 23:24:06.261 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/05.png - - - 200 2988 image/png 399.8954ms
+2024-05-13 23:24:06.261 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/03.png - - - 200 2645 image/png 402.8028ms
+2024-05-13 23:24:06.265 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/13.png - - - 200 31989 image/png 47.0086ms
+2024-05-13 23:24:06.266 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/shapes/02.png - - - 200 392425 image/png 416.4387ms
+2024-05-13 23:24:06.266 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/settings/dark/12.png - - - 200 20164 image/png 49.5023ms
+2024-05-13 23:24:06.266 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/shapes/01.png - - - 200 313492 image/png 416.4098ms
+2024-05-13 23:24:06.267 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/shapes/04.png - - - 200 324336 image/png 417.1123ms
+2024-05-13 23:24:06.269 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/shapes/03.png - - - 200 374276 image/png 419.6395ms
+2024-05-13 23:24:06.271 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/assets/images/shapes/05.png - - - 200 438052 image/png 420.0738ms
+2024-05-13 23:24:06.291 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.7567ms
+2024-05-13 23:24:17.562 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/index-horizontal.html - -
+2024-05-13 23:24:17.591 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/dashboard/index-horizontal.html'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\dashboard\index-horizontal.html'
+2024-05-13 23:24:17.593 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/index-horizontal.html - - - 200 - text/html 30.7157ms
+2024-05-13 23:24:17.637 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:24:17.637 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:24:17.639 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.0244ms
+2024-05-13 23:24:17.648 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.1269ms
+2024-05-13 23:24:20.583 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:24:20.585 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.9352ms
+2024-05-13 23:24:20.586 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:24:20.596 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.7797ms
+2024-05-13 23:24:32.213 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/special-pages/billing.html - -
+2024-05-13 23:24:32.242 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/dashboard/special-pages/billing.html'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\dashboard\special-pages\billing.html'
+2024-05-13 23:24:32.245 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/special-pages/billing.html - - - 200 - text/html 31.4997ms
+2024-05-13 23:24:32.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:24:32.286 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:24:32.288 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.1318ms
+2024-05-13 23:24:32.296 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.7157ms
+2024-05-13 23:24:53.998 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:24:54.000 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.7742ms
+2024-05-13 23:24:54.008 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:24:54.024 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.6156ms
+2024-05-13 23:26:53.025 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-13 23:26:53.167 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-13 23:26:53.167 +03:00 [INF] Hosting environment: Development
+2024-05-13 23:26:53.168 +03:00 [INF] Content root path: C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web
+2024-05-13 23:26:53.183 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/index.html - -
+2024-05-13 23:26:53.216 +03:00 [INF] The file /HopeUi-Dashboard/dashboard/index.html was not modified
+2024-05-13 23:26:53.223 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/index.html - - - 304 - text/html 41.6904ms
+2024-05-13 23:26:53.300 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:26:53.300 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:26:53.313 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 13.4241ms
+2024-05-13 23:26:53.342 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.7900ms
+2024-05-13 23:27:25.934 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-13 23:27:26.338 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-13 23:27:26.339 +03:00 [INF] Hosting environment: Development
+2024-05-13 23:27:26.339 +03:00 [INF] Content root path: C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web
+2024-05-13 23:27:26.367 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-13 23:27:26.367 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/index.html - -
+2024-05-13 23:27:26.425 +03:00 [INF] The file /HopeUi-Dashboard/dashboard/index.html was not modified
+2024-05-13 23:27:26.428 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/index.html - - - 0 - text/html 63.3072ms
+2024-05-13 23:27:27.005 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:27:27.027 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 23:27:27.049 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 23:27:27.231 +03:00 [INF] Executed ViewResult - view Login executed in 186.3001ms.
+2024-05-13 23:27:27.236 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 207.9259ms
+2024-05-13 23:27:27.236 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:27:27.241 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 876.6085ms
+2024-05-13 23:27:27.387 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:27:27.389 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:27:27.405 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 17.2121ms
+2024-05-13 23:27:27.471 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.6957ms
+2024-05-13 23:27:29.652 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 267
+2024-05-13 23:27:29.662 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:27:29.687 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 23:27:29.816 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-13 23:27:29.819 +03:00 [INF] User logged in.
+2024-05-13 23:27:29.824 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-13 23:27:29.825 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 137.4934ms
+2024-05-13 23:27:29.826 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:27:29.829 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 267 - 302 - - 176.9613ms
+2024-05-13 23:27:29.831 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 23:27:29.853 +03:00 [INF] Authorization was successful.
+2024-05-13 23:27:29.854 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:27:29.857 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 23:27:30.755 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:27:30.798 +03:00 [INF] Executed ViewResult - view Index executed in 43.5542ms.
+2024-05-13 23:27:30.798 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 941.696ms
+2024-05-13 23:27:30.799 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:27:30.801 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 969.1200ms
+2024-05-13 23:27:30.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:27:30.861 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:27:30.864 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 3.6026ms
+2024-05-13 23:27:30.887 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.7625ms
+2024-05-13 23:27:33.461 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Test/Index - -
+2024-05-13 23:27:33.465 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:27:33.469 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-13 23:27:33.508 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:27:33.513 +03:00 [INF] Executed ViewResult - view Index executed in 5.6753ms.
+2024-05-13 23:27:33.513 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 44.1371ms
+2024-05-13 23:27:33.513 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:27:33.514 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Test/Index - - - 200 - text/html;+charset=utf-8 53.1854ms
+2024-05-13 23:27:33.545 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:27:33.555 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.3486ms
+2024-05-13 23:27:33.569 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:27:33.571 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.5749ms
+2024-05-13 23:27:35.783 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Test/Index - -
+2024-05-13 23:27:35.787 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:27:35.787 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-13 23:27:35.802 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:27:35.804 +03:00 [INF] Executed ViewResult - view Index executed in 1.3664ms.
+2024-05-13 23:27:35.804 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 16.4539ms
+2024-05-13 23:27:35.804 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:27:35.805 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Test/Index - - - 200 - text/html;+charset=utf-8 21.8807ms
+2024-05-13 23:27:35.831 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:27:35.841 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.1529ms
+2024-05-13 23:27:35.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:27:35.850 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.5397ms
+2024-05-13 23:30:15.004 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Test/Index - -
+2024-05-13 23:30:15.012 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:30:15.012 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-13 23:30:15.031 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:30:15.033 +03:00 [INF] Executed ViewResult - view Index executed in 1.868ms.
+2024-05-13 23:30:15.033 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 20.6909ms
+2024-05-13 23:30:15.033 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:30:15.034 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Test/Index - - - 200 - text/html;+charset=utf-8 29.9787ms
+2024-05-13 23:30:15.077 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:30:15.077 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:30:15.087 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 9.7158ms
+2024-05-13 23:30:15.108 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.2432ms
+2024-05-13 23:30:32.252 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Test/Index - -
+2024-05-13 23:30:32.260 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:30:32.260 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-13 23:30:32.276 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:30:32.278 +03:00 [INF] Executed ViewResult - view Index executed in 1.6069ms.
+2024-05-13 23:30:32.278 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 17.535ms
+2024-05-13 23:30:32.278 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:30:32.280 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Test/Index - - - 200 - text/html;+charset=utf-8 27.8810ms
+2024-05-13 23:30:32.315 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:30:32.326 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.3028ms
+2024-05-13 23:30:32.332 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:30:32.334 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.3368ms
+2024-05-13 23:31:24.274 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/index.html - -
+2024-05-13 23:31:24.310 +03:00 [INF] Sending file. Request path: '/HopeUi-Dashboard/dashboard/index.html'. Physical path: 'C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web\wwwroot\HopeUi-Dashboard\dashboard\index.html'
+2024-05-13 23:31:24.313 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/HopeUi-Dashboard/dashboard/index.html - - - 200 - text/html 38.7718ms
+2024-05-13 23:31:24.370 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:31:24.371 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.6337ms
+2024-05-13 23:31:24.379 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:31:24.395 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.4122ms
+2024-05-13 23:31:29.023 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:31:29.023 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:31:29.037 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 13.2343ms
+2024-05-13 23:31:29.074 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.9994ms
+2024-05-13 23:32:25.702 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-13 23:32:26.106 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-13 23:32:26.106 +03:00 [INF] Hosting environment: Development
+2024-05-13 23:32:26.106 +03:00 [INF] Content root path: C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web
+2024-05-13 23:32:26.129 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-13 23:32:26.225 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:32:26.256 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 23:32:26.277 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 23:32:26.423 +03:00 [INF] Executed ViewResult - view Login executed in 150.5048ms.
+2024-05-13 23:32:26.426 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 169.8228ms
+2024-05-13 23:32:26.428 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:32:26.442 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 314.8590ms
+2024-05-13 23:32:26.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:32:26.613 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 9.5160ms
+2024-05-13 23:32:26.613 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:32:26.710 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 96.7563ms
+2024-05-13 23:32:28.488 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 267
+2024-05-13 23:32:28.502 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:32:28.532 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 23:32:29.098 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-13 23:32:29.101 +03:00 [INF] User logged in.
+2024-05-13 23:32:29.106 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-13 23:32:29.107 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 575.0114ms
+2024-05-13 23:32:29.108 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:32:29.111 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 267 - 302 - - 623.6294ms
+2024-05-13 23:32:29.114 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 23:32:29.132 +03:00 [INF] Authorization was successful.
+2024-05-13 23:32:29.133 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:32:29.136 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 23:32:30.053 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:32:30.095 +03:00 [INF] Executed ViewResult - view Index executed in 41.7072ms.
+2024-05-13 23:32:30.095 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 958.6094ms
+2024-05-13 23:32:30.095 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:32:30.097 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 982.9852ms
+2024-05-13 23:32:30.152 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:32:30.154 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:32:30.155 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.8250ms
+2024-05-13 23:32:30.182 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.4702ms
+2024-05-13 23:32:32.904 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Test/Index - -
+2024-05-13 23:32:32.909 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:32:32.911 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-13 23:32:32.953 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:32:32.956 +03:00 [INF] Executed ViewResult - view Index executed in 3.4274ms.
+2024-05-13 23:32:32.956 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 44.3019ms
+2024-05-13 23:32:32.956 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:32:32.957 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Test/Index - - - 200 - text/html;+charset=utf-8 53.0012ms
+2024-05-13 23:32:32.986 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:32:32.997 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.7409ms
+2024-05-13 23:32:33.003 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:32:33.005 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.4217ms
+2024-05-13 23:32:35.321 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Test/Index - -
+2024-05-13 23:32:35.325 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:32:35.326 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-13 23:32:35.340 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:32:35.342 +03:00 [INF] Executed ViewResult - view Index executed in 1.6243ms.
+2024-05-13 23:32:35.342 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 16.3739ms
+2024-05-13 23:32:35.342 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:32:35.344 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Test/Index - - - 200 - text/html;+charset=utf-8 22.4350ms
+2024-05-13 23:32:35.375 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:32:35.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:32:35.385 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.9413ms
+2024-05-13 23:32:35.388 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.8072ms
+2024-05-13 23:32:37.020 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Test/Index - -
+2024-05-13 23:32:37.023 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:32:37.023 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-13 23:32:37.039 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:32:37.040 +03:00 [INF] Executed ViewResult - view Index executed in 1.2565ms.
+2024-05-13 23:32:37.040 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 16.5273ms
+2024-05-13 23:32:37.040 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:32:37.043 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Test/Index - - - 200 - text/html;+charset=utf-8 22.5200ms
+2024-05-13 23:32:37.077 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:32:37.087 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:32:37.089 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.4712ms
+2024-05-13 23:32:37.090 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.0664ms
+2024-05-13 23:33:36.468 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-13 23:33:36.824 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-13 23:33:36.825 +03:00 [INF] Hosting environment: Development
+2024-05-13 23:33:36.825 +03:00 [INF] Content root path: C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web
+2024-05-13 23:33:36.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-13 23:33:36.944 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:33:36.976 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 23:33:36.991 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 23:33:37.113 +03:00 [INF] Executed ViewResult - view Login executed in 125.3434ms.
+2024-05-13 23:33:37.117 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 140.7715ms
+2024-05-13 23:33:37.118 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:33:37.128 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 280.3671ms
+2024-05-13 23:33:37.218 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:33:37.222 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 3.6113ms
+2024-05-13 23:33:37.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:33:37.274 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.8287ms
+2024-05-13 23:33:39.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Test/Index - -
+2024-05-13 23:33:39.860 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:33:39.874 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-13 23:33:40.659 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:33:40.702 +03:00 [INF] Executed ViewResult - view Index executed in 44.4552ms.
+2024-05-13 23:33:40.704 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 830.0326ms
+2024-05-13 23:33:40.705 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:33:40.708 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Test/Index - - - 200 - text/html;+charset=utf-8 858.0277ms
+2024-05-13 23:33:40.745 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:33:40.745 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:33:40.747 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.9940ms
+2024-05-13 23:33:40.773 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.1600ms
+2024-05-13 23:33:46.329 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Test/Index - -
+2024-05-13 23:33:46.342 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:33:46.343 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-13 23:33:46.360 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:33:46.362 +03:00 [INF] Executed ViewResult - view Index executed in 2.2598ms.
+2024-05-13 23:33:46.362 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 19.0314ms
+2024-05-13 23:33:46.362 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:33:46.363 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Test/Index - - - 200 - text/html;+charset=utf-8 34.0198ms
+2024-05-13 23:33:46.391 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:33:46.401 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:33:46.402 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.7443ms
+2024-05-13 23:33:46.402 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.8797ms
+2024-05-13 23:33:49.272 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 267
+2024-05-13 23:33:49.277 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:33:49.289 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 23:33:49.755 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-13 23:33:49.757 +03:00 [INF] User logged in.
+2024-05-13 23:33:49.759 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-13 23:33:49.760 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 470.4835ms
+2024-05-13 23:33:49.760 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:33:49.761 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 267 - 302 - - 489.0950ms
+2024-05-13 23:33:49.764 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 23:33:49.772 +03:00 [INF] Authorization was successful.
+2024-05-13 23:33:49.773 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:33:49.777 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 23:33:49.989 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:33:49.995 +03:00 [INF] Executed ViewResult - view Index executed in 6.445ms.
+2024-05-13 23:33:49.996 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 218.8465ms
+2024-05-13 23:33:49.996 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:33:49.997 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 233.5116ms
+2024-05-13 23:33:50.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:33:50.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:33:50.054 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 2.1525ms
+2024-05-13 23:33:50.068 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.9304ms
+2024-05-13 23:34:29.574 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 23:34:29.578 +03:00 [INF] Authorization was successful.
+2024-05-13 23:34:29.578 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:34:29.578 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 23:34:29.635 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:34:29.637 +03:00 [INF] Executed ViewResult - view Index executed in 1.4807ms.
+2024-05-13 23:34:29.637 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 58.8344ms
+2024-05-13 23:34:29.637 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:34:29.638 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 64.7715ms
+2024-05-13 23:34:29.671 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:34:29.672 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:34:29.673 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.0907ms
+2024-05-13 23:34:29.683 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.7242ms
+2024-05-13 23:34:43.421 +03:00 [INF] User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-13 23:34:43.767 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-13 23:34:43.767 +03:00 [INF] Hosting environment: Development
+2024-05-13 23:34:43.767 +03:00 [INF] Content root path: C:\Users\PC\Desktop\demos\SalesDemo\SalesDemo.Web
+2024-05-13 23:34:43.793 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-13 23:34:43.899 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:34:43.935 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 23:34:43.952 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 23:34:44.093 +03:00 [INF] Executed ViewResult - view Login executed in 144.2732ms.
+2024-05-13 23:34:44.096 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 160.6442ms
+2024-05-13 23:34:44.097 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:34:44.106 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 316.1778ms
+2024-05-13 23:34:44.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:34:44.213 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 6.2296ms
+2024-05-13 23:34:44.213 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:34:44.271 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.7044ms
+2024-05-13 23:34:46.444 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 267
+2024-05-13 23:34:46.453 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:34:46.477 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 23:34:47.023 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-13 23:34:47.025 +03:00 [INF] User logged in.
+2024-05-13 23:34:47.028 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-13 23:34:47.029 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 552.4002ms
+2024-05-13 23:34:47.030 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:34:47.033 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 267 - 302 - - 589.0601ms
+2024-05-13 23:34:47.036 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 23:34:47.058 +03:00 [INF] Authorization was successful.
+2024-05-13 23:34:47.059 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:34:47.062 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 23:34:47.993 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:34:48.036 +03:00 [INF] Executed ViewResult - view Index executed in 44.1104ms.
+2024-05-13 23:34:48.037 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 974.955ms
+2024-05-13 23:34:48.037 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:34:48.038 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 1002.2067ms
+2024-05-13 23:34:48.093 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:34:48.095 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:34:48.095 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.9668ms
+2024-05-13 23:34:48.122 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.1927ms
+2024-05-13 23:34:51.525 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Home/Index - -
+2024-05-13 23:34:51.531 +03:00 [INF] Authorization was successful.
+2024-05-13 23:34:51.532 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:34:51.532 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 23:34:51.570 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:34:51.572 +03:00 [INF] Executed ViewResult - view Index executed in 1.8057ms.
+2024-05-13 23:34:51.572 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 39.5182ms
+2024-05-13 23:34:51.572 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:34:51.573 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Home/Index - - - 200 - text/html;+charset=utf-8 48.0612ms
+2024-05-13 23:34:51.618 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:34:51.629 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.0396ms
+2024-05-13 23:34:51.632 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:34:51.636 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 4.0228ms
+2024-05-13 23:34:53.906 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Test/Index - -
+2024-05-13 23:34:53.910 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:34:53.913 +03:00 [INF] Route matched with {action = "Index", controller = "Test"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.TestController (SalesDemo.Web).
+2024-05-13 23:34:53.952 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:34:53.955 +03:00 [INF] Executed ViewResult - view Index executed in 3.0935ms.
+2024-05-13 23:34:53.955 +03:00 [INF] Executed action SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web) in 41.5133ms
+2024-05-13 23:34:53.955 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.TestController.Index (SalesDemo.Web)'
+2024-05-13 23:34:53.956 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Test/Index - - - 200 - text/html;+charset=utf-8 49.9623ms
+2024-05-13 23:34:53.984 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:34:53.994 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.9896ms
+2024-05-13 23:34:54.001 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:34:54.003 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.5865ms
+2024-05-13 23:34:56.444 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Home/Index - -
+2024-05-13 23:34:56.449 +03:00 [INF] Authorization was successful.
+2024-05-13 23:34:56.450 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:34:56.450 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 23:34:56.488 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:34:56.490 +03:00 [INF] Executed ViewResult - view Index executed in 1.6117ms.
+2024-05-13 23:34:56.490 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 39.8499ms
+2024-05-13 23:34:56.490 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:34:56.492 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Home/Index - - - 200 - text/html;+charset=utf-8 47.8223ms
+2024-05-13 23:34:56.532 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:34:56.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:34:56.545 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 3.5825ms
+2024-05-13 23:34:56.547 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.3227ms
+2024-05-13 23:35:14.013 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/Account/Logout - -
+2024-05-13 23:35:14.017 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web)'
+2024-05-13 23:35:14.020 +03:00 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LogoutAsync() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 23:35:14.022 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2024-05-13 23:35:14.023 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-05-13 23:35:14.023 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2024-05-13 23:35:14.024 +03:00 [INF] user signout
+2024-05-13 23:35:14.026 +03:00 [INF] Executing RedirectResult, redirecting to /.
+2024-05-13 23:35:14.026 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web) in 5.6897ms
+2024-05-13 23:35:14.026 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.LogoutAsync (SalesDemo.Web)'
+2024-05-13 23:35:14.027 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/Account/Logout - - - 302 - - 13.6179ms
+2024-05-13 23:35:14.029 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/ - -
+2024-05-13 23:35:14.032 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:35:14.032 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 23:35:14.033 +03:00 [INF] Executing ViewResult, running view Login.
+2024-05-13 23:35:14.036 +03:00 [INF] Executed ViewResult - view Login executed in 2.5118ms.
+2024-05-13 23:35:14.036 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 3.0786ms
+2024-05-13 23:35:14.036 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:35:14.036 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/ - - - 200 - text/html;+charset=utf-8 6.9216ms
+2024-05-13 23:35:14.066 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:35:14.068 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 1.3765ms
+2024-05-13 23:35:14.081 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:35:14.093 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.3971ms
+2024-05-13 23:35:17.395 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 225
+2024-05-13 23:35:17.397 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:35:17.398 +03:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SalesDemo.Models.ViewModels.LoginVM, System.String) on controller SalesDemo.Web.Controllers.AccountController (SalesDemo.Web).
+2024-05-13 23:35:17.432 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-05-13 23:35:17.432 +03:00 [INF] User logged in.
+2024-05-13 23:35:17.433 +03:00 [INF] Executing LocalRedirectResult, redirecting to /home/index.
+2024-05-13 23:35:17.433 +03:00 [INF] Executed action SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web) in 35.0591ms
+2024-05-13 23:35:17.433 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.AccountController.Login (SalesDemo.Web)'
+2024-05-13 23:35:17.434 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44365/ application/x-www-form-urlencoded 225 - 302 - - 39.5454ms
+2024-05-13 23:35:17.437 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/home/index - -
+2024-05-13 23:35:17.440 +03:00 [INF] Authorization was successful.
+2024-05-13 23:35:17.440 +03:00 [INF] Executing endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:35:17.440 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller SalesDemo.Web.Controllers.HomeController (SalesDemo.Web).
+2024-05-13 23:35:17.486 +03:00 [INF] Executing ViewResult, running view Index.
+2024-05-13 23:35:17.488 +03:00 [INF] Executed ViewResult - view Index executed in 1.5938ms.
+2024-05-13 23:35:17.488 +03:00 [INF] Executed action SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web) in 47.7196ms
+2024-05-13 23:35:17.488 +03:00 [INF] Executed endpoint 'SalesDemo.Web.Controllers.HomeController.Index (SalesDemo.Web)'
+2024-05-13 23:35:17.489 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/home/index - - - 200 - text/html;+charset=utf-8 51.8901ms
+2024-05-13 23:35:17.532 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - -
+2024-05-13 23:35:17.532 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44365/_vs/browserLink - -
+2024-05-13 23:35:17.536 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 3.6049ms
+2024-05-13 23:35:17.546 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44365/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.4630ms

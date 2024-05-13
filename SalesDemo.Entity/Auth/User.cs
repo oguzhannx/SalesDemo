@@ -4,7 +4,7 @@ using System;
 
 namespace SalesDemo.Entities.Auth
 {
-    [CollectionName("Users")]
+    [CollectionName("User")]
     public class User : MongoIdentityUser<Guid>
     {
         public string Name { get; set; }
