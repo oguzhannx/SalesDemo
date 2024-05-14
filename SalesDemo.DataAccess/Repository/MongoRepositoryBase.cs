@@ -32,12 +32,13 @@ namespace SalesDemo.DataAccess.Repository
             {
                 var data = _collection.AsQueryable().ToList();
                 if (data != null)
-                    result.Data = data;
+                    result.Message = "Veri Getirildi";
+                result.Data = data;
             }
             catch (Exception ex)
             {
                 result.Message = $"AsQueryable {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -49,12 +50,13 @@ namespace SalesDemo.DataAccess.Repository
             {
                 var data = await _collection.AsQueryable().ToListAsync();
                 if (data != null)
-                    result.Data = data;
+                    result.Data = data; result.Message = "Veri Getirildi";
+
             }
             catch (Exception ex)
             {
                 result.Message = $"AsQueryable {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -69,12 +71,13 @@ namespace SalesDemo.DataAccess.Repository
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var data = _collection.FindOneAndDelete(filter);
                 if (data != null)
-                    result.Data = data;
+                    result.Data = data; result.Message = "Veri Getirildi";
+
             }
             catch (Exception ex)
             {
                 result.Message = $"DeleteById {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -89,12 +92,13 @@ namespace SalesDemo.DataAccess.Repository
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var data = await _collection.FindOneAndDeleteAsync(filter);
                 if (data != null)
-                    result.Data = data;
+                    result.Data = data; result.Message = "Veri Getirildi";
+
             }
             catch (Exception ex)
             {
                 result.Message = $"DeleteById {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -113,12 +117,13 @@ namespace SalesDemo.DataAccess.Repository
             try
             {
                 var deleteDocument = _collection.FindOneAndDelete(filter);
-                result.Data = deleteDocument;
+                result.Data = deleteDocument; result.Message = "Veri silindi";
+
             }
             catch (Exception ex)
             {
                 result.Message = $"DeleteOne {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -129,12 +134,12 @@ namespace SalesDemo.DataAccess.Repository
             try
             {
                 var deleteDocument = await _collection.FindOneAndDeleteAsync(filter);
-                result.Data = deleteDocument;
+                result.Data = deleteDocument; result.Message = "Veri silindi";
             }
             catch (Exception ex)
             {
                 result.Message = $"DeleteOneAsync {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -147,12 +152,12 @@ namespace SalesDemo.DataAccess.Repository
             {
                 var data = _collection.Find(filter).ToList();
                 if (data != null)
-                    result.Data = data;
+                    result.Data = data; result.Message = "Veri Getirildi";
             }
             catch (Exception ex)
             {
                 result.Message = $"FilterBy {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -165,12 +170,12 @@ namespace SalesDemo.DataAccess.Repository
             {
                 var data = await _collection.Find(filter).ToListAsync();
                 if (data != null)
-                    result.Data = data;
+                    result.Data = data; result.Message = "Veri Getirildi";
             }
             catch (Exception ex)
             {
                 result.Message = $"FilterBy {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -190,12 +195,12 @@ namespace SalesDemo.DataAccess.Repository
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var data = _collection.Find(filter).FirstOrDefault();
                 if (data != null)
-                    result.Data = data;
+                    result.Data = data; result.Message = "Veri Getirildi";
             }
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -215,12 +220,12 @@ namespace SalesDemo.DataAccess.Repository
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var data = await _collection.Find(filter).FirstOrDefaultAsync();
                 if (data != null)
-                    result.Data = data;
+                    result.Data = data; result.Message = "Veri Getirildi";
             }
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -232,12 +237,12 @@ namespace SalesDemo.DataAccess.Repository
             try
             {
                 _collection.InsertMany(entities);
-                result.Data = entities;
+                result.Data = entities; result.Message = "Veri Eklendi";
             }
             catch (Exception ex)
             {
                 result.Message = $"InsertMany {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -249,12 +254,12 @@ namespace SalesDemo.DataAccess.Repository
             try
             {
                 await _collection.InsertManyAsync(entities);
-                result.Data = entities;
+                result.Data = entities; result.Message = "Veri Eklendi";
             }
             catch (Exception ex)
             {
                 result.Message = $"InsertManyAsync {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -266,12 +271,12 @@ namespace SalesDemo.DataAccess.Repository
             try
             {
                 _collection.InsertOne(entity);
-                result.Data = entity;
+                result.Data = entity; result.Message = "Veri Eklendi";
             }
             catch (Exception ex)
             {
                 result.Message = $"InsertOne {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -283,12 +288,12 @@ namespace SalesDemo.DataAccess.Repository
             try
             {
                 await _collection.InsertOneAsync(entity);
-                result.Data = entity;
+                result.Data = entity; result.Message = "Veri Eklendi";
             }
             catch (Exception ex)
             {
                 result.Message = $"InsertOneAsync {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -307,12 +312,12 @@ namespace SalesDemo.DataAccess.Repository
 
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var updatedDocument = _collection.ReplaceOne(filter, entity);
-                result.Data = entity;
+                result.Data = entity; result.Message = "Veri Guncellendi";
             }
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
@@ -331,12 +336,12 @@ namespace SalesDemo.DataAccess.Repository
 
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var updatedDocument = await _collection.ReplaceOneAsync(filter, entity);
-                result.Data = entity;
+                result.Data = entity; result.Message = "Veri Guncellendi";
             }
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                result.StatusCode= 400;
+                result.StatusCode = 400;
                 result.Data = null;
             }
             return result;
