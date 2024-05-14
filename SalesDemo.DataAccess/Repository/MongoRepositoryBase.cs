@@ -37,7 +37,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"AsQueryable {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -54,7 +54,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"AsQueryable {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -74,7 +74,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"DeleteById {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -94,7 +94,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"DeleteById {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -118,7 +118,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"DeleteOne {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -134,7 +134,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"DeleteOneAsync {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -152,7 +152,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"FilterBy {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -170,7 +170,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"FilterBy {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -195,7 +195,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -220,7 +220,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -237,7 +237,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"InsertMany {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -254,7 +254,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"InsertManyAsync {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -271,7 +271,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"InsertOne {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -288,7 +288,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"InsertOneAsync {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -312,7 +312,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
@@ -336,7 +336,7 @@ namespace SalesDemo.DataAccess.Repository
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                //result.Success = false;
+                result.StatusCode= 400;
                 result.Data = null;
             }
             return result;
