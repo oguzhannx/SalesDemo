@@ -3,6 +3,7 @@ using SalesDemo.Business.Abstract;
 using SalesDemo.Core.Models.Concrete;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.Entities;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace SalesDemo.Business.Concrete
@@ -16,13 +17,10 @@ namespace SalesDemo.Business.Concrete
         }
 
         //butun satışları getiren 
-        public async Task<GetManyResult<Sale>> getAllSales() => await _saleRepository.GetAllAsync();
+        public  Result<ICollection<Sale>> getAllSales() => _saleRepository.GetAll();
 
         //şirket id sine göre satışları getiren
-        public GetManyResult<Sale> getSalesByComppanyId(string id)
-        {
-            var a = _saleRepository.FilterBy(q => q.CompanyId == ObjectId.Parse(id));
-            return a;
-        }
+        public Result<ICollection<Sale>> getSalesByComppanyId(string id) => _saleRepository.FilterBy(q => q.CompanyId == ObjectId.Parse(id));
+     
     }
 }

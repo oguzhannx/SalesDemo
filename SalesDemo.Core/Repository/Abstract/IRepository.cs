@@ -8,22 +8,22 @@ namespace SalesDemo.Core.Repository.Abstract
 {
     public interface IRepository<TEntity> where TEntity : class, new()
     {
-        GetManyResult<TEntity> GetAll();
-        Task<GetManyResult<TEntity>> GetAllAsync();
-        GetManyResult<TEntity> FilterBy(Expression<Func<TEntity, bool>> filter);
-        Task<GetManyResult<TEntity>> FilterByAsync(Expression<Func<TEntity, bool>> filter);
-        GetOneResult<TEntity> GetById(string id, string type = "object");
-        Task<GetOneResult<TEntity>> GetByIdAsync(string id, string type = "object");
-        GetOneResult<TEntity> InsertOne(TEntity entity);
-        Task<GetOneResult<TEntity>> InsertOneAsync(TEntity entity);
-        GetManyResult<TEntity> InsertMany(ICollection<TEntity> entities);
-        Task<GetManyResult<TEntity>> InsertManyAsync(ICollection<TEntity> entities);
-        GetOneResult<TEntity> ReplaceOne(TEntity entity, string id, string type = "object");
-        Task<GetOneResult<TEntity>> ReplaceOneAsync(TEntity entity, string id, string type = "object");
-        GetOneResult<TEntity> DeleteOne(Expression<Func<TEntity, bool>> filter);
-        Task<GetOneResult<TEntity>> DeleteOneAsync(Expression<Func<TEntity, bool>> filter);
-        GetOneResult<TEntity> DeleteById(string id);
-        Task<GetOneResult<TEntity>> DeleteByIdAsync(string id);
+        Result<ICollection<TEntity>>GetAll();
+        Task<Result<ICollection<TEntity>>> GetAllAsync();
+        Result<ICollection<TEntity>>FilterBy(Expression<Func<TEntity, bool>> filter);
+        Task<Result<ICollection<TEntity>>> FilterByAsync(Expression<Func<TEntity, bool>> filter);
+        Result<TEntity> GetById(string id, string type = "object");
+        Task<Result<TEntity>> GetByIdAsync(string id, string type = "object");
+        Result<TEntity> InsertOne(TEntity entity);
+        Task<Result<TEntity>> InsertOneAsync(TEntity entity);
+        Result<ICollection<TEntity>>InsertMany(ICollection<TEntity> entities);
+        Task<Result<ICollection<TEntity>>> InsertManyAsync(ICollection<TEntity> entities);
+        Result<TEntity> ReplaceOne(TEntity entity, string id, string type = "object");
+        Task<Result<TEntity>> ReplaceOneAsync(TEntity entity, string id, string type = "object");
+        Result<TEntity> DeleteOne(Expression<Func<TEntity, bool>> filter);
+        Task<Result<TEntity>> DeleteOneAsync(Expression<Func<TEntity, bool>> filter);
+        Result<TEntity> DeleteById(string id);
+        Task<Result<TEntity>> DeleteByIdAsync(string id);
         void DeleteMany(Expression<Func<TEntity, bool>> filter);
         Task DeleteManyAsync(Expression<Func<TEntity, bool>> filter);
 

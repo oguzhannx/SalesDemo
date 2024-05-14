@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MongoDB.Bson;
 using Newtonsoft.Json;
+using SalesDemo.Core.Models.Concrete;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.Entities;
 using SalesDemo.Entities.Auth;
@@ -52,31 +53,31 @@ namespace SalesDemo.Web.Controllers
                 //Butun Şirketlerin Getirilmesi
                 //var companies = _companyRepository.GetAllAsync().Result.Result.ToList();
 
-                List<CompanyDto> companyDtos = new();
+                Result<ICollection<CompanyDto>> companyResult = new();
                 using (var client = new HttpClient())
                 {
                     var responseMessage = await client.GetAsync("https://localhost:44363/api/Company");
                     var jsonString = await responseMessage.Content.ReadAsStringAsync();
-                    var companyDtoDatas = JsonConvert.DeserializeObject<List<CompanyDto>>(jsonString);
-                    companyDtos = companyDtoDatas;
+                    var result = JsonConvert.DeserializeObject<Result<ICollection<CompanyDto>>>(jsonString);
+                    companyResult = result;
                 }
 
 
 
 
                 List<IndexVM> indexVMs = new List<IndexVM>();
-                foreach (var item in companyDtos)
+                foreach (var item in companyResult.Data)
                 {
 
                     //sales talosunda companyId'ye karşilık gelen veriyi alma alma
                     //var sale = _saleRepository.FilterByAsync(q => q.CompanyId == item.Id).Result.Result.FirstOrDefault();
-                    List<SaleDto> saleDtos = new();
+                    Result<ICollection<SaleDto>> saleDtos = new();
                     using (var client = new HttpClient())
                     {
                         ObjectId objectId = new(item.Id.TimeStamp, item.Id.Machine, (short)item.Id.Pid, item.Id.Increment);
-                        var responseMessage = await client.GetAsync("https://localhost:44363/api/Sale/FromCompanyId?id=" + objectId);
+                        var responseMessage = await client.GetAsync("https://localhost:44363/api/Sale/FromCompanyId?id=" + objectId.ToString());
                         var jsonString = await responseMessage.Content.ReadAsStringAsync();
-                        var saleDtoDatas = JsonConvert.DeserializeObject<List<SaleDto>>(jsonString);
+                        var saleDtoDatas = JsonConvert.DeserializeObject<Result<ICollection<SaleDto>>>(jsonString);
                         saleDtos = saleDtoDatas;
                     }
 
@@ -84,7 +85,7 @@ namespace SalesDemo.Web.Controllers
                     IndexVM indexVM = new IndexVM
                     {
                         CompanyDto = item,
-                        SaleDto = saleDtos.FirstOrDefault()
+                        SaleDto = saleDtos.Data.First(),
                     };
                     indexVMs.Add(indexVM);
                 }
@@ -95,13 +96,13 @@ namespace SalesDemo.Web.Controllers
             {
                 //companyName ye gore company getirme
                 //var companies = _companyRepository.FilterByAsync(q => q.CompanyName.ToLower() == role.First().ToLower()).Result.Result;
-                CompanyDto item = new();
+                Result<CompanyDto> item = new();
                 using (var client = new HttpClient())
                 {
                   
                     var responseMessage = await client.GetAsync("https://localhost:44363/api/Company/GetByCompanyName?companyName=" + role.FirstOrDefault());
                     var jsonString = await responseMessage.Content.ReadAsStringAsync();
-                    var companyDtoDatas = JsonConvert.DeserializeObject<CompanyDto>(jsonString);
+                    var companyDtoDatas = JsonConvert.DeserializeObject<Result<CompanyDto>>(jsonString);
                     item = companyDtoDatas;
                 }
 
@@ -111,21 +112,21 @@ namespace SalesDemo.Web.Controllers
                
                     //sales talosunda companyId'ye karşilık gelen yeri alma
                     //var sale = _saleRepository.FilterByAsync(q => q.CompanyId == item.Id).Result.Result.FirstOrDefault();
-                    List<SaleDto> saleDtos = new();
+                    Result<ICollection<SaleDto>> saleDtos = new();
                     using (var client = new HttpClient())
                     {
-                        ObjectId objectId = new(item.Id.TimeStamp, item.Id.Machine, (short)item.Id.Pid, item.Id.Increment);
+                        ObjectId objectId = new(item.Data.Id.TimeStamp, item.Data.Id.Machine, (short)item.Data.Id.Pid, item.Data.Id.Increment);
                         var responseMessage = await client.GetAsync("https://localhost:44363/api/Sale/FromCompanyId?id=" + objectId);
                         var jsonString = await responseMessage.Content.ReadAsStringAsync();
-                        var saleDtoDatas = JsonConvert.DeserializeObject<List<SaleDto>>(jsonString);
+                        var saleDtoDatas = JsonConvert.DeserializeObject<Result<ICollection<SaleDto>>>(jsonString);
                         saleDtos = saleDtoDatas;
                     }
 
 
                     IndexVM indexVM = new IndexVM
                     {
-                        CompanyDto = item,
-                        SaleDto = saleDtos.FirstOrDefault()
+                        CompanyDto = item.Data,
+                        SaleDto = saleDtos.Data.FirstOrDefault()
                     };
                     indexVMs.Add(indexVM);
                 

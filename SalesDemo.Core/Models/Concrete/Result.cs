@@ -1,22 +1,41 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace SalesDemo.Core.Models.Concrete
 {
-    public class Result
+    public class Result<T>
     {
+
+        /// <summary>
+        /// hepsini el ile atama yapackasan
+        /// </summary>
+        /// <param name="statusCode"></param>
+        /// <param name="message"></param>
+        /// <param name="data"></param>
+        /// <param name="time"></param>
+        public Result(int statusCode, string message, T data, DateTime time)
+        {
+            StatusCode = statusCode;
+            Message = message;
+            Data = data;
+            Time = time;
+        }
+        /// <summary>
+        /// boş constructor
+        /// </summary>
         public Result()
         {
-            Success = true;
+
         }
-        public bool Success { get; set; }
+
+
+  
+
+        public int StatusCode { get; set; } = 200;
         public string Message { get; set; }
+       
+        public DateTime Time{ get; set; } = DateTime.Now;
+        public T Data { get; set; }
     }
-    public class GetOneResult<TEntity> : Result where TEntity : class, new()
-    {
-        public TEntity Entity { get; set; }
-    }
-    public class GetManyResult<TEntity> : Result where TEntity : class, new()
-    {
-        public IEnumerable<TEntity> Result { get; set; }
-    }
+   
 }

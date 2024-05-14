@@ -1,5 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using SalesDemo.Business.Abstract;
+using SalesDemo.Core.Models.Concrete;
+using SalesDemo.Entities;
+using System;
+using System.Collections.Generic;
+using System.Net;
 
 namespace SalesDemo.Api.Controllers
 {
@@ -18,34 +24,34 @@ namespace SalesDemo.Api.Controllers
 
 
         [HttpGet]
-        public IActionResult Get()
+        public Result<ICollection<Sale>> Get()
         {
             try
             {
-                var a = _saleService.getAllSales().Result;
-                return Ok(a.Result);
+               
+                return _saleService.getAllSales();
             }
             catch (System.Exception e)
             {
 
-                return BadRequest(e.Message);
+                return new Result<ICollection<Sale>>(Int32.Parse(HttpStatusCode.BadRequest.ToString()), e.Message, null, DateTime.Now);
             }
         }
 
 
         [HttpGet("FromCompanyId")]
-        public IActionResult GetSalesFromCompanyId(string id)
+        public Result<ICollection<Sale>> GetSalesFromCompanyId(string id)
         {
             try
             {
-                var a = _saleService.getSalesByComppanyId(id).Result;
 
-                return Ok(a);
+
+                return _saleService.getSalesByComppanyId(id);
             }
             catch (System.Exception e)
             {
 
-                return BadRequest(e.Message);
+                return new Result<ICollection<Sale>>(Int32.Parse(HttpStatusCode.BadRequest.ToString()), e.Message, null, DateTime.Now);
             }
         }
     }

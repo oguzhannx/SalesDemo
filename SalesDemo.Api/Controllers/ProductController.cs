@@ -1,5 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalesDemo.Business.Abstract;
+using SalesDemo.Core.Models.Concrete;
+using SalesDemo.Entities;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Net;
 
 namespace SalesDemo.Api.Controllers
 {
@@ -13,18 +19,18 @@ namespace SalesDemo.Api.Controllers
             _productService = productService;
         }
         [HttpGet]
-        public IActionResult Get()
+        public Result<ICollection<Product>> Get()
         {
             try
             {
-                var a = _productService.GetProducts();
-                return Ok(a.Result);
+
+                return _productService.GetProducts();
 
             }
             catch (System.Exception e)
             {
 
-                return BadRequest(e.Message);
+                return new Result<ICollection<Product>>(Int32.Parse(HttpStatusCode.BadRequest.ToString()),e.Message, null, DateTime.Now );
             }
         }
     }

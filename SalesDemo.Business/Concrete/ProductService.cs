@@ -2,6 +2,7 @@
 using SalesDemo.Core.Models.Concrete;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.Entities;
+using System.Collections.Generic;
 
 namespace SalesDemo.Business.Concrete
 {
@@ -15,12 +16,10 @@ namespace SalesDemo.Business.Concrete
             _productRepository = productRepository;
             _companyRepository = companyRepository;
         }
-        public GetManyResult<Product> GetProducts()
-        {
 
+        Result<ICollection<Product>> IProductService.GetProducts()
+        {         
             return _productRepository.GetAll();
         }
-
-
     }
 }

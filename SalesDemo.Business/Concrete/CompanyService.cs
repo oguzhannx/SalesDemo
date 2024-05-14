@@ -1,4 +1,5 @@
 ﻿using SalesDemo.Business.Abstract;
+using SalesDemo.Core.Models.Concrete;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.Entities;
 using System.Collections.Generic;
@@ -13,17 +14,23 @@ namespace SalesDemo.Business.Concrete
         {
             _companyRepository = companyRepository;
         }
-        public ICollection<Company> GetCompanies()
+        public Result<ICollection<Company>> GetCompanies()
         {
-            var a = _companyRepository.GetAll().Result.ToList();
-            return a;
+            
+            return _companyRepository.GetAll();
         }
 
-        public Company GetCompanyByCompanyName(string companyName)
+        public Result<Company> GetCompanyByCompanyName(string companyName)
         {
+            
 
+            var a = _companyRepository.FilterBy(q => q.CompanyName.ToLower() == companyName.ToLower());
 
-            return _companyRepository.FilterBy(q => q.CompanyName.ToLower() == companyName.ToLower()).Result.FirstOrDefault();
+            Result<Company> result = new();
+            result.Message = a.Message;
+            result.Data = a.Data.FirstOrDefault();
+
+            return result;
 
 
         }

@@ -25,77 +25,77 @@ namespace SalesDemo.DataAccess.Repository
         }
 
 
-        public GetManyResult<T> GetAll()
+        public Result<ICollection<T>> GetAll()
         {
-            var result = new GetManyResult<T>();
+            var result = new Result<ICollection<T>>();
             try
             {
                 var data = _collection.AsQueryable().ToList();
                 if (data != null)
-                    result.Result = data;
+                    result.Data = data;
             }
             catch (Exception ex)
             {
                 result.Message = $"AsQueryable {ex.Message}";
-                result.Success = false;
-                result.Result = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
-        public async Task<GetManyResult<T>> GetAllAsync()
+        public async Task<Result<ICollection<T>>> GetAllAsync()
         {
-            var result = new GetManyResult<T>();
+            var result = new Result<ICollection<T>>();
             try
             {
                 var data = await _collection.AsQueryable().ToListAsync();
                 if (data != null)
-                    result.Result = data;
+                    result.Data = data;
             }
             catch (Exception ex)
             {
                 result.Message = $"AsQueryable {ex.Message}";
-                result.Success = false;
-                result.Result = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public GetOneResult<T> DeleteById(string id)
+        public Result<T> DeleteById(string id)
         {
-            var result = new GetOneResult<T>();
+            var result = new Result<T>();
             try
             {
                 var objectId = ObjectId.Parse(id);
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var data = _collection.FindOneAndDelete(filter);
                 if (data != null)
-                    result.Entity = data;
+                    result.Data = data;
             }
             catch (Exception ex)
             {
                 result.Message = $"DeleteById {ex.Message}";
-                result.Success = false;
-                result.Entity = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public async Task<GetOneResult<T>> DeleteByIdAsync(string id)
+        public async Task<Result<T>> DeleteByIdAsync(string id)
         {
-            var result = new GetOneResult<T>();
+            var result = new Result<T>();
             try
             {
                 var objectId = ObjectId.Parse(id);
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var data = await _collection.FindOneAndDeleteAsync(filter);
                 if (data != null)
-                    result.Entity = data;
+                    result.Data = data;
             }
             catch (Exception ex)
             {
                 result.Message = $"DeleteById {ex.Message}";
-                result.Success = false;
-                result.Entity = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
@@ -107,78 +107,78 @@ namespace SalesDemo.DataAccess.Repository
         {
             await _collection.DeleteManyAsync(filter);
         }
-        public GetOneResult<T> DeleteOne(Expression<Func<T, bool>> filter)
+        public Result<T> DeleteOne(Expression<Func<T, bool>> filter)
         {
-            var result = new GetOneResult<T>();
+            var result = new Result<T>();
             try
             {
                 var deleteDocument = _collection.FindOneAndDelete(filter);
-                result.Entity = deleteDocument;
+                result.Data = deleteDocument;
             }
             catch (Exception ex)
             {
                 result.Message = $"DeleteOne {ex.Message}";
-                result.Success = false;
-                result.Entity = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
-        public async Task<GetOneResult<T>> DeleteOneAsync(Expression<Func<T, bool>> filter)
+        public async Task<Result<T>> DeleteOneAsync(Expression<Func<T, bool>> filter)
         {
-            var result = new GetOneResult<T>();
+            var result = new Result<T>();
             try
             {
                 var deleteDocument = await _collection.FindOneAndDeleteAsync(filter);
-                result.Entity = deleteDocument;
+                result.Data = deleteDocument;
             }
             catch (Exception ex)
             {
                 result.Message = $"DeleteOneAsync {ex.Message}";
-                result.Success = false;
-                result.Entity = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public GetManyResult<T> FilterBy(Expression<Func<T, bool>> filter)
+        public Result<ICollection<T>> FilterBy(Expression<Func<T, bool>> filter)
         {
-            var result = new GetManyResult<T>();
+            var result = new Result<ICollection<T>>();
             try
             {
                 var data = _collection.Find(filter).ToList();
                 if (data != null)
-                    result.Result = data;
+                    result.Data = data;
             }
             catch (Exception ex)
             {
                 result.Message = $"FilterBy {ex.Message}";
-                result.Success = false;
-                result.Result = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public async Task<GetManyResult<T>> FilterByAsync(Expression<Func<T, bool>> filter)
+        public async Task<Result<ICollection<T>>> FilterByAsync(Expression<Func<T, bool>> filter)
         {
-            var result = new GetManyResult<T>();
+            var result = new Result<ICollection<T>>();
             try
             {
                 var data = await _collection.Find(filter).ToListAsync();
                 if (data != null)
-                    result.Result = data;
+                    result.Data = data;
             }
             catch (Exception ex)
             {
                 result.Message = $"FilterBy {ex.Message}";
-                result.Success = false;
-                result.Result = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public GetOneResult<T> GetById(string id, string type = "object")
+        public Result<T> GetById(string id, string type = "object")
         {
-            var result = new GetOneResult<T>();
+            var result = new Result<T>();
             try
             {
                 object objectId = null;
@@ -190,20 +190,20 @@ namespace SalesDemo.DataAccess.Repository
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var data = _collection.Find(filter).FirstOrDefault();
                 if (data != null)
-                    result.Entity = data;
+                    result.Data = data;
             }
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                result.Success = false;
-                result.Entity = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public async Task<GetOneResult<T>> GetByIdAsync(string id, string type = "object")
+        public async Task<Result<T>> GetByIdAsync(string id, string type = "object")
         {
-            var result = new GetOneResult<T>();
+            var result = new Result<T>();
             try
             {
                 object objectId = null;
@@ -215,88 +215,88 @@ namespace SalesDemo.DataAccess.Repository
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var data = await _collection.Find(filter).FirstOrDefaultAsync();
                 if (data != null)
-                    result.Entity = data;
+                    result.Data = data;
             }
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                result.Success = false;
-                result.Entity = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public GetManyResult<T> InsertMany(ICollection<T> entities)
+        public Result<ICollection<T>> InsertMany(ICollection<T> entities)
         {
-            var result = new GetManyResult<T>();
+            var result = new Result<ICollection<T>>();
             try
             {
                 _collection.InsertMany(entities);
-                result.Result = entities;
+                result.Data = entities;
             }
             catch (Exception ex)
             {
                 result.Message = $"InsertMany {ex.Message}";
-                result.Success = false;
-                result.Result = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public async Task<GetManyResult<T>> InsertManyAsync(ICollection<T> entities)
+        public async Task<Result<ICollection<T>>> InsertManyAsync(ICollection<T> entities)
         {
-            var result = new GetManyResult<T>();
+            var result = new Result<ICollection<T>>();
             try
             {
                 await _collection.InsertManyAsync(entities);
-                result.Result = entities;
+                result.Data = entities;
             }
             catch (Exception ex)
             {
                 result.Message = $"InsertManyAsync {ex.Message}";
-                result.Success = false;
-                result.Result = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public GetOneResult<T> InsertOne(T entity)
+        public Result<T> InsertOne(T entity)
         {
-            var result = new GetOneResult<T>();
+            var result = new Result<T>();
             try
             {
                 _collection.InsertOne(entity);
-                result.Entity = entity;
+                result.Data = entity;
             }
             catch (Exception ex)
             {
                 result.Message = $"InsertOne {ex.Message}";
-                result.Success = false;
-                result.Entity = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public async Task<GetOneResult<T>> InsertOneAsync(T entity)
+        public async Task<Result<T>> InsertOneAsync(T entity)
         {
-            var result = new GetOneResult<T>();
+            var result = new Result<T>();
             try
             {
                 await _collection.InsertOneAsync(entity);
-                result.Entity = entity;
+                result.Data = entity;
             }
             catch (Exception ex)
             {
                 result.Message = $"InsertOneAsync {ex.Message}";
-                result.Success = false;
-                result.Entity = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public GetOneResult<T> ReplaceOne(T entity, string id, string type = "object")
+        public Result<T> ReplaceOne(T entity, string id, string type = "object")
         {
-            var result = new GetOneResult<T>();
+            var result = new Result<T>();
             try
             {
                 object objectId = null;
@@ -307,20 +307,20 @@ namespace SalesDemo.DataAccess.Repository
 
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var updatedDocument = _collection.ReplaceOne(filter, entity);
-                result.Entity = entity;
+                result.Data = entity;
             }
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                result.Success = false;
-                result.Entity = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
 
-        public async Task<GetOneResult<T>> ReplaceOneAsync(T entity, string id, string type = "object")
+        public async Task<Result<T>> ReplaceOneAsync(T entity, string id, string type = "object")
         {
-            var result = new GetOneResult<T>();
+            var result = new Result<T>();
             try
             {
                 object objectId = null;
@@ -331,13 +331,13 @@ namespace SalesDemo.DataAccess.Repository
 
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var updatedDocument = await _collection.ReplaceOneAsync(filter, entity);
-                result.Entity = entity;
+                result.Data = entity;
             }
             catch (Exception ex)
             {
                 result.Message = $"GetById {ex.Message}";
-                result.Success = false;
-                result.Entity = null;
+                //result.Success = false;
+                result.Data = null;
             }
             return result;
         }
