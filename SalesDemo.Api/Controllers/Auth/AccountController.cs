@@ -13,6 +13,8 @@ using Microsoft.Extensions.Configuration;
 using SalesDemo.DataAccess.Abstract;
 using Microsoft.AspNetCore.Identity;
 using System.Linq;
+using Microsoft.Extensions.Options;
+using SalesDemo.Core.Models.Auth;
 
 namespace SalesDemo.Api.Controllers.Auth
 {
@@ -20,22 +22,23 @@ namespace SalesDemo.Api.Controllers.Auth
     [ApiController]
     public class AccountController : ControllerBase
     {
-        private IConfiguration _config;
         private readonly IUserRepository _userRepository;
         private readonly SignInManager<User> _signInManager;
         private readonly UserManager<User> _userManager;
-        public AccountController(IConfiguration config,
+        private readonly JwtModel jwtModel;
+        public AccountController(
             IUserRepository userRepository,
             SignInManager<User> signInManager,
-            UserManager<User> userManager)
+            UserManager<User> userManager,
+            IOptions<JwtModel> options)
         {
-            _config = config;
             _userRepository = userRepository;
             _signInManager = signInManager;            
             _userManager = userManager;
+            jwtModel= options.Value;
 
         }
-        [HttpPost]
+        [HttpPost("register")]
         public IActionResult Register(RegisterVM registerVM)
         {
 
@@ -51,13 +54,14 @@ namespace SalesDemo.Api.Controllers.Auth
         [HttpPost("token")]
         public IActionResult Token([FromBody]LoginVM loginVm)
         {
-          
+            var a = jwtModel;
+
 
             //kullanıcının bulunması
             var user = _userRepository.FilterBy(q => q.NormalizedUserName == loginVm.UserName.ToUpper()).Data.First();
             
             //kullıcının rolunun bulunması
-            var role = _userManager.GetRolesAsync(user).Result;
+            var role = _userManager.GetRolesAsync(user).Result.FirstOrDefault();
 
             //giriş yapabiliyor mu diye kontrol etme
             var canLogin = _signInManager.CheckPasswordSignInAsync(user, loginVm.Password, false).Result;
@@ -66,17 +70,22 @@ namespace SalesDemo.Api.Controllers.Auth
             if (canLogin.Succeeded)
             {
                 // JWT'nin oluşturulması
-                var issuer = _config.GetSection("Jwt")["Issuer"];
-                var audience = _config.GetSection("Jwt")["Audience"];
+                var issuer = jwtModel.Issuer;
+                var audience = jwtModel.Audience;
                 var key = Encoding.ASCII.GetBytes
-                (_config.GetSection("Jwt")["Key"]);
+                (jwtModel.Key);
 
 
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {
                     Subject = new ClaimsIdentity(new[]
                     {
-                    new Claim("Id", Guid.NewGuid().ToString()),
+                    new Claim("Id", user.Id.ToString()),
+                    new Claim("UserName", user.UserName.ToString()),
+                    new Claim("PhoneNumber", user.PhoneNumber.ToString()),
+                    new Claim("Name", user.Name.ToString()),
+                    new Claim("Surname", user.Surname.ToString()),
+                    new Claim("Role", role.ToString()),
 
                  }),
                     Expires = DateTime.UtcNow.AddMinutes(5),

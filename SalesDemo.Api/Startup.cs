@@ -11,6 +11,7 @@ using Microsoft.OpenApi.Models;
 using SalesDemo.Business.Abstract;
 using SalesDemo.Business.Concrete;
 using SalesDemo.Core.DbSettingModels;
+using SalesDemo.Core.Models.Auth;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.DataAccess.Concrete;
 using SalesDemo.Entities.Auth;
@@ -50,8 +51,15 @@ namespace SalesDemo.Api
             services.AddSingleton<IUserRepository, UserRepository>();
 
 
-            //JwtBearer ayarlarý
 
+            services.Configure<JwtModel>(o =>
+            {
+                o.Issuer = Configuration["Jwt:Issuer"];
+                o.Audience = Configuration["Jwt:Audience"];
+                o.Key = Configuration["Jwt:Key"];
+            });
+
+            //JwtBearer ayarlarý
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -67,8 +75,10 @@ namespace SalesDemo.Api
                     (Encoding.UTF8.GetBytes(Configuration["Jwt:Key"])),
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidateLifetime = false,
-                    ValidateIssuerSigningKey = true
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                   
+                    
                 };
             });
             services.AddAuthorization();
@@ -93,6 +103,31 @@ namespace SalesDemo.Api
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SalesDemo.Api", Version = "v1" });
+
+                // Swagger'da JWT kullanýmý için gerekli tanýmlamalarý yapýn
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = "JWT Authorization header using the Bearer scheme. Enter 'Bearer' [space] and then your token in the text input below.",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new string[] { }
+                    }
+                });
             });
         }
 

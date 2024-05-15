@@ -46,7 +46,6 @@ namespace SalesDemo.Web
             services.AddIdentity<User, MongoIdentityRole>()
                 .AddMongoDbStores<User, MongoIdentityRole, Guid>(Configuration.GetSection("MongoDbConnectionString:ConnectionString").Value,
                     Configuration.GetSection("MongoDbConnectionString:DatabaseName").Value)
-                .AddDefaultTokenProviders()
                 .AddSignInManager();
 
 
