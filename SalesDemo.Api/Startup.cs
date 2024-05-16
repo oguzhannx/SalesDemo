@@ -35,6 +35,9 @@ namespace SalesDemo.Api
 
             services.AddControllers();
 
+            //unit of works
+            //services.AddSingleton<IUnitOfWork, UnitOfWork>();
+
             //SALE
             services.AddSingleton<ISaleRepository, SaleRepository>();
             services.AddSingleton<ISaleService, SaleService>();
@@ -49,6 +52,7 @@ namespace SalesDemo.Api
 
             //User
             services.AddSingleton<IUserRepository, UserRepository>();
+            //services.AddSingleton<IUserService, UserService>();
 
 
 

@@ -1,8 +1,11 @@
-﻿
+﻿@using SalesDemo.Web.Controllers
+@model MyModel
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_DashboardLayout.cshtml";
 }
 
-<h1>Test controller Index</h1>
+<h1>@Model.cookie</h1>
+<h1>@Model.message</h1>
+<h1>@Model.errmsg</h1>
 

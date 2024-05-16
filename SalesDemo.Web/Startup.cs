@@ -1,15 +1,20 @@
 using AspNetCore.Identity.MongoDbCore.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using SalesDemo.Core.DbSettingModels;
+using SalesDemo.Core.Models.Auth;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.DataAccess.Concrete;
 using SalesDemo.Entities.Auth;
 using System;
+using System.Text;
 
 namespace SalesDemo.Web
 {
@@ -29,24 +34,28 @@ namespace SalesDemo.Web
             services.AddControllersWithViews();
             services.AddHttpClient();
 
-
-
-
-            services.AddSingleton<IProductRepository, ProductRepository>();
-            services.AddSingleton<ICompanyRepository, CompanyRepository>();
-            services.AddSingleton<ISaleRepository, SaleRepository>();
-            //veritabaný entegrasyonu
-            services.Configure<MongoSettings>(o =>
+            services.Configure<JwtModel>(o =>
             {
-                o.ConnectionString = Configuration.GetSection("MongoDbConnectionString:ConnectionString").Value;
-                o.DatabaseName = Configuration.GetSection("MongoDbConnectionString:DatabaseName").Value;
-
+                o.Issuer = Configuration["Jwt:Issuer"];
+                o.Audience = Configuration["Jwt:Audience"];
+                o.Key = Configuration["Jwt:Key"];
             });
 
-            services.AddIdentity<User, MongoIdentityRole>()
-                .AddMongoDbStores<User, MongoIdentityRole, Guid>(Configuration.GetSection("MongoDbConnectionString:ConnectionString").Value,
-                    Configuration.GetSection("MongoDbConnectionString:DatabaseName").Value)
-                .AddSignInManager();
+            //JwtBearer ayarlarý
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = Configuration["Jwt:Issuer"],
+                    ValidAudience = Configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+                };
+            });
 
 
         }

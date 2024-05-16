@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SalesDemo.Business.Abstract;
 using SalesDemo.Core.Models.Concrete;
 using SalesDemo.Entities;
@@ -10,6 +11,7 @@ namespace SalesDemo.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = "Bearer")]
     public class CompanyController : ControllerBase
     {
         private readonly ICompanyService _companyService;

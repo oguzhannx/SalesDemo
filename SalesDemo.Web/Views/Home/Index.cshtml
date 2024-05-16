@@ -18,8 +18,8 @@
                                     
                                        
                                         <div class="progress-detail">
-                                        <p class="mb-2">@item.CompanyDto.CompanyName</p>
-                                            <h4 class="counter">@item.SaleDto.TotalPrice$ Toplam Satış</h4>
+                                        <p class="mb-2">@item.CompanyVM.CompanyName</p>
+                                            <h4 class="counter">@item.SaleVM.TotalPrice$ Toplam Satış</h4>
                                         </div>
                                
                                 </div>
@@ -57,7 +57,7 @@
 
                                                     @foreach (var item in Model)
                                                     {
-                                                        <li class="iq-sub-card list-group-item"><a class="p-0" href="#">@item.CompanyDto.CompanyName</a></li>
+                                                        <li class="iq-sub-card list-group-item"><a class="p-0" href="#">@item.CompanyVM.CompanyName</a></li>
 
                                                     }
 
@@ -88,16 +88,16 @@
                                                 <tr>
                                                     <td>
 
-                                                        <h6>@indexVm.CompanyDto.CompanyName</h6>
+                                                        <h6>@indexVm.CompanyVM.CompanyName</h6>
 
                                                     </td>
                                                     <td>
-                                                        @indexVm.CompanyDto.PhoneNumber
+                                                        @indexVm.CompanyVM.PhoneNumber
                                                     </td> 
                                                     <td>
-                                                        @indexVm.CompanyDto.Products.Count()
+                                                        @indexVm.CompanyVM.Products.Count()
                                                     </td>
-                                                    <td>@indexVm.SaleDto.TotalPrice</td>
+                                                    <td>@indexVm.SaleVM.TotalPrice</td>
 
                                                 </tr>
                                             }
@@ -130,7 +130,7 @@
                             double totalPrices = 0;
                             foreach (var item in Model)
                             {
-                                        totalPrices += item.SaleDto.TotalPrice;
+                                        totalPrices += item.SaleVM.TotalPrice;
                             }
                             <h2 class="mb-2"><small>₺@totalPrices</small></h2>
                             <p class="mb-0 text-gray">Toplam Satış Ucreti</p>
@@ -143,7 +143,7 @@
                             var totalProducts = 0;
                             foreach (var item in Model)
                             {
-                                        totalProducts += item.CompanyDto.Products.Count();
+                                        totalProducts += item.CompanyVM.Products.Count();
                             }
 
                             <h2 class="mb-2"><small>@totalProducts</small></h2>

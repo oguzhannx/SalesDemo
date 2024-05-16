@@ -4,7 +4,7 @@ using SalesDemo.Models.Dtos;
 namespace SalesDemo.Entities
 {
 
-    public class ProductDto 
+    public class ProductVM 
     {
         public BaseIdVM Id { get; set; }
 

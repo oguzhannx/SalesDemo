@@ -1,34 +1,35 @@
 ﻿using AspNetCore.Identity.MongoDbCore.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SalesDemo.Entities.Auth;
 using SalesDemo.Models.ViewModels;
+using System;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net.Http;
 using System.Security.Claims;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace SalesDemo.Web.Controllers
 {
+    
     public class AccountController : Controller
     {
-        private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
-        private readonly RoleManager<MongoIdentityRole> _roleManager;
+    
         private readonly ILogger<AccountController> _logger;
 
 
 
-        public AccountController(UserManager<User> userManager,
-            RoleManager<MongoIdentityRole> roleManager,
-            SignInManager<User> signInManager,
+        public AccountController(
+        
             ILogger<AccountController> accountController)
         {
             _logger = accountController;
-            _userManager = userManager;
-            _roleManager = roleManager;
-            _signInManager = signInManager;
+        
         }
 
         public IActionResult Register()
@@ -47,68 +48,34 @@ namespace SalesDemo.Web.Controllers
             if (ModelState.IsValid)
             {
 
-                User user = new User
+                using (HttpClient client = new HttpClient())
                 {
-                    Name = registerVM.Name,
-                    Surname = registerVM.Surname,
-                    UserName = registerVM.UserName,
-                    PhoneNumber = registerVM.Phone,
+                    // Veriyi JSON formatına çevirme
+                    string jsonData = JsonSerializer.Serialize(registerVM);
+                    var content = new StringContent(jsonData, System.Text.Encoding.UTF8, "application/json");
+                    var response = await client.PostAsync("https://localhost:44363/api/Account/register", content);
 
-                };
-
-                var result = await _userManager.CreateAsync(user, registerVM.Password);
-                _logger.LogInformation("User created.");
-
-                if (result.Succeeded)
-                {
-                    //companyName isminde rol oluşturur
-                    if (!_roleManager.RoleExistsAsync(registerVM.CompanyName.ToLower()).GetAwaiter().GetResult())
+                    if (response.IsSuccessStatusCode)
                     {
-                        _roleManager.CreateAsync(new MongoIdentityRole
+                        var token = await response.Content.ReadAsStringAsync();
+
+                        // JWT'yi bir cookie'ye yerleştirme
+                        Response.Cookies.Append("jwt", token, new CookieOptions
                         {
-                            Name = registerVM.CompanyName.ToLower(),
-                        }).GetAwaiter().GetResult();
+                            HttpOnly = true, // Cookie'ye JavaScript erişimini engeller
+                            Secure = true,   // Sadece HTTPS üzerinden iletilir
+                            SameSite = SameSiteMode.Strict, // CSRF saldırılarını önlemek için güçlendirilmiş güvenlik
+                            Expires = DateTime.UtcNow.AddDays(1) // Cookie'nin son kullanma tarihi 
+                        });
 
-                        await _userManager.AddToRoleAsync(user, registerVM.CompanyName.ToLower());
-                        await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Role, registerVM.CompanyName.ToLower()));
-                        if (result.Succeeded)
-                        {
-                            await _signInManager.SignInAsync(user, isPersistent: false);
-                            _logger.LogInformation("User logged in.");
-
-                            return LocalRedirect(returnUrl);
-                        }
-                    }
-                    //company ismide rol zaten varsa kullanıcıya direkt o rolu ata
-                    else
-                    {
-                        await _userManager.AddToRoleAsync(user, registerVM.CompanyName.ToLower());
-                        await _userManager.AddClaimAsync(user, new Claim(ClaimTypes.Role, registerVM.CompanyName.ToLower()));
-                        if (result.Succeeded)
-                        {
-                            await _signInManager.SignInAsync(user, isPersistent: false);
-                            _logger.LogInformation("User logged in.");
-
-                            return LocalRedirect(returnUrl);
-                        }
-
-                    }
-                }
-                else if (!result.Succeeded)
-                {
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError(string.Empty, error.Description);
-                        _logger.LogInformation(error.Description);
-
+                        _logger.LogInformation("User logged in.");
+                        return LocalRedirect(returnUrl);
                     }
 
-                    // Hata mesajlarını ViewBag üzerinden kullanıcıya gönderin
-                    ViewBag.RegisterErrors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
                 }
 
-            }
-            return View();
+                }
+                return View();
         }
 
         public IActionResult Login()
@@ -123,30 +90,48 @@ namespace SalesDemo.Web.Controllers
         {
             returnUrl ??= Url.Content("/home/index");
 
-
             if (ModelState.IsValid)
             {
-                // This doesn't count login failures towards account lockout
-                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var user = await _userManager.FindByNameAsync(loginVM.UserName);
-                if (user != null)
-                {
-                    var result = await _signInManager.PasswordSignInAsync(loginVM.UserName, loginVM.Password, true, false);
 
-                    if (result.Succeeded)
+                using (HttpClient client = new HttpClient())
+                {
+                    // Veriyi JSON formatına çevirme
+                    string jsonData = JsonSerializer.Serialize(loginVM);
+                    var content = new StringContent(jsonData, System.Text.Encoding.UTF8, "application/json");
+                    var response = await client.PostAsync("https://localhost:44363/api/Account/token", content);
+
+                    if (response.IsSuccessStatusCode)
                     {
+                        var token = await response.Content.ReadAsStringAsync();
+
+                        // JWT'yi bir cookie'ye yerleştirme
+                        Response.Cookies.Append("jwt", token, new CookieOptions
+                        {
+                            HttpOnly = true, // Cookie'ye JavaScript erişimini engeller
+                            Secure = true,   // Sadece HTTPS üzerinden iletilir
+                            SameSite = SameSiteMode.Strict, // CSRF saldırılarını önlemek için güçlendirilmiş güvenlik
+                            Expires = DateTime.UtcNow.AddDays(1) // Cookie'nin son kullanma tarihi 
+                        });
+
                         _logger.LogInformation("User logged in.");
                         return LocalRedirect(returnUrl);
+
+
+
                     }
+
                 }
+
 
             }
             return View();
         }
 
-        public async Task<IActionResult> LogoutAsync()
+        public IActionResult LogoutAsync()
         {
-            await _signInManager.SignOutAsync();
+
+            Response.Cookies.Delete("jwt");
+
 
             _logger.LogInformation("user signout");
 

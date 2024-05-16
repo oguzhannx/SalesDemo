@@ -12,6 +12,12 @@ using System.Threading.Tasks;
 
 namespace SalesDemo.Web.Controllers
 {
+    public class MyModel
+    {
+        public string cookie { get; set; }
+        public string message { get; set; }
+        public string errmsg { get; set; }
+    }
     public class TestController : Controller
     {
 
@@ -21,9 +27,19 @@ namespace SalesDemo.Web.Controllers
 
             using (var client = new HttpClient())
             {
-                var responseMessage = await client.GetAsync("https://localhost:44363/api/Company");
+
+                var a = Request.Cookies["jwt"];
+
+                client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Request.Cookies["jwt"]);
+                var responseMessage = await client.GetAsync("https://localhost:44363/api/test");
                 var jsonString = await responseMessage.Content.ReadAsStringAsync();
-                var companyDtoDatas = JsonConvert.DeserializeObject<List<CompanyDto>>(jsonString);
+
+                MyModel vm = new MyModel
+                {
+                    cookie = a,
+                    message = jsonString,
+                    errmsg = responseMessage.ReasonPhrase
+                };
 
                 //List<Company> company = new List<Company>();
                 //foreach (var companyDto in companyDtoDatas)
@@ -38,9 +54,9 @@ namespace SalesDemo.Web.Controllers
                 //    };
                 //}
 
+                return View(vm);
 
             }
-            return View();
         }
 
 

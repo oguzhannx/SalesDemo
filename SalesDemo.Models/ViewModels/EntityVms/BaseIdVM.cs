@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace SalesDemo.Models.Dtos
 {
-    public class BaseIdDto
-
+    public class BaseIdVM
     {
         public int TimeStamp { get; set; }
         public int Machine { get; set; }

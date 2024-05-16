@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SalesDemo.Business.Abstract;
 using SalesDemo.Core.Models.Concrete;
@@ -11,6 +12,8 @@ namespace SalesDemo.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = "Bearer")]
+
     public class SaleController : ControllerBase
     {
 

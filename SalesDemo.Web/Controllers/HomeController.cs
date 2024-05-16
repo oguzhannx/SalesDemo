@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MongoDB.Bson;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using SalesDemo.Core.Models.Concrete;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.Entities;
@@ -13,137 +14,120 @@ using SalesDemo.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace SalesDemo.Web.Controllers
 {
-    [Authorize()]
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IProductRepository _productRepository;
-        private readonly ICompanyRepository _companyRepository;
-        private readonly ISaleRepository _saleRepository;
-        private readonly UserManager<User> _userManager;
 
-        public HomeController(ILogger<HomeController> logger, IProductRepository productRepository, ICompanyRepository companyRepository, UserManager<User> userManager,
-            ISaleRepository saleRepository, HttpClient client)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _productRepository = productRepository;
-            _companyRepository = companyRepository;
-            _userManager = userManager;
-            _saleRepository = saleRepository;
+      
         }
 
         public async Task<IActionResult> Index()
         {
+            // JWT'yi çözme
+            var handler = new JwtSecurityTokenHandler();
+            var jsonToken = handler.ReadToken(Request.Cookies["jwt"]) as JwtSecurityToken;
 
-
-
-
-
-            var user = await _userManager.GetUserAsync(User);
-            var role = await _userManager.GetRolesAsync(user);
+            // Claims (iddialar) JSON olarak okuma
+            var claimsJson = new JObject();
+            foreach (var claim in jsonToken.Claims)
+            {
+                claimsJson.Add(claim.Type, claim.Value);
+            }
+                      
+            var role = claimsJson["Role"].ToString();
+            
+            ViewBag.UserName = claimsJson["UserName"].ToString();
+            ViewBag.Role = claimsJson["Role"].ToString();
 
             if (role.Contains("seyhanlar"))
             {
                 //Butun Şirketlerin Getirilmesi
-                //var companies = _companyRepository.GetAllAsync().Result.Result.ToList();
-
-                Result<ICollection<CompanyDto>> companyResult = new();
+                Result<ICollection<CompanyVM>> companyResult = new();
                 using (var client = new HttpClient())
                 {
+                    client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Request.Cookies["jwt"]);
                     var responseMessage = await client.GetAsync("https://localhost:44363/api/Company");
                     var jsonString = await responseMessage.Content.ReadAsStringAsync();
-                    var result = JsonConvert.DeserializeObject<Result<ICollection<CompanyDto>>>(jsonString);
+                    var result = JsonConvert.DeserializeObject<Result<ICollection<CompanyVM>>>(jsonString);
                     companyResult = result;
                 }
-
-
-
-
-                List<IndexVM> indexVMs = new List<IndexVM>();
-                foreach (var item in companyResult.Data)
+                if (companyResult != null)
                 {
-
-                    //sales talosunda companyId'ye karşilık gelen veriyi alma alma
-                    //var sale = _saleRepository.FilterByAsync(q => q.CompanyId == item.Id).Result.Result.FirstOrDefault();
-                    Result<ICollection<SaleDto>> saleDtos = new();
-                    using (var client = new HttpClient())
+                    List<IndexVM> indexVMs = new List<IndexVM>();
+                    foreach (var item in companyResult.Data)
                     {
-                        ObjectId objectId = new(item.Id.TimeStamp, item.Id.Machine, (short)item.Id.Pid, item.Id.Increment);
-                        var responseMessage = await client.GetAsync("https://localhost:44363/api/Sale/FromCompanyId?id=" + objectId.ToString());
-                        var jsonString = await responseMessage.Content.ReadAsStringAsync();
-                        var saleDtoDatas = JsonConvert.DeserializeObject<Result<ICollection<SaleDto>>>(jsonString);
-                        saleDtos = saleDtoDatas;
+                        //sales talosunda companyId'ye karşilık gelen veriyi alma alma
+                        Result<ICollection<SaleVM>> saleDtos = new();
+                        using (var client = new HttpClient())
+                        {
+                            ObjectId objectId = new(item.Id.TimeStamp, item.Id.Machine, (short)item.Id.Pid, item.Id.Increment);
+                            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Request.Cookies["jwt"]);
+                            var responseMessage = await client.GetAsync("https://localhost:44363/api/Sale/FromCompanyId?id=" + objectId.ToString());
+                            var jsonString = await responseMessage.Content.ReadAsStringAsync();
+                            var saleDtoDatas = JsonConvert.DeserializeObject<Result<ICollection<SaleVM>>>(jsonString);
+                            saleDtos = saleDtoDatas;
+                        }
+                        IndexVM indexVM = new IndexVM
+                        {
+                            CompanyVM = item,
+                            SaleVM = saleDtos.Data.First(),
+                        };
+                        indexVMs.Add(indexVM);
                     }
-
-
-                    IndexVM indexVM = new IndexVM
-                    {
-                        CompanyDto = item,
-                        SaleDto = saleDtos.Data.First(),
-                    };
-                    indexVMs.Add(indexVM);
+                    return View(indexVMs);
                 }
-                return View(indexVMs);
+                else
+                {
+                    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+                }
 
             }
             else
             {
                 //companyName ye gore company getirme
-                //var companies = _companyRepository.FilterByAsync(q => q.CompanyName.ToLower() == role.First().ToLower()).Result.Result;
-                Result<CompanyDto> item = new();
+                Result<CompanyVM> item = new();
                 using (var client = new HttpClient())
                 {
-                  
-                    var responseMessage = await client.GetAsync("https://localhost:44363/api/Company/GetByCompanyName?companyName=" + role.FirstOrDefault());
+                    client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Request.Cookies["jwt"]);
+                    var responseMessage = await client.GetAsync("https://localhost:44363/api/Company/GetByCompanyName?companyName=" + role);
                     var jsonString = await responseMessage.Content.ReadAsStringAsync();
-                    var companyDtoDatas = JsonConvert.DeserializeObject<Result<CompanyDto>>(jsonString);
-                    item = companyDtoDatas;
+                    var companyVMDatas = JsonConvert.DeserializeObject<Result<CompanyVM>>(jsonString);
+                    item = companyVMDatas;
                 }
-
-
-                List<IndexVM> indexVMs = new List<IndexVM>();
-
-               
+                List<IndexVM> indexVMs = new List<IndexVM>();             
                     //sales talosunda companyId'ye karşilık gelen yeri alma
-                    //var sale = _saleRepository.FilterByAsync(q => q.CompanyId == item.Id).Result.Result.FirstOrDefault();
-                    Result<ICollection<SaleDto>> saleDtos = new();
+                    Result<ICollection<SaleVM>> saleDtos = new();
                     using (var client = new HttpClient())
                     {
-                        ObjectId objectId = new(item.Data.Id.TimeStamp, item.Data.Id.Machine, (short)item.Data.Id.Pid, item.Data.Id.Increment);
-                        var responseMessage = await client.GetAsync("https://localhost:44363/api/Sale/FromCompanyId?id=" + objectId);
+                    ObjectId objectId = new(item.Data.Id.TimeStamp, item.Data.Id.Machine, (short)item.Data.Id.Pid, item.Data.Id.Increment);
+                    client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Request.Cookies["jwt"]);
+                    var responseMessage = await client.GetAsync("https://localhost:44363/api/Sale/FromCompanyId?id=" + objectId);
                         var jsonString = await responseMessage.Content.ReadAsStringAsync();
-                        var saleDtoDatas = JsonConvert.DeserializeObject<Result<ICollection<SaleDto>>>(jsonString);
+                        var saleDtoDatas = JsonConvert.DeserializeObject<Result<ICollection<SaleVM>>>(jsonString);
                         saleDtos = saleDtoDatas;
                     }
-
-
                     IndexVM indexVM = new IndexVM
                     {
-                        CompanyDto = item.Data,
-                        SaleDto = saleDtos.Data.FirstOrDefault()
+                        CompanyVM = item.Data,
+                        SaleVM = saleDtos.Data.FirstOrDefault()
                     };
                     indexVMs.Add(indexVM);
-                
                 return View(indexVMs);
-
             }
-
-
-
-
-
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
