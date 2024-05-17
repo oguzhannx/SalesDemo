@@ -1,0 +1,17 @@
+﻿using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SalesDemo.Helper.Connection
+{
+    public interface IHttpConnection<T>
+    {
+        Task<T> GetAsync(string url);
+        Task<T> PostAsync(string url, T data);
+        Task<T> PutAsync(string url, T data);
+        Task DeleteAsync(string url);
+    }
+}

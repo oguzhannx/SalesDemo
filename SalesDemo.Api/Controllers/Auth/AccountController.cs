@@ -127,8 +127,6 @@ namespace SalesDemo.Api.Controllers.Auth
         [HttpPost("token")]
         public IActionResult Token([FromBody]LoginVM loginVm)
         {
-            var a = jwtModel;
-
 
             //kullanıcının bulunması
             var user = _userRepository.FilterBy(q => q.UserName == loginVm.UserName).Data.First();
@@ -161,7 +159,7 @@ namespace SalesDemo.Api.Controllers.Auth
                     new Claim("Role", role.ToString()),
 
                  }),
-                    Expires = DateTime.UtcNow.AddMinutes(5),
+                    Expires = DateTime.UtcNow.AddHours(1),
                     Issuer = issuer,
                     Audience = audience,
                     SigningCredentials = new SigningCredentials

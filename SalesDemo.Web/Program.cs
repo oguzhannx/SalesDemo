@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using System.Net;
+using System.Net.Http;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 
 namespace SalesDemo.Web
 {
@@ -8,6 +12,9 @@ namespace SalesDemo.Web
     {
         public static void Main(string[] args)
         {
+
+            ServicePointManager.ServerCertificateValidationCallback += (o, c, ch, er) => true;
+
 
             Log.Logger = new LoggerConfiguration()
             .WriteTo.Console()

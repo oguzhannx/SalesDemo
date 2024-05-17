@@ -5,10 +5,12 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SalesDemo.Entities.Auth;
+using SalesDemo.Helper.Connection;
 using SalesDemo.Models.ViewModels;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Text.Json;
@@ -48,38 +50,61 @@ namespace SalesDemo.Web.Controllers
             if (ModelState.IsValid)
             {
 
-                using (HttpClient client = new HttpClient())
+             
+
+
+
+                HttpConnection<RegisterVM> connection = new HttpConnection<RegisterVM>();
+                var postResult = await connection.register("https://10.60.60.141:44363/api/Account/register", registerVM);
+
+                if (postResult)
                 {
-                    // Veriyi JSON formatına çevirme
-                    string jsonData = JsonSerializer.Serialize(registerVM);
-                    var content = new StringContent(jsonData, System.Text.Encoding.UTF8, "application/json");
-                    var response = await client.PostAsync("https://localhost:44363/api/Account/register", content);
-
-                    if (response.IsSuccessStatusCode)
+                    LoginVM loginVM = new LoginVM
                     {
-                        var token = await response.Content.ReadAsStringAsync();
+                        UserName = registerVM.UserName,
+                        Password = registerVM.Password,
+                    };
 
-                        // JWT'yi bir cookie'ye yerleştirme
-                        Response.Cookies.Append("jwt", token, new CookieOptions
-                        {
-                            HttpOnly = true, // Cookie'ye JavaScript erişimini engeller
-                            Secure = true,   // Sadece HTTPS üzerinden iletilir
-                            SameSite = SameSiteMode.Strict, // CSRF saldırılarını önlemek için güçlendirilmiş güvenlik
-                            Expires = DateTime.UtcNow.AddDays(1) // Cookie'nin son kullanma tarihi 
-                        });
 
-                        _logger.LogInformation("User logged in.");
+                    HttpConnection<LoginVM> login = new HttpConnection<LoginVM>();
+
+                    var response = await login.tokenAsync("https://10.60.60.141:44363/api/Account/token", loginVM, HttpContext);
+
+
+
+                    if (response)
+                    {
                         return LocalRedirect(returnUrl);
+
                     }
 
                 }
 
-                }
+
+
+            }
                 return View();
         }
 
         public IActionResult Login()
         {
+            
+           
+            if (Request.Cookies["jwt"] != null)
+            {
+                // JWT'yi çözme
+                var handler = new JwtSecurityTokenHandler();
+                var jsonToken = (handler.ReadToken(Request.Cookies["jwt"]) as JwtSecurityToken);
+                var exp = jsonToken.Claims.First(q => q.Type.Equals("exp")).Value;
+                var ticks = long.Parse(exp);
+                var tokenDate = DateTimeOffset.FromUnixTimeSeconds(ticks).UtcDateTime;
+                var now = DateTime.Now.ToUniversalTime();
+                if ( (tokenDate >= now))
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            
             return View();
         }
 
@@ -92,46 +117,22 @@ namespace SalesDemo.Web.Controllers
 
             if (ModelState.IsValid)
             {
-
-                using (HttpClient client = new HttpClient())
+                HttpConnection<LoginVM> login = new HttpConnection<LoginVM>();
+                var response = await login.tokenAsync("https://10.60.60.141:44363/api/Account/token", loginVM, HttpContext);
+               
+                if (response)
                 {
-                    // Veriyi JSON formatına çevirme
-                    string jsonData = JsonSerializer.Serialize(loginVM);
-                    var content = new StringContent(jsonData, System.Text.Encoding.UTF8, "application/json");
-                    var response = await client.PostAsync("https://localhost:44363/api/Account/token", content);
-
-                    if (response.IsSuccessStatusCode)
-                    {
-                        var token = await response.Content.ReadAsStringAsync();
-
-                        // JWT'yi bir cookie'ye yerleştirme
-                        Response.Cookies.Append("jwt", token, new CookieOptions
-                        {
-                            HttpOnly = true, // Cookie'ye JavaScript erişimini engeller
-                            Secure = true,   // Sadece HTTPS üzerinden iletilir
-                            SameSite = SameSiteMode.Strict, // CSRF saldırılarını önlemek için güçlendirilmiş güvenlik
-                            Expires = DateTime.UtcNow.AddDays(1) // Cookie'nin son kullanma tarihi 
-                        });
-
-                        _logger.LogInformation("User logged in.");
-                        return LocalRedirect(returnUrl);
-
-
-
-                    }
+                    return LocalRedirect(returnUrl);
 
                 }
-
-
             }
+
             return View();
         }
 
         public IActionResult LogoutAsync()
         {
-
             Response.Cookies.Delete("jwt");
-
 
             _logger.LogInformation("user signout");
 

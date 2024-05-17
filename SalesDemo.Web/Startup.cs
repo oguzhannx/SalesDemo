@@ -14,6 +14,7 @@ using SalesDemo.DataAccess.Abstract;
 using SalesDemo.DataAccess.Concrete;
 using SalesDemo.Entities.Auth;
 using System;
+using System.Net;
 using System.Text;
 
 namespace SalesDemo.Web
@@ -33,7 +34,7 @@ namespace SalesDemo.Web
 
             services.AddControllersWithViews();
             services.AddHttpClient();
-
+            services.AddHttpContextAccessor();
             services.Configure<JwtModel>(o =>
             {
                 o.Issuer = Configuration["Jwt:Issuer"];
@@ -56,6 +57,9 @@ namespace SalesDemo.Web
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                 };
             });
+
+
+
 
 
         }
