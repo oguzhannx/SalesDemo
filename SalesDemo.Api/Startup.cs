@@ -81,8 +81,8 @@ namespace SalesDemo.Api
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                   
-                    
+
+
                 };
             });
             services.AddAuthorization();
@@ -148,7 +148,7 @@ namespace SalesDemo.Api
 
 
 
-         
+
 
             app.UseHttpsRedirection();
 

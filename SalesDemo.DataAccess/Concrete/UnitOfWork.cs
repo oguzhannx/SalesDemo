@@ -1,11 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
 using SalesDemo.Core.DbSettingModels;
 using SalesDemo.DataAccess.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SalesDemo.DataAccess.Concrete
 {

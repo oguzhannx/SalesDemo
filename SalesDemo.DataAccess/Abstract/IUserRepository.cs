@@ -1,5 +1,4 @@
 ﻿using SalesDemo.Core.Repository.Abstract;
-using SalesDemo.Entities;
 using SalesDemo.Entities.Auth;
 
 namespace SalesDemo.DataAccess.Abstract

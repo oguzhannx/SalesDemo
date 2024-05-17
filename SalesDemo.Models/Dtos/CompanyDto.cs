@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace SalesDemo.Entities
 {
 
-    public class CompanyDto 
+    public class CompanyDto
     {
         public BaseIdVM Id { get; set; }
         public string CompanyName { get; set; }

@@ -16,13 +16,13 @@ namespace SalesDemo.Business.Concrete
         }
         public Result<ICollection<Company>> GetCompanies()
         {
-            
+
             return _companyRepository.GetAll();
         }
 
         public Result<Company> GetCompanyByCompanyName(string companyName)
         {
-            
+
 
             var a = _companyRepository.FilterBy(q => q.CompanyName.ToLower() == companyName.ToLower());
 

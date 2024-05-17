@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SalesDemo.Business.Abstract;
 using SalesDemo.Core.Models.Concrete;
@@ -31,7 +30,7 @@ namespace SalesDemo.Api.Controllers
         {
             try
             {
-               
+
                 return _saleService.getAllSales();
             }
             catch (System.Exception e)

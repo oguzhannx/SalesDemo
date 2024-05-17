@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace SalesDemo.Core.Models.Concrete
 {
@@ -29,13 +28,13 @@ namespace SalesDemo.Core.Models.Concrete
         }
 
 
-  
+
 
         public int StatusCode { get; set; } = 200;
         public string Message { get; set; }
-       
-        public DateTime Time{ get; set; } = DateTime.Now;
+
+        public DateTime Time { get; set; } = DateTime.Now;
         public T Data { get; set; }
     }
-   
+
 }

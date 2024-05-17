@@ -1,19 +1,11 @@
-using AspNetCore.Identity.MongoDbCore.Models;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
-using SalesDemo.Core.DbSettingModels;
 using SalesDemo.Core.Models.Auth;
-using SalesDemo.DataAccess.Abstract;
-using SalesDemo.DataAccess.Concrete;
-using SalesDemo.Entities.Auth;
-using System;
 using System.Text;
 
 namespace SalesDemo.Web
@@ -33,7 +25,7 @@ namespace SalesDemo.Web
 
             services.AddControllersWithViews();
             services.AddHttpClient();
-
+            services.AddHttpContextAccessor();
             services.Configure<JwtModel>(o =>
             {
                 o.Issuer = Configuration["Jwt:Issuer"];
@@ -56,6 +48,9 @@ namespace SalesDemo.Web
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                 };
             });
+
+
+
 
 
         }

@@ -2,7 +2,6 @@
 using SalesDemo.Core.DbSettingModels;
 using SalesDemo.DataAccess.Abstract;
 using SalesDemo.DataAccess.Repository;
-using SalesDemo.Entities;
 using SalesDemo.Entities.Auth;
 
 namespace SalesDemo.DataAccess.Concrete

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace SalesDemo.Entities
 {
-    public class SaleVM 
+    public class SaleVM
     {
         public BaseIdVM Id { get; set; }
         public DateTime SaleDate { get; set; }

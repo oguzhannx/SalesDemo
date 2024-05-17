@@ -1,23 +1,18 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AspNetCore.Identity.MongoDbCore.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using SalesDemo.Core.Models.Auth;
+using SalesDemo.DataAccess.Abstract;
+using SalesDemo.Entities.Auth;
 using SalesDemo.Models.ViewModels;
-using System.Security.Claims;
-using System.Text;
 using System;
 using System.IdentityModel.Tokens.Jwt;
-using Microsoft.IdentityModel.Tokens;
-using System.Security.Cryptography;
-using SalesDemo.Core.Models.Concrete;
-using SalesDemo.Entities.Auth;
-using Microsoft.Extensions.Configuration;
-using SalesDemo.DataAccess.Abstract;
-using Microsoft.AspNetCore.Identity;
 using System.Linq;
-using Microsoft.Extensions.Options;
-using SalesDemo.Core.Models.Auth;
-using AspNetCore.Identity.MongoDbCore.Models;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
+using System.Security.Claims;
+using System.Text;
 
 namespace SalesDemo.Api.Controllers.Auth
 {
@@ -42,15 +37,15 @@ namespace SalesDemo.Api.Controllers.Auth
             )
         {
             _userRepository = userRepository;
-            _signInManager = signInManager;            
+            _signInManager = signInManager;
             _userManager = userManager;
-            jwtModel= options.Value;
+            jwtModel = options.Value;
             _logger = logger;
             _roleManager = roleManager;
 
         }
         [HttpPost("register")]
-        public  IActionResult Register(RegisterVM registerVM)
+        public IActionResult Register(RegisterVM registerVM)
         {
             if (ModelState.IsValid)
             {
@@ -64,7 +59,7 @@ namespace SalesDemo.Api.Controllers.Auth
 
                 };
 
-                var result =  _userManager.CreateAsync(user, registerVM.Password).Result;
+                var result = _userManager.CreateAsync(user, registerVM.Password).Result;
                 _logger.LogInformation("User created.");
 
                 if (result.Succeeded)
@@ -77,7 +72,7 @@ namespace SalesDemo.Api.Controllers.Auth
                             Name = registerVM.CompanyName.ToLower(),
                         }).GetAwaiter().GetResult();
 
-                         _userManager.AddToRoleAsync(user, registerVM.CompanyName.ToLower());
+                        _userManager.AddToRoleAsync(user, registerVM.CompanyName.ToLower());
                         if (result.Succeeded)
                         {
                             //await _signInManager.SignInAsync(user, isPersistent: false);
@@ -89,7 +84,7 @@ namespace SalesDemo.Api.Controllers.Auth
                     //company ismide rol zaten varsa kullanıcıya direkt o rolu ata
                     else
                     {
-                         _userManager.AddToRoleAsync(user, registerVM.CompanyName.ToLower());
+                        _userManager.AddToRoleAsync(user, registerVM.CompanyName.ToLower());
                         if (result.Succeeded)
                         {
                             //await _signInManager.SignInAsync(user, isPersistent: false);
@@ -125,14 +120,12 @@ namespace SalesDemo.Api.Controllers.Auth
 
 
         [HttpPost("token")]
-        public IActionResult Token([FromBody]LoginVM loginVm)
+        public IActionResult Token([FromBody] LoginVM loginVm)
         {
-            var a = jwtModel;
-
 
             //kullanıcının bulunması
             var user = _userRepository.FilterBy(q => q.UserName == loginVm.UserName).Data.First();
-            
+
             //kullıcının rolunun bulunması
             var role = _userManager.GetRolesAsync(user).Result.FirstOrDefault();
 
@@ -161,7 +154,7 @@ namespace SalesDemo.Api.Controllers.Auth
                     new Claim("Role", role.ToString()),
 
                  }),
-                    Expires = DateTime.UtcNow.AddMinutes(5),
+                    Expires = DateTime.UtcNow.AddHours(1),
                     Issuer = issuer,
                     Audience = audience,
                     SigningCredentials = new SigningCredentials

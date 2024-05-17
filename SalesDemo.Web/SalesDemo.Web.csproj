@@ -19,8 +19,8 @@
     <ProjectReference Include="..\SalesDemo.Core\SalesDemo.Core.csproj" />
     <ProjectReference Include="..\SalesDemo.DataAccess\SalesDemo.DataAccess.csproj" />
     <ProjectReference Include="..\SalesDemo.Entity\SalesDemo.Entities.csproj" />
+    <ProjectReference Include="..\SalesDemo.Helper\SalesDemo.Helper.csproj" />
     <ProjectReference Include="..\SalesDemo.Models\SalesDemo.Models.csproj" />
-    <ProjectReference Include="..\SalesDemo.Utility\SalesDemo.Utility.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,14 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using SalesDemo.Business.Abstract;
 using SalesDemo.Core.Models.Concrete;
 using SalesDemo.DataAccess.Abstract;
-using SalesDemo.DataAccess.Concrete;
 using SalesDemo.Entities.Auth;
 using System;
 using System.Linq;
-using System.Net;
 
 namespace SalesDemo.Api.Controllers.Auth
 {
@@ -27,7 +23,7 @@ namespace SalesDemo.Api.Controllers.Auth
         }
 
         [HttpGet("role")]
-        public  string getUserRole(string userId)
+        public string getUserRole(string userId)
         {
             var user = userRepository.GetById(userId, "guid").Data;
             var role = userManager.GetRolesAsync(user).Result.FirstOrDefault();

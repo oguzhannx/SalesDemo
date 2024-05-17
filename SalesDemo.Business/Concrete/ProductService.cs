@@ -18,7 +18,7 @@ namespace SalesDemo.Business.Concrete
         }
 
         Result<ICollection<Product>> IProductService.GetProducts()
-        {         
+        {
             return _productRepository.GetAll();
         }
     }

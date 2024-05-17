@@ -5,7 +5,7 @@ namespace SalesDemo.Entities
 {
     [BsonIgnoreExtraElements]
 
-    public class SaleDetailDto 
+    public class SaleDetailDto
     {
         public BaseIdVM Id { get; set; }
         public ProductVM product { get; set; }

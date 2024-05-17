@@ -4,7 +4,6 @@ using SalesDemo.Business.Abstract;
 using SalesDemo.Core.Models.Concrete;
 using SalesDemo.Entities;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 
@@ -33,7 +32,7 @@ namespace SalesDemo.Api.Controllers
             catch (System.Exception e)
             {
 
-                return new Result<ICollection<Product>>(Int32.Parse(HttpStatusCode.BadRequest.ToString()),e.Message, null, DateTime.Now );
+                return new Result<ICollection<Product>>(Int32.Parse(HttpStatusCode.BadRequest.ToString()), e.Message, null, DateTime.Now);
             }
         }
     }
