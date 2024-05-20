@@ -25,7 +25,7 @@ namespace SalesDemo.Web.Controllers
                 var a = Request.Cookies["jwt"];
 
                 client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Request.Cookies["jwt"]);
-                var responseMessage = await client.GetAsync("https://10.60.60.141:44363/api/test");
+                var responseMessage = await client.GetAsync("https://localhost:44363/api/test");
                 var jsonString = await responseMessage.Content.ReadAsStringAsync();
 
                 MyModel vm = new MyModel

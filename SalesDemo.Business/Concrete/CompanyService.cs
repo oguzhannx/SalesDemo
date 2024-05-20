@@ -14,6 +14,12 @@ namespace SalesDemo.Business.Concrete
         {
             _companyRepository = companyRepository;
         }
+
+        public Result<Company> AddCompany(Company company)
+        {
+            return _companyRepository.InsertOne(company);
+        }
+
         public Result<ICollection<Company>> GetCompanies()
         {
 

@@ -146,12 +146,12 @@ namespace SalesDemo.Api.Controllers.Auth
                 {
                     Subject = new ClaimsIdentity(new[]
                     {
-                    new Claim("Id", user.Id.ToString()),
-                    new Claim("UserName", user.UserName.ToString()),
-                    new Claim("PhoneNumber", user.PhoneNumber.ToString()),
-                    new Claim("Name", user.Name.ToString()),
-                    new Claim("Surname", user.Surname.ToString()),
-                    new Claim("Role", role.ToString()),
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                    new Claim(ClaimTypes.Name, user.UserName.ToString()),
+                    new Claim(ClaimTypes.MobilePhone, user.PhoneNumber.ToString()),
+                    new Claim(ClaimTypes.GivenName, user.Name.ToString()),
+                    new Claim(ClaimTypes.Surname, user.Surname.ToString()),
+                    new Claim(ClaimTypes.Role, role.ToString()),
 
                  }),
                     Expires = DateTime.UtcNow.AddHours(1),

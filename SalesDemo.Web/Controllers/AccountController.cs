@@ -43,7 +43,7 @@ namespace SalesDemo.Web.Controllers
             {
                 //kayıt işleminin yapılması
                 HttpConnection<RegisterVM> connection = new HttpConnection<RegisterVM>();
-                var postResult = await connection.register("https://10.60.60.141:44363/api/Account/register", registerVM);
+                var postResult = await connection.register("https://localhost:44363/api/Account/register", registerVM);
 
                 //kayıt işleminin sonucu true ise giriş yapsın
                 if (postResult)
@@ -57,7 +57,7 @@ namespace SalesDemo.Web.Controllers
 
                     HttpConnection<LoginVM> login = new HttpConnection<LoginVM>();
 
-                    var response = await login.tokenAsync("https://10.60.60.141:44363/api/Account/token", loginVM, HttpContext);
+                    var response = await login.tokenAsync("https://localhost:44363/api/Account/token", loginVM, HttpContext);
 
 
 
@@ -107,7 +107,7 @@ namespace SalesDemo.Web.Controllers
             if (ModelState.IsValid)
             {
                 HttpConnection<LoginVM> login = new HttpConnection<LoginVM>();
-                var response = await login.tokenAsync("https://10.60.60.141:44363/api/Account/token", loginVM, HttpContext);
+                var response = await login.tokenAsync("https://localhost:44363/api/Account/token", loginVM, HttpContext);
 
                 if (response)
                 {

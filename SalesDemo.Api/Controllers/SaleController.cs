@@ -56,5 +56,14 @@ namespace SalesDemo.Api.Controllers
                 return new Result<ICollection<Sale>>(Int32.Parse(HttpStatusCode.BadRequest.ToString()), e.Message, null, DateTime.Now);
             }
         }
+
+
+
+        [HttpGet("test")]
+        [Authorize(Roles = "seyhanlar")]
+        public IActionResult test()
+        {
+            return Ok("it works....");
+        }
     }
 }

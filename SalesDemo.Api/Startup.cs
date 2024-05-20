@@ -2,12 +2,14 @@ using AspNetCore.Identity.MongoDbCore.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using MongoDB.Driver.Linq;
 using SalesDemo.Business.Abstract;
 using SalesDemo.Business.Concrete;
 using SalesDemo.Core.DbSettingModels;
@@ -16,7 +18,10 @@ using SalesDemo.DataAccess.Abstract;
 using SalesDemo.DataAccess.Concrete;
 using SalesDemo.Entities.Auth;
 using System;
+using System.Linq;
+using System.Security.Claims;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SalesDemo.Api
 {
@@ -81,11 +86,25 @@ namespace SalesDemo.Api
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-
+                   
 
                 };
+                o.Events = new JwtBearerEvents
+                {
+                    OnTokenValidated = context =>
+                    {
+                        // Token doðrulandýktan sonra gelen rolleri kontrol etmek için bu noktayý kullanabilirsiniz
+                        var role = context.Principal.Claims.Where(q => q.Type == "role").Select(q => q.Value).FirstOrDefault();
+
+                        // Debug noktasýna ulaþýldýðýnda 'roles' deðiþkeni içinde gelen rolleri görebilirsiniz
+                        return Task.CompletedTask;
+                    }
+                };
             });
-            services.AddAuthorization();
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminOnly", policy => policy.RequireRole("seyhanlar"));
+            });
 
 
             services.Configure<MongoSettings>(o =>
@@ -143,6 +162,8 @@ namespace SalesDemo.Api
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SalesDemo.Api v1"));
+
+
             }
 
 

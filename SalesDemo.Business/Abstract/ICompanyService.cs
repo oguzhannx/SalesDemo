@@ -7,6 +7,7 @@ namespace SalesDemo.Business.Abstract
     public interface ICompanyService
     {
         Result<ICollection<Company>> GetCompanies();
+        Result<Company> AddCompany(Company company);
         Result<Company> GetCompanyByCompanyName(string companyName);
     }
 }

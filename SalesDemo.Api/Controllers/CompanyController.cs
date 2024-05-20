@@ -11,7 +11,7 @@ namespace SalesDemo.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(AuthenticationSchemes = "Bearer")]
+    //[Authorize(AuthenticationSchemes = "Bearer")]
     public class CompanyController : ControllerBase
     {
         private readonly ICompanyService _companyService;
@@ -23,39 +23,34 @@ namespace SalesDemo.Api.Controllers
         [HttpGet]
         public Result<ICollection<Company>> Get()
         {
-
             try
             {
-
-
                 return _companyService.GetCompanies();
             }
             catch (System.Exception e)
             {
-
                 return new Result<ICollection<Company>>(Int32.Parse(HttpStatusCode.BadRequest.ToString()), e.Message, null, DateTime.Now);
             }
-
-
         }
+
         [HttpGet("GetByCompanyName")]
         public Result<Company> GetCompanyByName(string companyName)
         {
-
             try
             {
-
-
                 return _companyService.GetCompanyByCompanyName(companyName);
             }
             catch (System.Exception e)
             {
-
                 return new Result<Company>(Int32.Parse(HttpStatusCode.BadRequest.ToString()), e.Message, null, DateTime.Now);
             }
-
-
         }
 
+
+        [HttpPost]
+        public Result<Company> PostCompany([FromBody]Company company)
+        {
+            return _companyService.AddCompany(company);
+        }
     }
 }

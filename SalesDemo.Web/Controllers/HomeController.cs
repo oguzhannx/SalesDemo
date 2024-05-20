@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace SalesDemo.Web.Controllers
@@ -44,10 +45,10 @@ namespace SalesDemo.Web.Controllers
                 claimsJson.Add(claim.Type, claim.Value);
             }
 
-            var role = claimsJson["Role"].ToString();
+            var role = claimsJson["role"].ToString();
 
-            ViewBag.UserName = claimsJson["UserName"].ToString();
-            ViewBag.Role = claimsJson["Role"].ToString();
+            ViewBag.UserName = claimsJson["unique_name"].ToString();
+            ViewBag.Role = claimsJson["role"].ToString();
 
             if (role.Contains("seyhanlar"))
             {
@@ -55,7 +56,7 @@ namespace SalesDemo.Web.Controllers
                 Result<ICollection<CompanyVM>> companyResult = new();
 
                 HttpConnection<Result<ICollection<CompanyVM>>> companyConn = new HttpConnection<Result<ICollection<CompanyVM>>>();
-                companyResult = await companyConn.GetAsync("https://10.60.60.141:44363/api/Company", "Authorization", "Bearer " + Request.Cookies["jwt"]);
+                companyResult = await companyConn.GetAsync("https://localhost:44363/api/Company", "Authorization", "Bearer " + Request.Cookies["jwt"]);
 
 
 
@@ -68,7 +69,7 @@ namespace SalesDemo.Web.Controllers
                     ObjectId objectId = new(item.Id.TimeStamp, item.Id.Machine, (short)item.Id.Pid, item.Id.Increment);
 
                     HttpConnection<Result<ICollection<SaleVM>>> SaleConn = new HttpConnection<Result<ICollection<SaleVM>>>();
-                    saleDtos = await SaleConn.GetAsync("https://10.60.60.141:44363/api/Sale/FromCompanyId?id=" + objectId.ToString(), "Authorization", "Bearer " + Request.Cookies["jwt"]);
+                    saleDtos = await SaleConn.GetAsync("https://localhost:44363/api/Sale/FromCompanyId?id=" + objectId.ToString(), "Authorization", "Bearer " + Request.Cookies["jwt"]);
 
                     IndexVM indexVM = new IndexVM
                     {
@@ -88,7 +89,7 @@ namespace SalesDemo.Web.Controllers
                 Result<CompanyVM> item = new();
 
                 HttpConnection<Result<CompanyVM>> companyConn = new HttpConnection<Result<CompanyVM>>();
-                item = await companyConn.GetAsync("https://10.60.60.141:44363/api/Company/GetByCompanyName?companyName=" + role, "Authorization", "Bearer " + Request.Cookies["jwt"]);
+                item = await companyConn.GetAsync("https://localhost:44363/api/Company/GetByCompanyName?companyName=" + role, "Authorization", "Bearer " + Request.Cookies["jwt"]);
 
 
 
@@ -98,7 +99,7 @@ namespace SalesDemo.Web.Controllers
                 Result<ICollection<SaleVM>> saleDtos = new();
                 ObjectId objectId = new(item.Data.Id.TimeStamp, item.Data.Id.Machine, (short)item.Data.Id.Pid, item.Data.Id.Increment); //companyId yi objectId ye çevirme
                 HttpConnection<Result<ICollection<SaleVM>>> saleConn = new HttpConnection<Result<ICollection<SaleVM>>>();
-                saleDtos = await saleConn.GetAsync("https://10.60.60.141:44363/api/Sale/FromCompanyId?id=" + objectId, "Authorization", "Bearer " + Request.Cookies["jwt"]);
+                saleDtos = await saleConn.GetAsync("https://localhost:44363/api/Sale/FromCompanyId?id=" + objectId, "Authorization", "Bearer " + Request.Cookies["jwt"]);
 
 
 

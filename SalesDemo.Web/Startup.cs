@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using SalesDemo.Core.Models.Auth;
+using SalesDemo.Web.Models;
 using System.Text;
 
 namespace SalesDemo.Web

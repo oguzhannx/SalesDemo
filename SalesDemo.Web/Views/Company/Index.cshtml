@@ -1,0 +1,65 @@
+﻿@using MongoDB.Bson
+@using SalesDemo.Entities
+@model List<CompanyVM>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+
+<div class="conatiner-fluid content-inner mt-n5 py-0">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                    <div class="header-title">
+                        <h4 class="card-title">Şirketler Tablosu</h4>
+                    </div>
+                    <div class="header-title">
+                        <a class="btn btn-success" asp-action="Upsert">Ekle</a>
+                    </div> 
+                </div>
+                @*table start*@
+                <div class="card-body p-0">
+                    <div class="table-responsive mt-4">
+                        <table id="basic-table" class="table table-striped mb-0" role="grid">
+                            <thead>
+                                <tr>
+                                    <th>Şirket İsmi</th>
+                                    <th>Telefon No</th>
+                                    <th>Toplam Ürün</th>
+                                    <th>Düzenle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               
+                              @foreach (var company in Model)
+                                {
+@*                                    ObjectId objectId = new(company.Id.TimeStamp, company.Id.Machine, (short)company.Id.Pid, company.Id.Increment);*@                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+
+                                                <h6>@company.CompanyName</h6>
+                                            </div>
+                                        </td>
+
+                                        <td>@company.PhoneNumber</td>
+                                        <td><div class="text-warning">@company.Products.Count.ToString()</div></td>
+                                        <td>
+                                            <a class="btn btn-warning" asp-controller="Company" asp-action="Upsert" asp-route-companyName="@company.CompanyName.ToString()">Düzenle</a>
+                                            <a class="btn btn-danger">Sil</a>
+
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                @*table end*@
+            
+            </div>
+        </div>
+    </div>
+
+</div>
