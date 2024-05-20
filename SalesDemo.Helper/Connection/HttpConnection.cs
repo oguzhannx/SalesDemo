@@ -2,8 +2,11 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 
@@ -21,6 +24,11 @@ namespace SalesDemo.Helper.Connection
             _handler = new HttpClientHandler();
             _handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true;
             _httpClient = new HttpClient(_handler);
+
+
+
+
+
         }
 
         /// <summary>
@@ -70,7 +78,7 @@ namespace SalesDemo.Helper.Connection
         /// <returns></returns>
         public async Task<T> PostAsync(string url, T data, string? headerName, string? value)
         {
-
+        
             using (HttpClientHandler handler = new HttpClientHandler())
             {
                 handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true;
@@ -138,7 +146,7 @@ namespace SalesDemo.Helper.Connection
                 handler.ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true;
 
                 using (HttpClient client = new HttpClient(handler))
-                {
+        {
                    
 
                     var response = await client.GetAsync(url);
@@ -149,7 +157,7 @@ namespace SalesDemo.Helper.Connection
                 }
 
             }
-        }        
+        }
        
         
         /// <summary>
@@ -198,10 +206,10 @@ namespace SalesDemo.Helper.Connection
 
 
 
-        }      
-       
-        
-        
+        }
+
+
+
         /// <summary>
         /// kayıt olunacağı zaman gullanılır
         /// </summary>

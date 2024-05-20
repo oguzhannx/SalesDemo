@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using MongoDB.Bson;
 using Newtonsoft.Json.Linq;
 using SalesDemo.Core.Models.Concrete;
@@ -77,6 +78,7 @@ namespace SalesDemo.Web.Controllers
                     indexVMs.Add(indexVM);
                 }
                 return View(indexVMs);
+
 
 
             }
