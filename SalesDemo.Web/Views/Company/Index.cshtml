@@ -35,7 +35,8 @@
                                
                               @foreach (var company in Model)
                                 {
-@*                                    ObjectId objectId = new(company.Id.TimeStamp, company.Id.Machine, (short)company.Id.Pid, company.Id.Increment);*@                                    <tr>
+                                    ObjectId objectId = new(company.Id.TimeStamp, company.Id.Machine, (short)company.Id.Pid, company.Id.Increment);
+                                    <tr>
                                         <td>
                                             <div class="d-flex align-items-center">
 
@@ -44,11 +45,12 @@
                                         </td>
 
                                         <td>@company.PhoneNumber</td>
-                                        <td><div class="text-warning">@company.Products.Count.ToString()</div></td>
+                                        @*<td><div class="text-warning">@(@company.Products == null ? 0 : @company.Products.Count.ToString())</div></td>*@
+                                        <td><div class="text-warning">@(company.Products == null ? 0 : company.Products.Count.ToString())</div></td>
                                         <td>
                                             <a class="btn btn-warning" asp-controller="Company" asp-action="Upsert" asp-route-companyName="@company.CompanyName.ToString()">Düzenle</a>
-                                            <a class="btn btn-danger">Sil</a>
-
+                                            <a class="btn btn-danger" asp-controller="Company" asp-action="Delete" asp-route-companyId="@objectId.ToString()">Sil</a>
+                                            <a class="btn btn-secondary">Urun Ekle</a>
                                         </td>
                                     </tr>
                                 }

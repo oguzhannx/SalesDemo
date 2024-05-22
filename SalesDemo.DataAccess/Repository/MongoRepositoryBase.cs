@@ -71,7 +71,8 @@ namespace SalesDemo.DataAccess.Repository
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
                 var data = _collection.FindOneAndDelete(filter);
                 if (data != null)
-                    result.Data = data; result.Message = "Veri Getirildi";
+                    result.Data = data; 
+                result.Message = "Veri silindi";
 
             }
             catch (Exception ex)
@@ -309,8 +310,8 @@ namespace SalesDemo.DataAccess.Repository
                     objectId = Guid.Parse(id);
                 else
                     objectId = ObjectId.Parse(id);
-
                 var filter = Builders<T>.Filter.Eq("_id", objectId);
+
                 var updatedDocument = _collection.ReplaceOne(filter, entity);
                 result.Data = entity; result.Message = "Veri Guncellendi";
             }

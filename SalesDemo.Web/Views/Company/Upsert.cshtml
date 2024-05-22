@@ -1,4 +1,5 @@
-﻿@model SalesDemo.Entities.CompanyVM
+﻿@using MongoDB.Bson
+@model SalesDemo.Entities.CompanyVM
 
 @{
     ViewData["Title"] = "Upsert";
@@ -11,17 +12,26 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
+  
         <form asp-action="Upsert">
-            
+         
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @if (Model.Id != null)
+            {
+                ObjectId id = new(Model.Id.TimeStamp, Model.Id.Machine, (short)Model.Id.Pid, Model.Id.Increment);
+                <input asp-for="CompanyId" value="@id.ToString()" type="hidden" class="form-control"  />
+
+            }
+            @*<input asp-for="Id" type="hidden" class="form-control" />*@
+
             <div class="form-group">
                 <label asp-for="CompanyName" class="control-label"></label>
-                <input asp-for="CompanyName" class="form-control" placeholder="@Model.CompanyName" required/>
+                <input asp-for="CompanyName" class="form-control" placeholder="@Model.CompanyName" required />
                 <span asp-validation-for="CompanyName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PhoneNumber" class="control-label"></label>
-                <input asp-for="PhoneNumber" class="form-control" placeholder="@Model.PhoneNumber" required/>
+                <input asp-for="PhoneNumber" class="form-control" placeholder="@Model.PhoneNumber" required />
                 <span asp-validation-for="PhoneNumber" class="text-danger"></span>
             </div>
             <div class="form-group">

@@ -20,6 +20,11 @@ namespace SalesDemo.Business.Concrete
             return _companyRepository.InsertOne(company);
         }
 
+        public Result<Company> DeleteCompany(string id)
+        {
+            return _companyRepository.DeleteById(id);
+        }
+
         public Result<ICollection<Company>> GetCompanies()
         {
 
@@ -39,6 +44,17 @@ namespace SalesDemo.Business.Concrete
             return result;
 
 
+        }
+
+        public Result<Company> UpdateCompany(Company company, string id)
+        {
+
+            var a = _companyRepository.ReplaceOne(company, id);
+           return a;
+
+
+
+            throw new System.NotImplementedException();
         }
     }
 }

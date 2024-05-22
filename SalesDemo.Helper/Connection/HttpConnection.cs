@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -127,10 +129,17 @@ namespace SalesDemo.Helper.Connection
         }
         public async Task<T> PutAsync(string url, T data)
         {
-            var jsonData = JsonSerializer.Serialize(data);
+            
+            //var jsonData = JsonSerializer.Serialize(data);
+            //var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+            //var response = await _httpClient.PutAsync(url, content);
+            ////response.EnsureSuccessStatusCode();
+            //var responseData = await response.Content.ReadAsStringAsync();
+            //return JsonSerializer.Deserialize<T>(responseData);
+
+            var jsonData = JsonSerializer.Serialize<T>(data);
             var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
             var response = await _httpClient.PutAsync(url, content);
-            response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<T>(responseData);
         }
@@ -148,7 +157,6 @@ namespace SalesDemo.Helper.Connection
                 using (HttpClient client = new HttpClient(handler))
         {
                    
-
                     var response = await client.GetAsync(url);
                     //response.EnsureSuccessStatusCode();
                     var responseData = await response.Content.ReadAsStringAsync();

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using SalesDemo.Business.Abstract;
 using SalesDemo.Core.Models.Concrete;
 using SalesDemo.Entities;
@@ -52,5 +53,20 @@ namespace SalesDemo.Api.Controllers
         {
             return _companyService.AddCompany(company);
         }
+
+        [HttpDelete]
+        public Result<Company> DeleteCompany(string id)
+        {
+            return _companyService.DeleteCompany(id);
+        }
+       
+        
+        [HttpPut]
+        public Result<Company> UpdateCompany([FromBody]Company company,string id)
+        {
+            company.Id = ObjectId.Parse(id);
+            return _companyService.UpdateCompany(company, id);
+        }
+
     }
 }
